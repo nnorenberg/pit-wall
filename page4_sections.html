@@ -1,0 +1,45 @@
+  <section class="panel radio pitwall" id="pitwall" aria-label="Pit wall">
+    <div class="radio-col">
+      <div class="sec-title">Radio channels</div>
+      <div class="chan-list" id="chans"></div>
+      <p class="radio-note" id="radio-mode">Connecting the radio…</p>
+    </div>
+    <div class="radio-col convo">
+      <div class="convo-head"><div class="sec-title" id="convo-title">Channel</div><p>Orders, questions and coaching in plain words. The strategist and the data channel speak up here too.</p></div>
+      <div class="msgs" id="msgs" aria-live="polite"></div>
+      <div class="suggest" id="suggest"></div>
+      <form id="radio-form" autocomplete="off"><input id="radio-input" type="text" placeholder="Talk to the driver…" aria-label="Message to the driver"><button class="btn primary" type="submit">Send</button></form>
+      <div><h3 class="side-title">Driver coaching in progress</h3><div class="jobs" id="jobs"></div></div>
+    </div>
+    <div class="radio-col side">
+      <div class="sec-title">Engineer's orders</div>
+      <div id="pw-body"></div>
+    </div>
+  </section>
+
+  <div class="desk two">
+    <section class="panel card" aria-label="Setup sheet">
+      <div class="geo-head"><h3>Setup sheet</h3><div class="geo-nav"><button type="button" id="setup-reset">Reset</button><button type="button" id="setup-apply" class="on">Apply</button></div></div>
+      <p class="note" id="setup-sub"></p>
+      <div id="setup-rows" class="su-rows"></div>
+      <div id="setup-bal"></div>
+    </section>
+    <section class="panel card" aria-label="Driver">
+      <div class="geo-head"><h3>Driver</h3></div>
+      <div id="drv-card"></div>
+      <div class="geo-head" style="margin-top:14px"><h3>Debrief</h3><div class="geo-nav"><button type="button" id="debrief-now">Debrief now</button></div></div>
+      <div id="debrief-body"></div>
+    </section>
+  </div>
+
+  <section class="panel chart-card" id="grid-panel" aria-label="Grid">
+    <div class="chart-head"><div><h3>Grid</h3><p class="sub">How many of each driver, and what they're like. Manufacturers share the field so every make gets a mix of skill levels.</p></div></div>
+    <div id="grid-body" class="gp"></div>
+  </section>
+
+  <section class="panel chart-card" id="champ" aria-label="Championship">
+    <div class="chart-head"><div><h3>Championship</h3><p class="sub">Each series' real 2026 calendar and weekend format, with points for drivers and teams. Road cars tour every circuit on a track-day calendar.</p></div>
+      <div class="ctl"><select id="ch-series" aria-label="Series"></select><button class="btn" id="ch-new" type="button">New championship</button></div></div>
+    <div class="ch-wrap"><ol class="ch-cal" id="ch-cal"></ol><div id="ch-stand"></div></div>
+  </section>
+

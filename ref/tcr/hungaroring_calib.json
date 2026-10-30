@@ -1,0 +1,131 @@
+{
+ "tcr": {
+  "year": 2026,
+  "layout": "Hungaroring 4381m",
+  "pole": 111.799,
+  "poleDrv": "Mike Halder",
+  "poleCar": "Honda Civic Type R FL5 TCR",
+  "poleSession": "Q1",
+  "officialPole": {
+   "t": "1:51.954",
+   "drv": "Marco Butti",
+   "car": "Cupra Leon VZ TCR",
+   "note": "Q2 (top 12) P1 = Race 1 pole"
+  },
+  "qualiGaps": {
+   "Honda Civic Type R FL5": 0.0,
+   "Cupra Leon VZ": 0.155,
+   "Hyundai Elantra N": 0.57,
+   "Audi RS 3 LMS": 1.007,
+   "Hyundai i30 N": 2.589
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 23.5,
+    "track": 44.4,
+    "wet": false,
+    "humidity": 37,
+    "trackStatus": "DRY"
+   },
+   "q2": {
+    "air": 23.4,
+    "track": 44.9,
+    "wet": false,
+    "humidity": 36,
+    "trackStatus": "DRY"
+   }
+  },
+  "raceFastest": 113.5,
+  "raceFastestRace": "R1",
+  "raceMedianTop5": null,
+  "raceLaps": 13,
+  "raceDuration": 1674.355,
+  "winnerTime": "27:54.355",
+  "races": {
+   "r1": {
+    "date": "2026-07-05",
+    "winner": "Marco Butti",
+    "winnerCar": "Cupra Leon VZ TCR",
+    "winnerTime": "27:54.355",
+    "raceDuration": 1674.355,
+    "raceLaps": 13,
+    "fastest": 113.5,
+    "fastestDrv": "Ruben Volt",
+    "fastestCar": "Honda Civic Type R FL5 TCR",
+    "avgLapTop5": 129.111,
+    "classified": 19,
+    "weather": {
+     "air": 25.5,
+     "track": 32.7,
+     "wet": false,
+     "humidity": 29,
+     "trackStatus": "DRY"
+    },
+    "penalties": [
+     "5 SECONDS TIME PENALTY TRACK LIMTIS CAR 12",
+     "STEWARDS DECISION NUMBER 7 CAR 22 - 10 SECONDS TIME PENALTY ADDED TO THE RACE TIME",
+     "STEWARDS DECISION NUMBER 8 CAR 33 - 10 SECONDS TIME PENALTY ADDED TO THE RACE TIME",
+     "STEWARDS DECISION NUMBER 9 CAR 27 - 30 SECONDS TIME PENALTY ADDED TO THE RACE TIME",
+     "STEWARDS DECISION NUMBER 10 CAR 37 - 10 SECONDS TIME PENALTY ADDED TO THE RACE TIME",
+     "STEWARDS DECISION NUMBER 11 CAR 12 - 30 SECONDS TIME PENALTY ADDED TO THE RACE TIME",
+     "STEWARDS DECISION CAR 19 - 10 SECONDS TIME PENALTY ADDED TO THE RACE TIME - CAUSING A COLLISION"
+    ]
+   },
+   "r2": {
+    "date": "2026-07-05",
+    "winner": "Junui Park",
+    "winnerCar": "Hyundai Elantra N TCR",
+    "winnerTime": "27:31.783",
+    "raceDuration": 1651.783,
+    "raceLaps": 13,
+    "fastest": 114.095,
+    "fastestDrv": "Junui Park",
+    "fastestCar": "Hyundai Elantra N TCR",
+    "avgLapTop5": 127.341,
+    "classified": 18,
+    "weather": {
+     "air": 23.7,
+     "track": 40.3,
+     "wet": false,
+     "humidity": 46,
+     "trackStatus": "DRY"
+    },
+    "penalties": [
+     "STW: CAR 7 TIME PENALTY 5 SECONDS FALSE START",
+     "STW CAR 22 5 SECONDS PENALTY TRACK LIMITS",
+     "STW CAR 12 10 SECONDS PENALTY CAUSING A COLLISION",
+     "16:35"
+    ]
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": false,
+   "minPitStopTimeSec": null,
+   "raceFormat": "2 races of 25 min + 1 lap, no mandatory stop (pit lane used only for drive-through penalties/repairs)",
+   "regsSource": "2026 TCR Europe Sporting Regulations V3, Art. 13 and 94"
+  },
+  "pitLaneSpeedKph": 60,
+  "weather": {
+   "air": 25.5,
+   "track": 32.7,
+   "wet": false,
+   "humidity": 29,
+   "trackStatus": "DRY"
+  },
+  "notes": "pole = fastest lap across Q1 (20 min, all cars) and Q2 (10 min, top 12); BoP/compensation weight apply per event; raceDuration/raceLaps/winnerTime are Race 1; Race 2 (reversed top 10 grid) under races.r2; no lap charts published for races, so raceMedianTop5 is null; avgLapTop5 = winner-lap top-5 total time / laps (includes standing start and any SC); weather null where the official sheet carries none (getraceresults/Creventic layout)"
+ },
+ "_sources": [
+  "https://europe.tcr-series.com/images/events/2026/04_Hungaroring/TCR_EU_R4_Hungaroring_Free_Practice_2.pdf",
+  "https://europe.tcr-series.com/images/events/2026/04_Hungaroring/TCR_EU_R4_Hungaroring_Qualifying_1.pdf",
+  "https://europe.tcr-series.com/images/events/2026/04_Hungaroring/TCR_EU_R4_Hungaroring_Qualifying_2.pdf",
+  "https://europe.tcr-series.com/images/events/2026/04_Hungaroring/TCR_EU_R4_Hungaroring_Race_1_Final.pdf",
+  "https://europe.tcr-series.com/images/events/2026/04_Hungaroring/TCR_EU_R4_Hungaroring_Race_2_Final.pdf",
+  "https://europe.tcr-series.com/index.php/2026-ev/item/hungaroring",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf"
+ ]
+}

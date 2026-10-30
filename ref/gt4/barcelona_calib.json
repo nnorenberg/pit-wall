@@ -1,0 +1,145 @@
+{
+ "gt4": {
+  "year": 2025,
+  "layout": "Barcelona 4657m",
+  "pole": 108.562,
+  "poleDrv": "J.Rattican / M.Cresswell",
+  "poleCar": "McLaren Artura GT4",
+  "poleSession": "Q2",
+  "q1Pole": {
+   "t": "1:48.578",
+   "drv": "J.Rattican / M.Cresswell",
+   "car": "McLaren Artura GT4"
+  },
+  "q2Pole": {
+   "t": "1:48.562",
+   "drv": "J.Rattican / M.Cresswell",
+   "car": "McLaren Artura GT4"
+  },
+  "qualiGaps": {
+   "McLaren Artura GT4": 0.0,
+   "Toyota GR Supra GT4 EVO 2": 0.423,
+   "Audi R8 LMS GT4": 0.621,
+   "Porsche 718 Cayman GT4 RS CS": 0.718,
+   "Mercedes-AMG GT4": 0.77,
+   "Ginetta G56 Evo": 0.832,
+   "BMW M4 GT4 G82 EVO": 0.916,
+   "Ford Mustang GT4": 0.941,
+   "Aston Martin Vantage AMR GT4 EVO": 0.991,
+   "Toyota GR Supra GT4": 1.17,
+   "Lotus Emira GT4": 2.024
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 23.2,
+    "track": 25.8,
+    "wet": false,
+    "cond": "Dry"
+   },
+   "q2": {
+    "air": 23.3,
+    "track": 26.8,
+    "wet": false,
+    "cond": "Dry"
+   }
+  },
+  "raceFastest": 110.085,
+  "raceFastestRace": "R2",
+  "raceMedianTop5": null,
+  "raceLaps": 27,
+  "raceDuration": 3611.544,
+  "winnerTime": "1:00:11.544",
+  "races": {
+   "r1": {
+    "date": "2025-10-11",
+    "winner": "J.Duran / H.David",
+    "winnerCar": "Toyota GR Supra GT4 EVO 2",
+    "winnerTime": "1:00:11.544",
+    "raceDuration": 3611.544,
+    "raceLaps": 27,
+    "fastest": 110.656,
+    "fastestDrv": "J.Rattican / M.Cresswell",
+    "fastestCar": "McLaren Artura GT4",
+    "avgLapTop5": 134.028,
+    "started": 40,
+    "classified": 32,
+    "scPhases": 2,
+    "fcyPhases": 1,
+    "weatherStart": {
+     "air": 22.8,
+     "track": 23.0,
+     "wet": false,
+     "cond": "Dry"
+    },
+    "weatherEnd": {
+     "air": 22.0,
+     "track": 21.8,
+     "wet": false
+    },
+    "greenFlag": "17:28:51",
+    "chequeredFlag": "18:29:02"
+   },
+   "r2": {
+    "date": "2025-10-12",
+    "winner": "J.Duran / H.David",
+    "winnerCar": "Toyota GR Supra GT4 EVO 2",
+    "winnerTime": "1:09:15.335",
+    "raceDuration": 4155.335,
+    "raceLaps": 24,
+    "fastest": 110.085,
+    "fastestDrv": "J.Rattican / M.Cresswell",
+    "fastestCar": "McLaren Artura GT4",
+    "avgLapTop5": 173.436,
+    "started": 39,
+    "classified": 34,
+    "scPhases": 2,
+    "fcyPhases": 1,
+    "weatherStart": {
+     "air": 21.7,
+     "track": 24.5,
+     "wet": false,
+     "cond": "Dry"
+    },
+    "weatherEnd": {
+     "air": 22.6,
+     "track": 25.9,
+     "wet": false
+    },
+    "greenFlag": "13:18:22",
+    "chequeredFlag": "14:27:37"
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": true,
+   "driverChange": true,
+   "pitWindow": "pit-entry line crossed between 25:00.00 and 34:59.99 after the official start (window can be delayed/extended under SC/FCY)",
+   "minPitStopTime": "pit-lane delta (pit-in to pit-out at 50.0 km/h) + 50 s, measured pit-in to pit-out; exact figure issued per event in a Stewards' bulletin",
+   "minPitStopTimeSec": null,
+   "tyreChange": "not permitted except wet<->dry change of all four (min 3:00 pit-in to pit-out if done in the mandatory window) or confirmed damage",
+   "compensationTime": "Pro-Am/Am crew compensations and derogation pit-time penalties may be added (Art. 10.4.7)",
+   "regsSource": "2024 GT4 European Series Sporting Regulations S02, Art. 20 (latest regulations published on gt4europeanseries.com)"
+  },
+  "pitLaneSpeedKph": 50,
+  "weather": {
+   "air": 22.8,
+   "track": 23.0,
+   "wet": false,
+   "cond": "Dry"
+  },
+  "notes": "R1: 2 SC phase(s), 1 FCY phase(s); R2: 2 SC phase(s), 1 FCY phase(s), elapsed 1:09:15.335 exceeds 60 min + 1 lap, so it evidently includes a race suspension (red flag); pole = fastest lap of Q1/Q2 (two separate sessions, each setting its own race grid, different drivers of each crew); raceDuration/raceLaps/winnerTime are Race 1; Race 2 under races.r2; no lap charts/pit timing published (results.sro.com unavailable), so raceMedianTop5/pit figures are null; avgLapTop5 = total time / laps of the lead-lap top 5 (includes start lap, SC/FCY and the mandatory stop)"
+ },
+ "_sources": [
+  "https://www.gt4europeanseries.com/results/2025/Barcelona",
+  "https://www.gt4europeanseries.com/images/results/69/GTWCEU_GT4%20Barcelona_PQ_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/69/GTWCEU_GT4%20Barcelona_Q1_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/69/GTWCEU_GT4%20Barcelona_Q2_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/69/GTWCEU_GT4%20Barcelona_R1_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/69/GTWCEU_GT4%20Barcelona_R2_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+ ]
+}

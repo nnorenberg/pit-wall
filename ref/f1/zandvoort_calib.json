@@ -1,0 +1,77 @@
+{
+ "f1": {
+  "year": 2026,
+  "round": 12,
+  "event": "Dutch Grand Prix",
+  "layout": "Circuit Park Zandvoort",
+  "pole": 71.163,
+  "poleDrv": "Lando Norris",
+  "poleCar": "McLaren MCL40",
+  "qualiGaps": {
+   "McLaren MCL40": 0.0,
+   "Mercedes W17": 0.102,
+   "Ferrari SF-26": 0.331,
+   "Red Bull RB22": 0.455,
+   "Audi R26": 0.916,
+   "Racing Bulls VCARB 03": 1.022,
+   "Alpine A526": 1.453,
+   "Haas VF-26": 1.974,
+   "Williams FW48": 2.019,
+   "Aston Martin AMR26": 2.487,
+   "Cadillac MAC-26": 3.208
+  },
+  "raceFastest": 74.23,
+  "raceFastestDrv": "Charles Leclerc",
+  "raceMedianTop5": 76.333,
+  "raceMedianTop5N": 287,
+  "raceLaps": 72,
+  "raceDuration": 7484.859,
+  "winnerTime": "2:04:44.859",
+  "winner": "Lando Norris",
+  "winnerCar": "McLaren MCL40",
+  "pitLoss": 20.4,
+  "pitLossN": 18,
+  "pitLaneTime": 18.0,
+  "stationary": null,
+  "pitStopsN": 40,
+  "stintLaps": 22.5,
+  "topSpeed": null,
+  "scLaps": [],
+  "vscLaps": [
+   55,
+   56,
+   57,
+   70
+  ],
+  "redFlagLaps": [
+   2,
+   3,
+   4
+  ],
+  "weather": {
+   "air": 19.0,
+   "track": 33.9,
+   "wet": true,
+   "humidity": 56.8
+  },
+  "notes": "red flag lap 2 (restart lap 3); VSC laps 55-57; VSC laps 70-70 (from race control); rain recorded during the race; raceMedianTop5: median of top-5 finishers laps excluding lap 1, in/out laps, SC/VSC/red-flag laps (+SC restart lap, and the lap before each neutralisation because race-control lap numbers follow the leader) and laps >110% of that driver median; pitLaneTime = median Jolpica pitstop duration (pit entry to exit) of green-flag stops; pitLoss = median (in-lap + out-lap - 2x clean lap) of green-flag stops by the top-10 finishers; stationary: not published in the timing feeds used (OpenF1 stop_duration empty)"
+ },
+ "_sources": [
+  "https://api.jolpi.ca/ergast/f1/2026/12/results.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/qualifying.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/pitstops.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/drivers/norris/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/drivers/antonelli/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/drivers/russell/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/drivers/hamilton/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/drivers/leclerc/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/drivers/piastri/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/drivers/lawson/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/drivers/hulkenberg/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/drivers/alonso/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/12/drivers/gasly/laps.json",
+  "https://api.openf1.org/v1/race_control?session_key=11353",
+  "https://api.openf1.org/v1/weather?session_key=11353",
+  "https://api.openf1.org/v1/pit?session_key=11353"
+ ]
+}

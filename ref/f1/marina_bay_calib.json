@@ -1,0 +1,73 @@
+{
+ "f1": {
+  "year": 2026,
+  "round": 17,
+  "event": "Singapore Grand Prix",
+  "layout": "Marina Bay Street Circuit",
+  "pole": 91.373,
+  "poleDrv": "Max Verstappen",
+  "poleCar": "Red Bull RB22",
+  "qualiGaps": {
+   "Red Bull RB22": 0.0,
+   "Ferrari SF-26": 0.054,
+   "Mercedes W17": 0.189,
+   "McLaren MCL40": 0.339,
+   "Alpine A526": 0.852,
+   "Racing Bulls VCARB 03": 0.946,
+   "Audi R26": 1.411,
+   "Haas VF-26": 1.535,
+   "Williams FW48": 2.153,
+   "Aston Martin AMR26": 2.85,
+   "Cadillac MAC-26": 3.75
+  },
+  "raceFastest": 95.202,
+  "raceFastestDrv": "Charles Leclerc",
+  "raceMedianTop5": 97.525,
+  "raceMedianTop5N": 263,
+  "raceLaps": 62,
+  "raceDuration": 6120.785,
+  "winnerTime": "1:42:00.785",
+  "winner": "Max Verstappen",
+  "winnerCar": "Red Bull RB22",
+  "pitLoss": 24.3,
+  "pitLossN": 10,
+  "pitLaneTime": 24.4,
+  "stationary": null,
+  "pitStopsN": 21,
+  "stintLaps": 29,
+  "topSpeed": null,
+  "scLaps": [],
+  "vscLaps": [
+   8,
+   9,
+   39,
+   40
+  ],
+  "redFlagLaps": [],
+  "weather": {
+   "air": 30.4,
+   "track": 42.2,
+   "wet": false,
+   "humidity": 73.5
+  },
+  "notes": "VSC laps 8-9; VSC laps 39-40 (from race control); raceMedianTop5: median of top-5 finishers laps excluding lap 1, in/out laps, SC/VSC/red-flag laps (+SC restart lap, and the lap before each neutralisation because race-control lap numbers follow the leader) and laps >110% of that driver median; pitLaneTime = median Jolpica pitstop duration (pit entry to exit) of green-flag stops; pitLoss = median (in-lap + out-lap - 2x clean lap) of green-flag stops by the top-10 finishers; stationary: not published in the timing feeds used (OpenF1 stop_duration empty)"
+ },
+ "_sources": [
+  "https://api.jolpi.ca/ergast/f1/2026/17/results.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/qualifying.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/pitstops.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/drivers/max_verstappen/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/drivers/leclerc/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/drivers/antonelli/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/drivers/norris/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/drivers/piastri/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/drivers/hamilton/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/drivers/lawson/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/drivers/hulkenberg/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/drivers/russell/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/17/drivers/hadjar/laps.json",
+  "https://api.openf1.org/v1/race_control?session_key=11388",
+  "https://api.openf1.org/v1/weather?session_key=11388",
+  "https://api.openf1.org/v1/pit?session_key=11388"
+ ]
+}

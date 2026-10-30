@@ -1,0 +1,73 @@
+{
+ "f1": {
+  "year": 2025,
+  "round": 4,
+  "event": "Bahrain Grand Prix",
+  "layout": "Bahrain International Circuit",
+  "pole": 89.841,
+  "poleDrv": "Oscar Piastri",
+  "poleCar": "McLaren MCL39",
+  "qualiGaps": {
+   "McLaren MCL39": 0.0,
+   "Mercedes W16": 0.168,
+   "Ferrari SF-25": 0.334,
+   "Alpine A525": 0.375,
+   "Red Bull RB21": 0.582,
+   "Williams FW47": 0.839,
+   "Racing Bulls VCARB 02": 1.43,
+   "Haas VF-25": 1.753,
+   "Aston Martin AMR25": 1.793,
+   "Kick Sauber C45": 2.226
+  },
+  "raceFastest": 95.14,
+  "raceFastestDrv": "Oscar Piastri",
+  "raceMedianTop5": 97.72,
+  "raceMedianTop5N": 240,
+  "raceLaps": 57,
+  "raceDuration": 5739.435,
+  "winnerTime": "1:35:39.435",
+  "winner": "Oscar Piastri",
+  "winnerCar": "McLaren MCL39",
+  "pitLoss": 23.7,
+  "pitLossN": 11,
+  "pitLaneTime": 24.8,
+  "stationary": 2.8,
+  "pitStopsN": 28,
+  "stintLaps": 18.0,
+  "topSpeed": null,
+  "scLaps": [
+   32,
+   33,
+   34,
+   35,
+   36
+  ],
+  "vscLaps": [],
+  "redFlagLaps": [],
+  "weather": {
+   "air": 26.8,
+   "track": 31.0,
+   "wet": false,
+   "humidity": 46.0
+  },
+  "notes": "SC laps 32-35 (from race control); 2025 event: no 2026 race at this circuit yet; 2026 cars (new chassis/PU regulations) differ, so scale accordingly; raceMedianTop5: median of top-5 finishers laps excluding lap 1, in/out laps, SC/VSC/red-flag laps (+SC restart lap, and the lap before each neutralisation because race-control lap numbers follow the leader) and laps >110% of that driver median; pitLaneTime = median Jolpica pitstop duration (pit entry to exit) of green-flag stops; pitLoss = median (in-lap + out-lap - 2x clean lap) of green-flag stops by the top-10 finishers"
+ },
+ "_sources": [
+  "https://api.jolpi.ca/ergast/f1/2025/4/results.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/qualifying.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/pitstops.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/drivers/piastri/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/drivers/russell/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/drivers/norris/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/drivers/leclerc/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/drivers/hamilton/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/drivers/max_verstappen/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/drivers/gasly/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/drivers/ocon/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/drivers/tsunoda/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/4/drivers/bearman/laps.json",
+  "https://api.openf1.org/v1/race_control?session_key=10014",
+  "https://api.openf1.org/v1/weather?session_key=10014",
+  "https://api.openf1.org/v1/pit?session_key=10014"
+ ]
+}

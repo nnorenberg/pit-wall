@@ -1,0 +1,826 @@
+{
+ "_meta": {
+  "asOf": "2026-10-27",
+  "convention": "Every block has verified true/false. verified=true means read in the cited primary document (or official result page) during this research. Article numbers refer to the cited issue."
+ },
+ "f1": {
+  "regulations": {
+   "technical": "FIA 2026 F1 Regulations Section C Issue 17 (28 Apr 2026)",
+   "sporting": "Section B Issue 07 (25 Jun 2026)"
+  },
+  "weekendFormats": {
+   "standard": {
+    "sessions": [
+     {
+      "name": "FP1",
+      "durationMin": 60,
+      "day": "Fri",
+      "typicalLocal": "12:30 or 13:30"
+     },
+     {
+      "name": "FP2",
+      "durationMin": 60,
+      "day": "Fri",
+      "typicalLocal": "16:00 or 17:00",
+      "rule": "2-3 h after FP1; 90 min if ICTT tyre testing scheduled"
+     },
+     {
+      "name": "FP3",
+      "durationMin": 60,
+      "day": "Sat",
+      "typicalLocal": "11:30 or 12:30",
+      "rule": ">=18 h after FP2"
+     },
+     {
+      "name": "Qualifying",
+      "durationMin": "18+7+15+7+13 (Q1/break/Q2/break/Q3)",
+      "day": "Sat",
+      "typicalLocal": "15:00 or 16:00",
+      "rule": "2-3 h after FP3"
+     },
+     {
+      "name": "Race",
+      "distance": "fewest laps > 305 km (Monaco > 260 km)",
+      "maxDuration": "2 h running, 3 h total incl. suspensions",
+      "day": "Sun",
+      "typicalLocal": "14:00 or 15:00 (night races later)"
+     }
+    ],
+    "verified": true,
+    "source": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf (B2.1, B2.4, B2.5)"
+   },
+   "sprint": {
+    "sessions": [
+     {
+      "name": "FP1",
+      "durationMin": 60,
+      "day": "Fri"
+     },
+     {
+      "name": "Sprint Qualifying",
+      "durationMin": "12+7+10+7+8 (SQ1/break/SQ2/break/SQ3)",
+      "day": "Fri",
+      "rule": "2.5-3.5 h after FP1; SQ1/SQ2 new Medium only, SQ3 Soft only"
+     },
+     {
+      "name": "Sprint",
+      "distance": "fewest laps > 100 km",
+      "maxDuration": "1 h (1.5 h incl. suspension)",
+      "day": "Sat",
+      "points": "top 8"
+     },
+     {
+      "name": "Qualifying",
+      "durationMin": "18/15/13",
+      "day": "Sat",
+      "rule": "3-4 h after Sprint"
+     },
+     {
+      "name": "Race",
+      "day": "Sun"
+     }
+    ],
+    "parcFerme": "Parc fermé from first exit in SQ until Sprint start; again from first exit in Qualifying until Race start.",
+    "events2026": [
+     "shanghai",
+     "miami",
+     "montreal",
+     "silverstone",
+     "zandvoort",
+     "marina_bay"
+    ],
+    "verified": true,
+    "source": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf (B2.1.2, B2.2, B2.3, B6.3.9)"
+   }
+  },
+  "qualifying": {
+   "format": "Knockout Q1/Q2/Q3",
+   "cars": 22,
+   "q1": {
+    "durationMin": 18,
+    "eliminated": 6,
+    "gridPositions": "17-22"
+   },
+   "q2": {
+    "durationMin": 15,
+    "eliminated": 6,
+    "gridPositions": "11-16"
+   },
+   "q3": {
+    "durationMin": 13,
+    "cars": 10
+   },
+   "breaksMin": 7,
+   "rule107": "Q1 eliminees slower than 107% of fastest Q1 time are unclassified (unless wet); stewards decide start.",
+   "scaling": "20 cars -> 5 eliminated per stage; 24 cars -> 7",
+   "verified": true,
+   "source": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf (B2.4.2-B2.4.3)",
+   "note": "Pre-season articles stated Q3 12 min; Issue 07 text has 13 min (break shortened by 1 min)."
+  },
+  "points": {
+   "race": [
+    25,
+    18,
+    15,
+    12,
+    10,
+    8,
+    6,
+    4,
+    2,
+    1
+   ],
+   "sprint": [
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ],
+   "fastestLapPoint": false,
+   "constructors": "sum of both cars' points",
+   "verified": true,
+   "source": "https://en.wikipedia.org/wiki/2026_Formula_One_World_Championship#Scoring_system (citing formula1.com beginners' guide)"
+  },
+  "parcFerme": {
+   "from": "car's first exit from pit lane in Qualifying (Sprint Qualifying at sprint events)",
+   "until": "Race start (Sprint start)",
+   "rule": "No parts replaced/modified and no set-up/configuration change except Appendix B2 permitted work or with Technical Delegate approval; suspension set-up sheet submitted before first run. Breach = start from pit lane.",
+   "exception": "6 times per season, damaged front wing/rear wing/rear bodywork/floor may be replaced by a different previously-raced specification (B3.5.5).",
+   "verified": true,
+   "source": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf (B3.5)"
+  },
+  "mass": {
+   "minimumMass": "724 kg + Nominal Tyre Mass (all sessions except qualifying); 726 kg + Nominal Tyre Mass in Qualifying and Sprint Qualifying",
+   "headlineFigure": "768 kg is the commonly quoted total (722/724 kg + ~46 kg nominal tyre set mass); the regulation defines it as 724 kg + Nominal Tyre Mass (Pirelli-measured set mass, rounded to 1 kg).",
+   "excludes": "fuel (Car Mass = car incl. tyres + driver + driver ballast)",
+   "weightDistribution": "front axle >= 0.44 x minimum mass, rear axle >= 0.54 x minimum mass (qualifying)",
+   "driverMass": "Reference mass of driver (measured in race kit per FIA-F1-DOC-035) + driver ballast must be >= 82 kg at all times (C4.5.2). NOTE: it is driver (+ballast), not 'driver + seat'.",
+   "driverBallast": "Fixed between front and rear of cockpit entry template, attached to survival cell, sealed, density > 7500 kg/m3 (C4.3.2)",
+   "heatHazard": "+5 kg in race/sprint (TTCS), +2 kg in practice/qualifying when Heat Hazard declared (cooling vest)",
+   "verified": true,
+   "source": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf (C4.1-C4.6)"
+  },
+  "fuel": {
+   "refuelling": "Not permitted during Race/Sprint (C4.4: no substance may be added during Race or Sprint); refuelling only in garage outside sessions at <= 0.8 l/s",
+   "fuelEnergyFlow": "max 3000 MJ/h; below 10,500 rpm max EF = 0.27*rpm + 165 MJ/h; partial-load curve EF = 9.78*P_engine(kW) + 869 MJ/h (380 MJ/h at <= -50 kW)",
+   "raceFuelLimit": "No explicit race fuel mass/energy cap found in Issue 17 Section C or Issue 07 Section B; limitation is via energy flow. Media estimates ~70 kg race fuel load (unverified).",
+   "fuel": "100% sustainable (advanced sustainable) fuel",
+   "verified": true,
+   "verifyNote": "Flow limits verified (C5.2.3-C5.2.5); 'no race fuel mass limit' is absence-of-finding; ~70 kg figure unverified.",
+   "source": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf"
+  },
+  "ers": {
+   "mguK": "350 kW max electrical DC power; MGU-H removed; MGU-K torque max 500 Nm; MGU-K usable at standing start only from 50 km/h",
+   "deploymentNormal": "P(kW) <= 1800 - 5*v(km/h) for v<340; 6900-20*v for 340<=v<345; 0 at >=345 km/h (capped at 350 kW, i.e. full 350 kW up to 290 km/h)",
+   "deploymentOvertake": "P(kW) <= 7100 - 20*v for v<355 (capped 350 kW, i.e. full power to 337.5 km/h); 0 at >=355 km/h",
+   "raceSectorLimit": "On FIA-specified sectors in Race/Sprint: 250 kW below 310 km/h then normal taper (C5.2.8.iii, added for safety)",
+   "storeWindow": "ES state-of-charge swing max 4 MJ",
+   "recharge": "max 8.5 MJ per lap (may be reduced per circuit; qualifying limit reduced to no less than 5 MJ at up to 12 events; reported reduction 8 -> 7 MJ for qualifying from Miami); +0.5 MJ extra harvest per lap when Overtake is activated",
+   "boost": "Driver-activated mode that maintains/increases ERS-K power demand",
+   "overtakeMode": {
+    "replaces": "DRS",
+    "race": "Activated at the Activation Line if car was within the Detection Gap of a car ahead at the Detection Line (FIA sets gap per event; widely reported as 1.0 s - unverified); disabled first lap after start/restart until leader crosses Detection Line; disabled under SC until cars cross Line after SC enters pits; disabled in Low Grip conditions",
+    "qualifying": "always enabled/activated"
+   },
+   "midSeasonChange": "From Miami: 'super clipping' limit raised 250 -> 350 kW to cut lift-and-coast; qualifying harvest 8 -> 7 MJ (Wikipedia, citing FIA)",
+   "verified": true,
+   "verifyNote": "Formulas verified in C5.2; detection-gap value and Miami change details from secondary sources (verified=false for those).",
+   "source": [
+    "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf (C5.2.7-C5.2.12)",
+    "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf (B7.2)",
+    "https://en.wikipedia.org/wiki/2026_Formula_One_World_Championship#Power_units"
+   ]
+  },
+  "activeAero": {
+   "modes": {
+    "cornerMode": "high-downforce default; failure returns wings to Corner Mode",
+    "straightMode": "front-wing flaps and rear-wing flap to low-drag position ('X-mode'/'straight-line mode')"
+   },
+   "use": "Driver may fully activate (front+rear) in FIA-defined Activation Zones when enabled; Low Grip conditions: partial activation only (front wing only) in Low Grip Activation Zones. Available to all drivers every lap (not proximity-based).",
+   "monaco": "Active aero disabled at Monaco 2026",
+   "verified": true,
+   "source": [
+    "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf (B7.1)",
+    "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf (C3.10.10, C3.11.6)"
+   ]
+  },
+  "tyres": {
+   "supplier": "Pirelli",
+   "rim": "18 in",
+   "compoundsAvailable": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5"
+   ],
+   "c6": "dropped for 2026 (not validated)",
+   "perEvent": "3 dry specs (Hard/Medium/Soft), 1 Intermediate, 1 Wet",
+   "allocationPerDriver": {
+    "standard": {
+     "hard": 2,
+     "medium": 3,
+     "soft": 8,
+     "inter": 5,
+     "wet": 2,
+     "maxDryUsed": 13
+    },
+    "sprint": {
+     "hard": 2,
+     "medium": 4,
+     "soft": 6,
+     "inter": "6 allocated / 5 usable (+1 if wet)",
+     "wet": 2,
+     "maxDryUsed": 12
+    }
+   },
+   "raceRule": "In a dry race each driver must use >= 2 different dry specifications, at least one being a mandatory race specification (DSQ if not). Not required if inters/wets used.",
+   "q3Rule": "One set of the softest spec reserved for Q3",
+   "returns": "Standard weekend: 2 sets returned after FP1, 2 after FP2, 2 after FP3",
+   "blankets": "Allowed: resistive blankets acting on outer surface, max 3 controllable zones (C10.8.4); blankets on fitted wheels must be disconnected from power on the grid (B5). Max blanket temperature is set by Pirelli prescriptions (70 C for all slicks in 2025) - 2026 value not verified.",
+   "verified": true,
+   "verifyNote": "Allocation/race-rule verified in B6; blanket temperature verified=false.",
+   "source": [
+    "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf (B6)",
+    "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf (C10.8)",
+    "https://press.pirelli.com/the-range-of-compounds-for-the-2026-season-has-been-set/"
+   ]
+  },
+  "pitLaneSpeed": {
+   "kmh": 80,
+   "note": "Race Director may amend (historically 60 km/h at Monaco/Singapore/Baku etc.; per-event values not verified)",
+   "verified": true,
+   "source": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf (B1.6.3)"
+  },
+  "safetyCar": {
+   "vsc": "All cars reduce speed and stay above an FIA-ECU minimum (delta) time; no overtaking; pitting allowed",
+   "sc": "Field bunches behind SC; Overtake mode disabled until all cars cross the Line after SC pits",
+   "redFlag": "Race suspension; tyre changes permitted",
+   "verified": true,
+   "source": "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf (B5.12-B5.15, B7.2.2)"
+  },
+  "bop": {
+   "applies": false,
+   "note": "No BoP in F1; ADUO (additional development and upgrade opportunities) for PU manufacturers that fall behind exists in 2026 regs (not detailed here, unverified)"
+  },
+  "gridSize": 22,
+  "pitStops": {
+   "refuelling": false,
+   "tyreChange": "no crew-size limit specified in regs (typically ~20 mechanics, unverified)"
+  }
+ },
+ "wec": {
+  "regulations": "2026 FIA WEC Sporting Regulations v1.2 (WMSC 16 Oct 2025, applies from 1 Jan 2026); Le Mans 2026 Supplementary Regulations",
+  "classes": {
+   "hyper": "Hypercar (LMH + LMDh)",
+   "gt3": "LMGT3"
+  },
+  "weekendFormats": {
+   "sixHour": {
+    "sessions": [
+     {
+      "name": "Free practice",
+      "rule": "2 or 3 sessions of 1 h / 1.5 h / 2 h, total max 4 h; typical FP1 90 min, FP2 90 min, FP3 60 min",
+      "verified": true
+     },
+     {
+      "name": "LMGT3 Qualifying",
+      "durationMin": ">=12",
+      "rule": "Bronze driver only; sets grid P11+"
+     },
+     {
+      "name": "LMGT3 Hyperpole",
+      "durationMin": ">=10",
+      "rule": "top 10 from qualifying; Silver driver only (if crew has one) - sets P1-10"
+     },
+     {
+      "name": "Hypercar Qualifying",
+      "durationMin": ">=12",
+      "rule": "any driver; sets P11+"
+     },
+     {
+      "name": "Hypercar Hyperpole",
+      "durationMin": ">=10",
+      "rule": "top 10 from qualifying; sets P1-10"
+     },
+     {
+      "name": "Race",
+      "durationH": 6
+     }
+    ],
+    "typicalTimes": "Practice Thu/Fri, qualifying block late Fri/Sat afternoon (~16:00-17:30 local), race Sat/Sun midday (11:00-14:00 local)",
+    "noWarmUp": true,
+    "verified": true,
+    "source": "https://www.fia.com/system/files/documents/2026_fia_world_endurance_championship_sporting_regulations_clean_v1.2wmsc.pdf (Art. 1 competition format, 10.2)"
+   },
+   "eightTenHour": {
+    "note": "8 h (Bahrain, cancelled 2026) / 10 h or 1812 km (Qatar, cancelled 2026) use same quali format with larger tyre allocation and 8-10 h points scale",
+    "verified": true
+   },
+   "leMans24": {
+    "sessions": [
+     {
+      "name": "Test Day",
+      "detail": "2 x 3 h (Sun, a week before)"
+     },
+     {
+      "name": "Free Practice 1-4",
+      "detail": "1 x 1 h, 1 x 2 h, 2 x 3 h (incl. night sessions)"
+     },
+     {
+      "name": "Qualifying (Q)",
+      "detail": "Hypercar session >=30 min; LMP2+LMGT3 session >=30 min"
+     },
+     {
+      "name": "Hyperpole 1 (H1)",
+      "detail": "Hypercar top 15 from Q, >=20 min, sets P11-15; LMP2/LMGT3 top 12 (marked-up text changed 15->12) sets P9-12",
+      "verified": false,
+      "verifyNote": "LMGT3/LMP2 numbers read from a marked-up document with strikethroughs; Hypercar numbers clear"
+     },
+     {
+      "name": "Hyperpole 2 (H2)",
+      "detail": "Hypercar top 10 from H1, >=15 min, sets P1-10; LMP2/LMGT3 top 8 (changed from 10)",
+      "verified": false
+     },
+     {
+      "name": "Warm-up",
+      "detail": "15 min on race morning"
+     },
+     {
+      "name": "Race",
+      "detail": "24 h, start 16:00 local Saturday (2026)"
+     }
+    ],
+    "verified": true,
+    "source": "https://assets.lemans.org/explorer/pdf/courses/2026/24-heures-du-mans/regulations/2026-24-hours-of-le-mans-supplementary-regulations.pdf"
+   }
+  },
+  "points": {
+   "scales": {
+    "6h": [
+     25,
+     18,
+     15,
+     12,
+     10,
+     8,
+     6,
+     4,
+     2,
+     1
+    ],
+    "8h_10h_1812km": [
+     38,
+     27,
+     23,
+     18,
+     15,
+     12,
+     9,
+     6,
+     3,
+     2
+    ],
+    "24h_LeMans": [
+     50,
+     36,
+     30,
+     24,
+     20,
+     16,
+     12,
+     8,
+     4,
+     2
+    ]
+   },
+   "pole": "+1 point to car with best Hyperpole time in each category (crew + team; manufacturers via that car)",
+   "hypercarManufacturers": "Two cars designated per manufacturer score per the race scale",
+   "hypercarDrivers": "World Championship; crews scoring same points share",
+   "lmgt3": "FIA Endurance Trophy for drivers and teams (per car number)",
+   "minimumDriving": "Driver with < 45 min total driving scores no points",
+   "shortenedRace": "<2 green laps: no points; >2 laps but <75% of race time: half points; >75%: full",
+   "verified": true,
+   "source": "https://www.fia.com/system/files/documents/2026_fia_world_endurance_championship_sporting_regulations_clean_v1.2wmsc.pdf (Art. 15)"
+  },
+  "driverTimes": {
+   "lmgt3MinimumDriving": {
+    "6h": "1h45 each for Silver and Bronze",
+    "8h": "2h20",
+    "10h": "2h55"
+   },
+   "hypercar": "no class-specific min/max table; 45 min to score points",
+   "verified": true,
+   "source": "https://www.fia.com/system/files/documents/2026_fia_world_endurance_championship_sporting_regulations_clean_v1.2wmsc.pdf (13.2.3)"
+  },
+  "crewComposition": {
+   "hyper": "Free, but no Bronze driver",
+   "lmgt3": "2-3 drivers incl. >=1 Bronze plus another Bronze or a Silver",
+   "verified": true,
+   "source": "https://www.fia.com/system/files/documents/2026_fia_world_endurance_championship_sporting_regulations_clean_v1.2wmsc.pdf (13.3)"
+  },
+  "parcFerme": {
+   "rule": "Cars not eligible for Hyperpole go into parc fermé at end of qualifying; Hyperpole cars at end of Hyperpole. Refuelling forbidden during quali/Hyperpole sessions; work incl. refuelling and tyre change allowed on Hyperpole cars between qualifying and Hyperpole. Set-up otherwise free between practice and race (no general F1-style parc fermé).",
+   "verified": true,
+   "verifyNote": "the 'set-up otherwise free' statement is an inference, not explicitly read",
+   "source": "https://www.fia.com/system/files/documents/2026_fia_world_endurance_championship_sporting_regulations_clean_v1.2wmsc.pdf (10.2.3)"
+  },
+  "mass": {
+   "hyper": "Minimum mass per BoP table (BoP tables no longer published from 2026). LMH/LMDh base minimum ~1030 kg (unverified for 2026).",
+   "driverCompensation": {
+    "hyper": "Reference crew weight 82 kg for Qualifying/Hyperpole (vs lightest driver taking part) and 78 kg for the race (vs average declared crew weight); ballast = ref - average, rounded up, max -5 kg; plus qualifying BSFC compensation ballast per manufacturer",
+    "lmgt3": "Reference crew weight 82 kg all sessions; ballast in homologated ballast box; max -5 kg",
+    "weightIncludes": "driver with full safety kit incl. helmet/HANS and personal seat insert"
+   },
+   "verified": true,
+   "verifyNote": "compensation ballast verified (WEC_2026_D06 amended 02/07/2026); Hypercar base mass unverified",
+   "source": "https://www.fia.com/sites/default/files/wec_2026_d06_all_compensation_ballast_amended_02072026.pdf"
+  },
+  "energyAndFuel": {
+   "hyperVirtualEnergyTank": "Max deployed energy per stint (PPUEnergyStint, per-car BoP value, measured by driveshaft torque sensors, pit-out to pit-in). PPUEnergyTank refills while refuel hose connected at PPUEnergyFlow = PPUEnergyStint/40 s (i.e. full refill ~40 s) after a BoP-defined 'additional docking time'. Overdraw = penalty and deficit made up at next stop.",
+   "lmgt3": "Also subject to a per-stint energy/fuel limit via BoP (virtual energy tank concept since 2024) - not read in a 2026 document",
+   "refuelling": "Allowed, only in the stopping area at start of stop, engine off; 1 refueller + deadman-valve attendant + extinguisher attendant; during refuelling max 4 persons may only ground the car, clean, visually check tyres/brakes - no tools, so tyres are changed after refuelling",
+   "pitCrew": "Max 4 persons (armbands) to work on car; max 2 pneumatic wheel guns; 2 industry reps may check tyres/brakes; driver change allowed anytime during stop",
+   "fcyEmergencyStop": "Under FCY/SC closed pit: emergency stop allowed (8 s refuel + docking time, damaged tyres) once per FCY",
+   "verified": true,
+   "verifyNote": "LMGT3 energy-limit line verified=false",
+   "source": [
+    "https://www.fia.com/sites/default/files/wec_2026_d01_hypercar_technical_information_amended_25032026.pdf",
+    "https://www.fia.com/system/files/documents/2026_fia_world_endurance_championship_sporting_regulations_clean_v1.2wmsc.pdf (12.2)"
+   ]
+  },
+  "tyres": {
+   "allocation_6h_8h_10h": {
+    "unit": "individual tyres (not sets)",
+    "hyper": {
+     "freePractice": 12,
+     "hyperpole": 4,
+     "qualiPlusRace": {
+      "6h": 18,
+      "8h": 26,
+      "10h": 32
+     }
+    },
+    "lmgt3": {
+     "freePractice": 16,
+     "hyperpole": 4,
+     "qualiPlusRace": {
+      "6h": 24,
+      "8h": 32,
+      "10h": 40
+     }
+    }
+   },
+   "allocationLeMans": {
+    "hyper": {
+     "fpPlusQ": 24,
+     "h1h2": 12,
+     "race": 56
+    },
+    "lmgt3": {
+     "fpPlusQ": 28,
+     "h1h2": 12,
+     "race": 60
+    },
+    "lmp2": {
+     "fpPlusQ": 24,
+     "h1h2": 12,
+     "race": 56
+    }
+   },
+   "specsPerSeason": {
+    "hyper": "3 dry specs at Le Mans, 2 at other races (3 total over season) + 1 wet",
+    "lmgt3": "2 dry specs (2 at all races) + 1 wet"
+   },
+   "wets": "Unlimited, only when track declared wet",
+   "hypercarRandomSets": "Technical Delegates may randomly assign one set of each spec (29/34 tyre layout)",
+   "blankets": "Tyre warmers forbidden in WEC (long-standing rule; not re-read in 2026 doc)",
+   "verified": true,
+   "verifyNote": "allocations verified; blanket ban verified=false",
+   "source": [
+    "https://www.fia.com/system/files/documents/2026_fia_world_endurance_championship_sporting_regulations_clean_v1.2wmsc.pdf (6.5)",
+    "https://assets.lemans.org/explorer/pdf/courses/2026/24-heures-du-mans/regulations/2026-24-hours-of-le-mans-supplementary-regulations.pdf"
+   ]
+  },
+  "pitLaneSpeed": {
+   "kmh": 60,
+   "verified": true,
+   "source": "https://www.fia.com/system/files/documents/2026_fia_world_endurance_championship_sporting_regulations_clean_v1.2wmsc.pdf"
+  },
+  "neutralisations": {
+   "fcy": "80 km/h, single file, no overtaking; pit entry closed (emergency stop only), exit open",
+   "vsc": "80 km/h, used ~2 laps before SC is deployed; each VSC followed by SC",
+   "sc": "Multiple safety cars (Le Mans 3); pit entry rules per SC procedure",
+   "slowZone": "Le Mans uses Slow Zones (80 km/h) - not re-read in 2026 doc (verified=false)",
+   "verified": true,
+   "source": "https://www.fia.com/system/files/documents/2026_fia_world_endurance_championship_sporting_regulations_clean_v1.2wmsc.pdf (14.5-14.7)"
+  },
+  "bop": {
+   "mechanism": "FIA/ACO set per-car BoP (min weight, max power vs speed, energy per stint, docking time) per event; Hypercar also BSFC quali ballast. From 2026 BoP tables are no longer published.",
+   "lmgt3": "BoP per model (weight, power, energy per stint); no success ballast in WEC",
+   "verified": true,
+   "source": "https://en.wikipedia.org/wiki/2026_FIA_World_Endurance_Championship"
+  },
+  "gridSize": {
+   "hyper": 17,
+   "lmgt3": 18,
+   "leMans": {
+    "hyper": 18,
+    "lmp2": 19,
+    "lmgt3": 25
+   },
+   "verified": true
+  }
+ },
+ "gt4": {
+  "series": "GT4 European Series (SRO)",
+  "regulationsNote": "2026 Sporting Regulations not publicly retrievable; rules below from the 2024 GT4ES Sporting Regulations (S02) unless confirmed by a 2026 stewards' bulletin. verified=false where only 2024 text was available.",
+  "weekendFormat": {
+   "sessions": [
+    {
+     "name": "Free Practice",
+     "durationMin": 60
+    },
+    {
+     "name": "Pre-Qualifying",
+     "durationMin": 60
+    },
+    {
+     "name": "Qualifying 1 (Driver 1)",
+     "durationMin": ">=15",
+     "sets": "Race 1 grid"
+    },
+    {
+     "name": "Qualifying 2 (Driver 2)",
+     "durationMin": ">=15",
+     "sets": "Race 2 grid"
+    },
+    {
+     "name": "Race 1",
+     "durationMin": 60,
+     "day": "Sat"
+    },
+    {
+     "name": "Race 2",
+     "durationMin": 60,
+     "day": "Sun"
+    }
+   ],
+   "rule": "Q1 driver starts Race 1, Q2 driver starts Race 2 (order may be reversed by event regs)",
+   "verified": false,
+   "verifyNote": "2024 regs Art. 41.7; 2026 confirmed two 60-min races with mandatory stop",
+   "source": "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+  },
+  "pitStop": {
+   "mandatory": "One stop per race with driver change; pit window opens 25:00 and closes 34:59.99 after start (delayed if SC/FCY)",
+   "minimumTime2026": {
+    "monza": "80 s (driver change only); 150 s if tyres changed during mandatory stop or outside window",
+    "portimao": "84 s; 154 s with tyre change"
+   },
+   "minimumTimeFormula": "pit-lane delta at 50 km/h + 50 s (2024 regs); +1 s tolerance once per event",
+   "tyreChange": "Only for weather change (all 4) or confirmed damage",
+   "soloDriver": "If permitted to race alone, must exit and re-enter car during the stop",
+   "successPenalty": "No results-based success time penalty found; driver-categorisation derogations may add pit-stop time",
+   "verified": true,
+   "verifyNote": "2026 times verified from Monza/Portimão bulletins; window/formula from 2024 regs (verified=false)",
+   "source": [
+    "https://www.gt4europeanseries.com/documents/notice/3035/BULLETIN+01.pdf",
+    "https://www.gt4europeanseries.com/documents/notice/3335/notice-board_bulletin-1_document-number-14_6ad1f1fe96ae43620f7d8394_16102026-09-44-30.pdf",
+    "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+   ]
+  },
+  "points": {
+   "race": [
+    25,
+    18,
+    15,
+    12,
+    10,
+    8,
+    6,
+    4,
+    2,
+    1
+   ],
+   "qualifyingPole": "+1 point for fastest in each of Q1 and Q2 per category (Silver, Pro-Am, Am)",
+   "perCategory": true,
+   "teams": "Only highest-finishing car per team per category scores",
+   "shortened": "<2 laps none; <75% half; >75% full",
+   "verified": true,
+   "source": [
+    "https://en.wikipedia.org/wiki/2026_GT4_European_Series#Scoring_system",
+    "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+   ]
+  },
+  "categories": {
+   "Silver": "2 Silver drivers",
+   "Pro-Am": "Silver/Gold + Bronze",
+   "Am": "Bronze (+Bronze)",
+   "verified": false,
+   "verifyNote": "SRO categorisation norms; not re-read"
+  },
+  "mass": {
+   "car": "Per SRO GT4 BoP sheet per model and event",
+   "driverWeight": "Average driver weight per car must be >= 85 kg; otherwise driver ballast to compensate (2024 regs 28.7)",
+   "verified": false,
+   "source": "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+  },
+  "fuel": {
+   "refuelling": "Not allowed during any session or race (paddock only); fuel TotalEnergies; >= 2 kg fuel for sampling",
+   "verified": false,
+   "verifyNote": "2024 regs Art. 35; consistent with TotalEnergies fuel reps in 2026 bulletins",
+   "source": "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+  },
+  "tyres": {
+   "supplier": "Pirelli",
+   "dry": "P Zero DHG (single spec)",
+   "wet": "Cinturato WHB (reported for GTWC Europe 2026; GT4-specific wet not stated)",
+   "allocation": "1st event: 4 new sets (S1-S2 FP/pre-quali; S3-S4 quali and races). Later events: 3 new sets + 1 used set from previous event (S1, FP only). 1 joker tyre per event. Wets unlimited (when declared wet in FP/quali; free choice in races).",
+   "blankets": "All tyre-heating devices forbidden",
+   "verified": false,
+   "verifyNote": "allocation from 2024 regs; DHG from Tyrepress 2026 GTWC article",
+   "source": [
+    "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf",
+    "https://www.tyrepress.com/2026/04/pirelli-supplies-tyres-as-2026-gt-world-challenge-europe-begins-at-paul-ricard/"
+   ]
+  },
+  "pitLaneSpeed": {
+   "kmh": 50,
+   "verified": false,
+   "source": "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+  },
+  "neutralisations": {
+   "fcy": "80 km/h, no overtaking",
+   "sc": "Safety Car; pit window delayed/extended if SC/FCY at window open",
+   "verified": false,
+   "source": "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+  },
+  "bop": {
+   "mechanism": "SRO GT Bureau BoP (weight, restrictor/power, ride height etc.) issued per event: e.g. 'BALANCE OF PERFORMANCE FOR PORTIMAO', SRO GT Bureau 09/10/2026",
+   "verified": true,
+   "source": "https://www.gt4europeanseries.com/documents/notice/3335/notice-board_bulletin-1_document-number-14_6ad1f1fe96ae43620f7d8394_16102026-09-44-30.pdf"
+  },
+  "gridSize": {
+   "perEvent": "~40-45",
+   "verified": false
+  }
+ },
+ "tcr": {
+  "series": "TCR Europe Touring Car Series",
+  "weekendFormat": {
+   "sessions": [
+    {
+     "name": "FP1",
+     "durationMin": 30
+    },
+    {
+     "name": "FP2",
+     "durationMin": 30
+    },
+    {
+     "name": "Qualifying",
+     "durationMin": 35,
+     "detail": "Q1 20 min all cars; >=5 min break; Q2 10 min top 12"
+    },
+    {
+     "name": "Race 1",
+     "duration": "min 25 min + 1 lap (exact time-based length per event Appendix 1)"
+    },
+    {
+     "name": "Race 2",
+     "duration": "min 25 min + 1 lap"
+    }
+   ],
+   "race1Grid": "Q2 order P1-12, then Q1",
+   "race2Grid": "Top 10 of qualifying reversed (P10 on pole), P11-12 from Q2, rest by Q1",
+   "pitStops": "No mandatory pit stop; no refuelling during sessions",
+   "verified": true,
+   "source": "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf (Art. 13, 113-125)"
+  },
+  "points": {
+   "qualifying": [
+    10,
+    8,
+    6,
+    4,
+    2,
+    1
+   ],
+   "qualifyingNote": "Combined Q1+Q2 result, top 6",
+   "race": [
+    30,
+    25,
+    22,
+    20,
+    18,
+    16,
+    14,
+    12,
+    10,
+    8,
+    6,
+    4,
+    3,
+    2,
+    1
+   ],
+   "shortened": "<40% distance none; <75% half; >=75% full",
+   "teams": "Two nominated drivers per team score",
+   "verified": true,
+   "source": "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf (Art. 17-18)"
+  },
+  "mass": {
+   "minimumRacingWeight": "Car min weight (TCR Tech Regs 2.5) + driver in full kit + BoP ballast; sprint car with racing gearbox 1265 kg incl. driver (1230 kg with production gearbox); max 1415 kg incl. fuel, driver, ballast",
+   "driverWeighing": "Drivers weighed in full kit at first event and mid-season; weight included in min racing weight (no fixed reference driver weight)",
+   "verified": true,
+   "verifyNote": "1265/1230 kg read in 2026 TCR Tech Regs; the exact article context (BoP reference vs absolute) not fully parsed",
+   "source": [
+    "https://europe.tcr-series.com/pdf/2026_TCR_Tech_Regulations.pdf",
+    "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf (Art. 74-75)"
+   ]
+  },
+  "successBallast": {
+   "name": "Compensation Weight (CW)",
+   "table": {
+    "1st": 40,
+    "2nd": 30,
+    "3rd": 30,
+    "4th": 20,
+    "5th": 10,
+    "6th+": 0
+   },
+   "basis": "Drivers' total points collected at the current event (qualifying + both races); applied for the whole next event on top of car+driver weight, even above min racing weight",
+   "smallFields": "<=6 cars: 40/30/20/10/0/0",
+   "overMaxWeight": "Excess beyond max car weight converted to +5 mm (<=10 kg) or +10 mm (>10 kg) ride height",
+   "firstEvent": "CW = 0",
+   "raceByRaceEntry": "+20 kg at first appearance in last two rounds",
+   "verified": true,
+   "source": [
+    "https://europe.tcr-series.com/pdf/2026_TCR_Tech_Regulations.pdf (Appendix C)",
+    "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf (Art. 78-79)"
+   ]
+  },
+  "bop": {
+   "mechanism": "WSC TCR BoP per model (min racing weight, power, ride height etc.) via Technical Bulletins + CW",
+   "verified": true,
+   "source": "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf (Art. 79)"
+  },
+  "fuel": {
+   "refuelling": "Forbidden during practice, qualifying and races; single designated fuel supplier",
+   "verified": true,
+   "source": "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf (Art. 102-105)"
+  },
+  "tyres": {
+   "supplier": "Kumho (per Wikipedia series infobox; verified=false)",
+   "dry": "Kumho Ecsta S700 slick (TCR-wide Kumho spec; verified=false for TCR Europe)",
+   "wet": "Kumho Ecsta W701 (verified=false)",
+   "allocation": "1st event max 12 new dry tyres; from 2nd event max 14 dry tyres of which max 8 new (+2 new at Paul Ricard and Monza); max 12 wet tyres per event",
+   "blankets": "Tyre warmers and any heat-retention devices forbidden",
+   "verified": true,
+   "verifyNote": "allocation/blanket rules verified; supplier/model verified=false",
+   "source": [
+    "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf (Art. 66-70)",
+    "https://en.wikipedia.org/wiki/TCR_Europe_Touring_Car_Series"
+   ]
+  },
+  "pitLaneSpeed": {
+   "kmh": 60,
+   "verified": true,
+   "source": "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf (Art. 94)"
+  },
+  "neutralisations": {
+   "fcy": "60 km/h single file, no overtaking; pit entry and exit open",
+   "sc": "Safety Car per Art. 146+",
+   "verified": true,
+   "source": "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf (Art. 145)"
+  },
+  "gridSize": {
+   "perEvent": "~20-24",
+   "verified": false
+  }
+ },
+ "_sources": [
+  "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_c_technical_-_iss_17_-_2026-04-28.pdf",
+  "https://api.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_b_sporting_-_iss_07_-_2026-06-25.pdf",
+  "https://en.wikipedia.org/wiki/2026_Formula_One_World_Championship",
+  "https://press.pirelli.com/the-range-of-compounds-for-the-2026-season-has-been-set/",
+  "https://www.redbullracing.com/int-en/projects/bulls-guide-to-the-f1-2026-regulations/technical-regulations",
+  "https://www.the-race.com/formula-1/how-does-f1-qualifying-work-2026/",
+  "https://www.fia.com/system/files/documents/2026_fia_world_endurance_championship_sporting_regulations_clean_v1.2wmsc.pdf",
+  "https://assets.lemans.org/explorer/pdf/courses/2026/24-heures-du-mans/regulations/2026-24-hours-of-le-mans-supplementary-regulations.pdf",
+  "https://www.fia.com/sites/default/files/wec_2026_d06_all_compensation_ballast_amended_02072026.pdf",
+  "https://www.fia.com/sites/default/files/wec_2026_d01_hypercar_technical_information_amended_25032026.pdf",
+  "https://en.wikipedia.org/wiki/2026_FIA_World_Endurance_Championship",
+  "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf",
+  "https://www.gt4europeanseries.com/documents/notice/3335/notice-board_bulletin-1_document-number-14_6ad1f1fe96ae43620f7d8394_16102026-09-44-30.pdf",
+  "https://www.gt4europeanseries.com/documents/notice/3035/BULLETIN+01.pdf",
+  "https://en.wikipedia.org/wiki/2026_GT4_European_Series",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Tech_Regulations.pdf",
+  "https://en.wikipedia.org/wiki/2026_TCR_Europe_Touring_Car_Series"
+ ]
+}

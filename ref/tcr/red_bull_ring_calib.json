@@ -1,0 +1,126 @@
+{
+ "tcr": {
+  "year": 2025,
+  "layout": "Red Bull Ring 4318m",
+  "pole": 96.605,
+  "poleDrv": "Eric Gené",
+  "poleCar": "Cupra Leon VZ TCR",
+  "poleSession": "Q2",
+  "officialPole": {
+   "t": "1:36.605",
+   "drv": "Eric Gené",
+   "car": "Cupra Leon VZ TCR",
+   "note": "Q2 (top 12) P1 = Race 1 pole"
+  },
+  "qualiGaps": {
+   "Cupra Leon VZ": 0.0,
+   "Audi RS 3 LMS": 0.056,
+   "Honda Civic Type R FL5": 0.277,
+   "Hyundai Elantra N": 0.53,
+   "Lynk & Co 03": 0.893
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 13.8,
+    "track": 15.0,
+    "wet": false,
+    "humidity": 72,
+    "trackStatus": "DRY"
+   },
+   "q2": {
+    "air": 14.4,
+    "track": 15.0,
+    "wet": false,
+    "humidity": 69,
+    "trackStatus": "DRY"
+   }
+  },
+  "raceFastest": 97.597,
+  "raceFastestRace": "R2",
+  "raceMedianTop5": null,
+  "raceLaps": 16,
+  "raceDuration": 3209.963,
+  "winnerTime": "53:29.963",
+  "races": {
+   "r1": {
+    "date": "2025-09-06",
+    "winner": "Eric Gené",
+    "winnerCar": "Cupra Leon VZ TCR",
+    "winnerTime": "53:29.963",
+    "raceDuration": 3209.963,
+    "raceLaps": 16,
+    "fastest": 97.816,
+    "fastestDrv": "Eric Gené",
+    "fastestCar": "Cupra Leon VZ TCR",
+    "avgLapTop5": 200.908,
+    "classified": 18,
+    "weather": {
+     "air": 21.4,
+     "track": 25.7,
+     "wet": false,
+     "humidity": 45,
+     "trackStatus": "DRY"
+    },
+    "penalties": [
+     "STEWARDS DECISION CAR #108 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME - CAUSING A COLLISION STEWARDS DECISION NUMBER 8",
+     "STEWARDS DECISION CAR #27 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME - JUMP START STEWARDS DECISION NUMBER 9",
+     "STEWARDS DECISION CAR #145 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME - CAUSING A COLLISION STEWARDS DECISION NUMBER 10",
+     "STEWARDS DECISION CAR #246 - 10 SECONDS TIME PENALTY ADDED TO RACE TIME - CAUSING A COLLISION STEWARDS DECISION NUMBER 11"
+    ]
+   },
+   "r2": {
+    "date": "2025-09-07",
+    "winner": "Jenson Brickley",
+    "winnerCar": "Cupra Leon VZ TCR",
+    "winnerTime": "28:13.930",
+    "raceDuration": 1693.93,
+    "raceLaps": 16,
+    "fastest": 97.597,
+    "fastestDrv": "Max Hart",
+    "fastestCar": "Hyundai Elantra N TCR",
+    "avgLapTop5": 106.062,
+    "classified": 15,
+    "weather": {
+     "air": 16.1,
+     "track": 19.2,
+     "wet": false,
+     "humidity": 72,
+     "trackStatus": "DRY"
+    },
+    "penalties": [
+     "STEWARDS DECISION CAR #12 - 10 SECONDS TIME PENALTY ADDED TO RACE TIME - CAUSING A COLLISION STEWARDS DECISION 13",
+     "STEWARDS DECISION CAR #28 - 10 SECONDS TIME PENALTY ADDED TO RACE TIME - CAUSING A COLLISION STEWARDS DECISION 14"
+    ]
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": false,
+   "minPitStopTimeSec": null,
+   "raceFormat": "2 races of 25 min + 1 lap, no mandatory stop (pit lane used only for drive-through penalties/repairs)",
+   "regsSource": "2026 TCR Europe Sporting Regulations V3, Art. 13 and 94"
+  },
+  "pitLaneSpeedKph": 60,
+  "weather": {
+   "air": 21.4,
+   "track": 25.7,
+   "wet": false,
+   "humidity": 45,
+   "trackStatus": "DRY"
+  },
+  "notes": "R1 winner time 53:29.963 for 16 laps: elapsed time evidently includes a red-flag suspension (16 laps at ~1:38 would be ~26 min); use R2 for a clean duration.; pole = fastest lap across Q1 (20 min, all cars) and Q2 (10 min, top 12); BoP/compensation weight apply per event; raceDuration/raceLaps/winnerTime are Race 1; Race 2 (reversed top 10 grid) under races.r2; no lap charts published for races, so raceMedianTop5 is null; avgLapTop5 = winner-lap top-5 total time / laps (includes standing start and any SC); weather null where the official sheet carries none (getraceresults/Creventic layout)"
+ },
+ "_sources": [
+  "https://europe.tcr-series.com/images/events/2025/05_RedBullRing/TCR_EU_R5_RedBullRing_Practice2.pdf",
+  "https://europe.tcr-series.com/images/events/2025/05_RedBullRing/TCR_EU_R5_RedBullRing_Qualifying_1.pdf",
+  "https://europe.tcr-series.com/images/events/2025/05_RedBullRing/TCR_EU_R5_RedBullRing_Qualifying_2.pdf",
+  "https://europe.tcr-series.com/images/events/2025/05_RedBullRing/TCR_EU_R5_RedBullRing_Race_1_Revised.pdf",
+  "https://europe.tcr-series.com/images/events/2025/05_RedBullRing/TCR_EU_R5_RedBullRing_Race_2_Final.pdf.pdf",
+  "https://europe.tcr-series.com/index.php/events/2025/red-bull-ring",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf"
+ ]
+}

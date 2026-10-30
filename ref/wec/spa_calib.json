@@ -1,0 +1,121 @@
+{
+ "_sources": [
+  "https://files.alkamelcloud.com/wec/results/15_2026/02_SPA%20FRANCORCHAMPS/653_FIA%20WEC/202605081430_Qualifying%20LMGT3/03_Classification_Qualifying%20LMGT3.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/02_SPA%20FRANCORCHAMPS/653_FIA%20WEC/202605081455_Hyperpole%20LMGT3/03_Classification_Hyperpole%20LMGT3.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/02_SPA%20FRANCORCHAMPS/653_FIA%20WEC/202605081520_Qualifying%20HYPERCAR/03_Classification_Qualifying%20HYPERCAR.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/02_SPA%20FRANCORCHAMPS/653_FIA%20WEC/202605081545_Hyperpole%20HYPERCAR/03_Classification_Hyperpole%20HYPERCAR.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/02_SPA%20FRANCORCHAMPS/653_FIA%20WEC/202605081640_Qualifying/90_Classification_Qualifying.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/02_SPA%20FRANCORCHAMPS/653_FIA%20WEC/202605091400_Race/06_Hour%206/03_Classification_Race_Hour%206.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/02_SPA%20FRANCORCHAMPS/653_FIA%20WEC/202605091400_Race/06_Hour%206/23_Analysis_Race_Hour%206.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/02_SPA%20FRANCORCHAMPS/653_FIA%20WEC/202605091400_Race/06_Hour%206/26_Weather_Race_Hour%206.CSV"
+ ],
+ "hyper": {
+  "year": 2026,
+  "layout": "Circuit de Spa-Francorchamps (GP)",
+  "event": "Spa Francorchamps",
+  "round": 2,
+  "pole": 120.653,
+  "poleDrv": "Loïc Duval / Malthe Jakobsen / Théo Pourchaire",
+  "poleCar": "Peugeot 9X8 #94",
+  "poleSource": "Hyperpole",
+  "qualiGaps": {
+   "Peugeot 9X8": 0.0,
+   "Cadillac V-Series.R": 0.043,
+   "Alpine A424": 0.078,
+   "Aston Martin Valkyrie": 0.36,
+   "Ferrari 499P": 0.464,
+   "BMW M Hybrid V8": 0.664,
+   "Toyota TR010 Hybrid": 0.939,
+   "Genesis GMR-001": 1.171
+  },
+  "raceFastest": 124.17699999999999,
+  "raceFastestBy": "Peugeot 9X8 #93",
+  "raceLaps": 151,
+  "raceDuration": 21677.036,
+  "winnerTime": "6:01:17.036",
+  "winner": "BMW M Hybrid V8 #20",
+  "raceMedianTop5": 126.48,
+  "raceMedianTop5N": 604,
+  "lapLengthKm": 7.004,
+  "stintLaps": 25,
+  "stintLapsP75": 26,
+  "pitLaneTime": 23.4,
+  "stationaryBasisStops": 75,
+  "stationary": 45.9,
+  "stationaryRefuelOnly": 44.4,
+  "stationaryRefuelTyres": 58.2,
+  "tyreChangeExtra": 13.7,
+  "stopMix": {
+   "short": 34,
+   "long": 41
+  },
+  "pitTimeMedian": 69.4,
+  "stopLossTotal": 82.0,
+  "pitLoss": 24.4,
+  "topSpeed": 321.5,
+  "topSpeedMedianCarBest": 316.8,
+  "topSpeedDiscarded": [
+   377.6
+  ],
+  "weather": {
+   "air": 19.5,
+   "track": 31.7,
+   "wet": false
+  },
+  "notes": "SC laps 7-9 (~0.3 h); SC laps 107-109 (~4.1 h); SC laps 133-135 (~5.2 h); SC laps 137-138 (~5.5 h)"
+ },
+ "gt3": {
+  "year": 2026,
+  "layout": "Circuit de Spa-Francorchamps (GP)",
+  "event": "Spa Francorchamps",
+  "round": 2,
+  "pole": 136.612,
+  "poleDrv": "Tom Van Rompuy / Hadrien David / Esteban Masson",
+  "poleCar": "Lexus RC F LMGT3 #78",
+  "poleSource": "Hyperpole",
+  "qualiGaps": {
+   "Lexus RC F LMGT3": 0.0,
+   "Aston Martin Vantage AMR LMGT3": 0.194,
+   "Ford Mustang LMGT3": 0.212,
+   "Ferrari 296 LMGT3 Evo": 0.651,
+   "BMW M4 LMGT3 Evo": 0.744,
+   "Mercedes-AMG LMGT3": 0.92,
+   "Porsche 911 GT3 R LMGT3": 1.454,
+   "Corvette Z06 LMGT3.R": 1.639,
+   "McLaren 720S LMGT3 Evo": 2.298
+  },
+  "raceFastest": 138.281,
+  "raceFastestBy": "Ferrari 296 LMGT3 Evo #21",
+  "raceLaps": 139,
+  "raceDuration": 21705.434,
+  "winnerTime": "6:01:45.434",
+  "winner": "McLaren 720S LMGT3 Evo #10",
+  "raceMedianTop5": 140.945,
+  "raceMedianTop5N": 537,
+  "lapLengthKm": 7.004,
+  "stintLaps": 25,
+  "stintLapsP75": 26,
+  "pitLaneTime": 23.4,
+  "stationaryBasisStops": 83,
+  "stationary": 53.6,
+  "stationaryRefuelOnly": 51.1,
+  "stationaryRefuelTyres": 57.4,
+  "tyreChangeExtra": 6.4,
+  "stopMix": {
+   "short": 43,
+   "long": 40
+  },
+  "pitTimeMedian": 77.1,
+  "stopLossTotal": 81.5,
+  "pitLoss": 24.9,
+  "topSpeed": 271.6,
+  "topSpeedMedianCarBest": 267.6,
+  "weather": {
+   "air": 19.5,
+   "track": 31.7,
+   "wet": false
+  },
+  "notes": "SC laps 7-9 (~0.3 h); SC laps 107-109 (~4.1 h); SC laps 133-135 (~5.2 h); SC laps 137-138 (~5.5 h)"
+ },
+ "_fields": "pole/qualiGaps: grid-order classification (Qualifying + Hyperpole) and each car model's best lap over all qualifying segments, gap in s to pole. raceMedianTop5: median of top-5 class finishers' laps with green flag at the line, previous lap also green, no pit in/out, within 107% of the car's own green median. pitLaneTime: pit-lane transit from the drive-through cluster of PIT_TIME (pit entry to exit, no stop). pitTimeMedian: median PIT_TIME of normal stops (<180 s). stationary = pitTimeMedian - pitLaneTime; stationaryRefuelOnly / stationaryRefuelTyres: 2-means split of the stops that ended a near-full stint (>=70% of stintLaps; WEC: refuel and tyre change are sequential). stopLossTotal: median (in-lap + out-lap - 2 x car green median) for stops with green laps; pitLoss: per-stop median of (stop loss - (PIT_TIME - pitLaneTime)) = time lost to the pit lane alone, excluding stationary time. stintLaps: median laps between consecutive normal stops (>=5 laps). topSpeed: highest per-car best TOP_SPEED (speed trap) in the race, after discarding implausible trap readings >105% of the class median car-best (listed in topSpeedDiscarded); topSpeedMedianCarBest also given. lapLengthKm: derived from KPH x lap time. Notes: SC (SF flag) / FCY periods on the overall winner's lap numbers."
+}

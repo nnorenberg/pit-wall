@@ -1,0 +1,78 @@
+{
+ "f1": {
+  "year": 2026,
+  "round": 10,
+  "event": "Belgian Grand Prix",
+  "layout": "Circuit de Spa-Francorchamps",
+  "pole": 104.361,
+  "poleDrv": "Kimi Antonelli",
+  "poleCar": "Mercedes W17",
+  "qualiGaps": {
+   "Mercedes W17": 0.0,
+   "Red Bull RB22": 0.317,
+   "McLaren MCL40": 0.44,
+   "Ferrari SF-26": 0.532,
+   "Racing Bulls VCARB 03": 0.782,
+   "Audi R26": 1.267,
+   "Alpine A526": 1.97,
+   "Williams FW48": 2.416,
+   "Haas VF-26": 2.418,
+   "Cadillac MAC-26": 3.462,
+   "Aston Martin AMR26": 5.641
+  },
+  "raceFastest": 108.89,
+  "raceFastestDrv": "Lando Norris",
+  "raceMedianTop5": 110.2,
+  "raceMedianTop5N": 170,
+  "raceLaps": 44,
+  "raceDuration": 5082.479,
+  "winnerTime": "1:24:42.479",
+  "winner": "Kimi Antonelli",
+  "winnerCar": "Mercedes W17",
+  "pitLoss": null,
+  "pitLossN": 0,
+  "pitLaneTime": 24.8,
+  "stationary": 3.9,
+  "pitStopsN": 10,
+  "stintLaps": 20,
+  "topSpeed": null,
+  "scLaps": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "vscLaps": [
+   18,
+   20,
+   21
+  ],
+  "redFlagLaps": [],
+  "weather": {
+   "air": 18.1,
+   "track": 30.6,
+   "wet": false,
+   "humidity": 50.2
+  },
+  "notes": "SC laps 1-4; VSC laps 18-18; VSC laps 20-21 (from race control); raceMedianTop5: median of top-5 finishers laps excluding lap 1, in/out laps, SC/VSC/red-flag laps (+SC restart lap, and the lap before each neutralisation because race-control lap numbers follow the leader) and laps >110% of that driver median; pitLaneTime = median Jolpica pitstop duration (pit entry to exit) of green-flag stops; pitLoss = median (in-lap + out-lap - 2x clean lap) of green-flag stops by the top-10 finishers; pitLoss: fewer than 2 green-flag stops with clean in/out laps among the top 10 (stops mostly under SC/VSC/red flag), left null"
+ },
+ "_sources": [
+  "https://api.jolpi.ca/ergast/f1/2026/10/results.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/qualifying.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/pitstops.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/drivers/antonelli/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/drivers/leclerc/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/drivers/max_verstappen/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/drivers/hamilton/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/drivers/piastri/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/drivers/hadjar/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/drivers/norris/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/drivers/bortoleto/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/drivers/arvid_lindblad/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2026/10/drivers/colapinto/laps.json",
+  "https://api.openf1.org/v1/race_control?session_key=11334",
+  "https://api.openf1.org/v1/weather?session_key=11334",
+  "https://api.openf1.org/v1/pit?session_key=11334"
+ ]
+}

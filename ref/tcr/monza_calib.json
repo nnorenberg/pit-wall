@@ -1,0 +1,126 @@
+{
+ "tcr": {
+  "year": 2026,
+  "layout": "Monza 5793m",
+  "pole": 113.58,
+  "poleDrv": "Gabriele Covini",
+  "poleCar": "Hyundai Elantra N TCR",
+  "poleSession": "Q1",
+  "officialPole": {
+   "t": "1:53.613",
+   "drv": "Gabriele Covini",
+   "car": "Hyundai Elantra N TCR",
+   "note": "Q2 (top 12) P1 = Race 1 pole"
+  },
+  "qualiGaps": {
+   "Hyundai Elantra N": 0.0,
+   "Audi RS 3 LMS": 0.06,
+   "Honda Civic Type R FL5": 0.142,
+   "Cupra Leon VZ": 0.303
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 22.7,
+    "track": 36.0,
+    "wet": false,
+    "humidity": 52,
+    "trackStatus": "DRY"
+   },
+   "q2": {
+    "air": 23.1,
+    "track": 37.1,
+    "wet": false,
+    "humidity": 51,
+    "trackStatus": "DRY"
+   }
+  },
+  "raceFastest": 114.484,
+  "raceFastestRace": "R1",
+  "raceMedianTop5": null,
+  "raceLaps": 14,
+  "raceDuration": 1620.116,
+  "winnerTime": "27:00.116",
+  "races": {
+   "r1": {
+    "date": "2026-09-26",
+    "winner": "Junui Park",
+    "winnerCar": "Hyundai Elantra N TCR",
+    "winnerTime": "27:00.116",
+    "raceDuration": 1620.116,
+    "raceLaps": 14,
+    "fastest": 114.484,
+    "fastestDrv": "Gabriele Covini",
+    "fastestCar": "Hyundai Elantra N TCR",
+    "avgLapTop5": 117.022,
+    "classified": 21,
+    "weather": {
+     "air": 23.9,
+     "track": 34.4,
+     "wet": false,
+     "humidity": 50,
+     "trackStatus": "DRY"
+    },
+    "penalties": [
+     "Car n.20 10 secs time penalty for not respecting RD instructions - pit transit not allowed",
+     "Car n.76 10 secs time penalty for causing a collision Stewards Decision Number 8",
+     "Car n.97 5 Grid Positions Penalty for the next Race wich the driver will take part Stewards Decision Number 6"
+    ]
+   },
+   "r2": {
+    "date": "2026-09-27",
+    "winner": "Alex Ley",
+    "winnerCar": "Hyundai Elantra N TCR",
+    "winnerTime": "28:58.902",
+    "raceDuration": 1738.902,
+    "raceLaps": 12,
+    "fastest": 115.199,
+    "fastestDrv": "Alex Ley",
+    "fastestCar": "Hyundai Elantra N TCR",
+    "avgLapTop5": 145.106,
+    "classified": 23,
+    "weather": {
+     "air": 22.1,
+     "track": 33.0,
+     "wet": false,
+     "humidity": 62,
+     "trackStatus": "DRY"
+    },
+    "penalties": [
+     "Car n.24 5 secs time penalty for Stewards Decision Number 11",
+     "Car n.24 10 secs time penalty Stewards Decision Number 12",
+     "Car n.97 5 secs time penalty Stewards Decision Number 13",
+     "Car n.19 5 secs time penalty Stewards Decision Number 14"
+    ]
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": false,
+   "minPitStopTimeSec": null,
+   "raceFormat": "2 races of 25 min + 1 lap, no mandatory stop (pit lane used only for drive-through penalties/repairs)",
+   "regsSource": "2026 TCR Europe Sporting Regulations V3, Art. 13 and 94"
+  },
+  "pitLaneSpeedKph": 60,
+  "weather": {
+   "air": 23.9,
+   "track": 34.4,
+   "wet": false,
+   "humidity": 50,
+   "trackStatus": "DRY"
+  },
+  "notes": "pole = fastest lap across Q1 (20 min, all cars) and Q2 (10 min, top 12); BoP/compensation weight apply per event; raceDuration/raceLaps/winnerTime are Race 1; Race 2 (reversed top 10 grid) under races.r2; no lap charts published for races, so raceMedianTop5 is null; avgLapTop5 = winner-lap top-5 total time / laps (includes standing start and any SC); weather null where the official sheet carries none (getraceresults/Creventic layout)"
+ },
+ "_sources": [
+  "https://europe.tcr-series.com/images/events/2026/05_Monza/TCR_EU_R5_Monza_Free_Practice_2.pdf",
+  "https://europe.tcr-series.com/images/events/2026/05_Monza/TCR_EU_R5_Monza_Qualfiying_1.pdf",
+  "https://europe.tcr-series.com/images/events/2026/05_Monza/TCR_EU_R5_Monza_Qualfiying_2.pdf",
+  "https://europe.tcr-series.com/images/events/2026/05_Monza/TCR_EU_R5_Monza_Race_1_Final.pdf",
+  "https://europe.tcr-series.com/images/events/2026/05_Monza/TCR_EU_R5_Monza_Race_2_Final.pdf",
+  "https://europe.tcr-series.com/index.php/2026-ev/item/autodromo-di-monza",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf"
+ ]
+}

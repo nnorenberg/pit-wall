@@ -1,0 +1,135 @@
+{
+ "tcr": {
+  "year": 2026,
+  "layout": "Spa-Francorchamps 7004m",
+  "pole": 146.586,
+  "poleDrv": "Felipe Fernández",
+  "poleCar": "Honda Civic Type R FL5 TCR",
+  "poleSession": "Q2",
+  "officialPole": {
+   "t": "2:26.586",
+   "drv": "Felipe Fernández",
+   "car": "Honda Civic Type R FL5 TCR",
+   "note": "Q2 (top 12) P1 = Race 1 pole"
+  },
+  "qualiGaps": {
+   "Honda Civic Type R FL5": 0.0,
+   "Cupra Leon VZ": 0.35,
+   "Audi RS 3 LMS": 0.92,
+   "Hyundai Elantra N": 1.239
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 9.6,
+    "track": 21.1,
+    "wet": true,
+    "humidity": 56,
+    "trackStatus": "WET"
+   },
+   "q2": {
+    "air": 10.1,
+    "track": 23.5,
+    "wet": true,
+    "humidity": 51,
+    "trackStatus": "WET"
+   }
+  },
+  "raceFastest": 149.644,
+  "raceFastestRace": "R1",
+  "raceMedianTop5": null,
+  "raceLaps": 11,
+  "raceDuration": 1664.221,
+  "winnerTime": "27:44.221",
+  "races": {
+   "r1": {
+    "date": "2026-05-16",
+    "winner": "Felipe Fernández",
+    "winnerCar": "Honda Civic Type R FL5 TCR",
+    "winnerTime": "27:44.221",
+    "raceDuration": 1664.221,
+    "raceLaps": 11,
+    "fastest": 149.644,
+    "fastestDrv": "Marco Butti",
+    "fastestCar": "Cupra Leon VZ TCR",
+    "avgLapTop5": 151.527,
+    "classified": 19,
+    "weather": {
+     "air": 11.4,
+     "track": 17.8,
+     "wet": true,
+     "humidity": 53,
+     "trackStatus": "WET"
+    },
+    "penalties": [
+     "CAR 9 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 3",
+     "CAR 9 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 4",
+     "CAR 9 - 10 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 5",
+     "CAR 22 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 6",
+     "CAR 34 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 7",
+     "CAR 37 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 8",
+     "CAR 73 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 9",
+     "CAR 33 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 10",
+     "CAR 27 - 15 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 11",
+     "CAR 8 - 10 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 12",
+     "CAR 22 - 10 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 14",
+     "CAR 73 - 10 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 15"
+    ]
+   },
+   "r2": {
+    "date": "2026-05-17",
+    "winner": "Ruben Volt",
+    "winnerCar": "Honda Civic Type R FL5 TCR",
+    "winnerTime": "29:09.144",
+    "raceDuration": 1749.144,
+    "raceLaps": 9,
+    "fastest": 172.28,
+    "fastestDrv": "Ruben Volt",
+    "fastestCar": "Honda Civic Type R FL5 TCR",
+    "avgLapTop5": 195.193,
+    "classified": 20,
+    "weather": {
+     "air": 9.6,
+     "track": 12.2,
+     "wet": true,
+     "humidity": 85,
+     "trackStatus": "WET"
+    },
+    "penalties": [
+     "CAR 27 - NO FURTHER ACTION - STEWARDS DECISION 16",
+     "CAR 12 - 10 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 17",
+     "CAR 97 - 10 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 18",
+     "CAR 85 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME - STEWARDS DECISION 19"
+    ]
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": false,
+   "minPitStopTimeSec": null,
+   "raceFormat": "2 races of 25 min + 1 lap, no mandatory stop (pit lane used only for drive-through penalties/repairs)",
+   "regsSource": "2026 TCR Europe Sporting Regulations V3, Art. 13 and 94"
+  },
+  "pitLaneSpeedKph": 60,
+  "weather": {
+   "air": 11.4,
+   "track": 17.8,
+   "wet": true,
+   "humidity": 53,
+   "trackStatus": "WET"
+  },
+  "notes": "Q1/R1/R2 track status WET on the official sheets (R2 fastest 2:52.3); dry-reference pace comes from Q2.; pole = fastest lap across Q1 (20 min, all cars) and Q2 (10 min, top 12); BoP/compensation weight apply per event; raceDuration/raceLaps/winnerTime are Race 1; Race 2 (reversed top 10 grid) under races.r2; no lap charts published for races, so raceMedianTop5 is null; avgLapTop5 = winner-lap top-5 total time / laps (includes standing start and any SC); weather null where the official sheet carries none (getraceresults/Creventic layout)"
+ },
+ "_sources": [
+  "https://europe.tcr-series.com/images/events/2026/02_Spa/TCR_EU_R2_Spa_Free_Practice_2.pdf",
+  "https://europe.tcr-series.com/images/events/2026/02_Spa/TCR_EU_R2_Spa_Qualifying_1.pdf",
+  "https://europe.tcr-series.com/images/events/2026/02_Spa/TCR_EU_R2_Spa_Qualifying_2.pdf",
+  "https://europe.tcr-series.com/images/events/2026/02_Spa/TCR_EU_R2_Spa_Race_1.pdf",
+  "https://europe.tcr-series.com/images/events/2026/02_Spa/TCR_EU_R2_Spa_Race_2.pdf",
+  "https://europe.tcr-series.com/index.php/2026-ev/item/spa-francorchamps",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf"
+ ]
+}

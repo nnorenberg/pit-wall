@@ -1,0 +1,119 @@
+{
+ "tcr": {
+  "year": 2025,
+  "layout": "Misano World Circuit Marco Simoncelli 4226m",
+  "pole": 101.771,
+  "poleDrv": "Ruben Volt",
+  "poleCar": "Honda Civic Type R FL5 TCR",
+  "poleSession": "Q2",
+  "officialPole": {
+   "t": "1:41.771",
+   "drv": "Ruben Volt",
+   "car": "Honda Civic Type R FL5 TCR",
+   "note": "Q2 (top 12) P1 = Race 1 pole"
+  },
+  "qualiGaps": {
+   "Honda Civic Type R FL5": 0.0,
+   "Cupra Leon VZ": 0.206,
+   "Lynk & Co 03": 0.352,
+   "Hyundai Elantra N": 0.384,
+   "Audi RS 3 LMS": 0.697
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 29.0,
+    "track": 42.0,
+    "wet": false,
+    "humidity": 67
+   },
+   "q2": {
+    "air": 29.0,
+    "track": 43.0,
+    "wet": false,
+    "humidity": 66
+   }
+  },
+  "raceFastest": 103.002,
+  "raceFastestRace": "R1",
+  "raceMedianTop5": null,
+  "raceLaps": 16,
+  "raceDuration": 1667.3,
+  "winnerTime": "27:47.300",
+  "races": {
+   "r1": {
+    "date": "2025-06-28",
+    "winner": "Ruben Volt",
+    "winnerCar": "Honda Civic Type R FL5 TCR",
+    "winnerTime": "27:47.300",
+    "raceDuration": 1667.3,
+    "raceLaps": 16,
+    "fastest": 103.002,
+    "fastestDrv": "Marco Butti",
+    "fastestCar": "Honda Civic Type R FL5 TCR",
+    "avgLapTop5": null,
+    "classified": 13,
+    "weather": {
+     "air": 30.0,
+     "track": 32.0,
+     "wet": false,
+     "humidity": 53
+    },
+    "penalties": [
+     "Steward's Decision: Car n. 17 and car n. 8 - Time penalty + 5 sec"
+    ]
+   },
+   "r2": {
+    "date": "2025-06-29",
+    "winner": "Teddy Clairet",
+    "winnerCar": "Audi RS 3 LMS TCR",
+    "winnerTime": "27:14.983",
+    "raceDuration": 1634.983,
+    "raceLaps": 15,
+    "fastest": 104.174,
+    "fastestDrv": "Teddy Clairet",
+    "fastestCar": "Audi RS 3 LMS TCR",
+    "avgLapTop5": null,
+    "classified": 13,
+    "weather": {
+     "air": 31.0,
+     "track": 47.0,
+     "wet": false,
+     "humidity": 54
+    },
+    "penalties": [
+     "#344 Time Penalty 5 sec - Stewards dec n. 9",
+     "#33 Time Penalty 10 sec - Stewards dec n. 10",
+     "#97 Time Penalty 10 sec - Stewards dec n. 11"
+    ]
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": false,
+   "minPitStopTimeSec": null,
+   "raceFormat": "2 races of 25 min + 1 lap, no mandatory stop (pit lane used only for drive-through penalties/repairs)",
+   "regsSource": "2026 TCR Europe Sporting Regulations V3, Art. 13 and 94"
+  },
+  "pitLaneSpeedKph": 60,
+  "weather": {
+   "air": 30.0,
+   "track": 32.0,
+   "wet": false,
+   "humidity": 53
+  },
+  "notes": "pole = fastest lap across Q1 (20 min, all cars) and Q2 (10 min, top 12); BoP/compensation weight apply per event; raceDuration/raceLaps/winnerTime are Race 1; Race 2 (reversed top 10 grid) under races.r2; no lap charts published for races, so raceMedianTop5 is null; avgLapTop5 = winner-lap top-5 total time / laps (includes standing start and any SC); weather null where the official sheet carries none (getraceresults/Creventic layout)"
+ },
+ "_sources": [
+  "https://europe.tcr-series.com/images/events/2025/04_Misano/TCR_EU_R4_Misano_Free_Practice_2.pdf",
+  "https://europe.tcr-series.com/images/events/2025/04_Misano/TCR_EU_R4_Misano_Qualifying_1.pdf",
+  "https://europe.tcr-series.com/images/events/2025/04_Misano/TCR_EU_R4_Misano_Qualifying_2.pdf",
+  "https://europe.tcr-series.com/images/events/2025/04_Misano/TCR_EU_R4_Misano_Race_1.pdf",
+  "https://europe.tcr-series.com/images/events/2025/04_Misano/TCR_EU_R4_Misano_Race_2_Final.pdf",
+  "https://europe.tcr-series.com/index.php/events/2025/misano-tcr-italy",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf"
+ ]
+}

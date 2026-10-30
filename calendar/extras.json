@@ -1,0 +1,106 @@
+{
+ "gt4": [
+  {
+   "round": 1,
+   "event": "Paul Ricard (GTWC Europe Endurance Cup support)",
+   "trackId": "paul_ricard",
+   "dates": "2026-04-10/2026-04-12",
+   "layout": "Circuit Paul Ricard 1C-V2 with Mistral chicane, 15 turns (SRO timing: 5,822 m; circuit figure 5,842 m)"
+  },
+  {
+   "round": 2,
+   "event": "Monza (GTWC Europe Endurance Cup support)",
+   "trackId": "monza",
+   "dates": "2026-05-29/2026-05-31",
+   "layout": "Grand Prix circuit (5.793 km)"
+  },
+  {
+   "round": 3,
+   "event": "Spa-Francorchamps (CrowdStrike 24 Hours of Spa support)",
+   "trackId": "spa",
+   "dates": "2026-06-23/2026-06-27",
+   "layout": "Grand Prix circuit (7.004 km)"
+  },
+  {
+   "round": 4,
+   "event": "Misano (GTWC Europe Sprint Cup support)",
+   "trackId": "misano",
+   "dates": "2026-07-16/2026-07-19",
+   "layout": "Misano World Circuit Marco Simoncelli (4.226 km)"
+  },
+  {
+   "round": 5,
+   "event": "Zandvoort (GTWC Europe Sprint Cup support)",
+   "trackId": "zandvoort",
+   "dates": "2026-09-18/2026-09-20",
+   "layout": "Grand Prix circuit (4.259 km)"
+  },
+  {
+   "round": 6,
+   "event": "Portimão (GTWC Europe Endurance Cup support, season finale)",
+   "trackId": "portimao",
+   "dates": "2026-10-16/2026-10-18",
+   "layout": "Autódromo Internacional do Algarve, Grand Prix circuit (4.653 km)"
+  }
+ ],
+ "tcr": [
+  {
+   "round": 1,
+   "event": "Mugello",
+   "trackId": "mugello",
+   "dates": "2026-03-20/2026-03-22",
+   "layout": "Full circuit (5.245 km)"
+  },
+  {
+   "round": 2,
+   "event": "Spa-Francorchamps",
+   "trackId": "spa",
+   "dates": "2026-05-15/2026-05-17",
+   "layout": "Grand Prix circuit (7.004 km)"
+  },
+  {
+   "round": 3,
+   "event": "Paul Ricard",
+   "trackId": "paul_ricard",
+   "dates": "2026-06-05/2026-06-07",
+   "layout": "Circuit Paul Ricard 1C-V2 with Mistral chicane (5,842 m per TCR Europe event page)"
+  },
+  {
+   "round": 4,
+   "event": "Hungaroring",
+   "trackId": "hungaroring",
+   "dates": "2026-07-03/2026-07-05",
+   "layout": "Grand Prix circuit (4.381 km)"
+  },
+  {
+   "round": 5,
+   "event": "Monza",
+   "trackId": "monza",
+   "dates": "2026-09-25/2026-09-27",
+   "layout": "Grand Prix circuit (5.793 km)"
+  },
+  {
+   "round": 6,
+   "event": "Barcelona-Catalunya (season finale)",
+   "trackId": "barcelona",
+   "dates": "2026-10-23/2026-10-25",
+   "layout": "Grand Prix circuit (4.657 km)"
+  }
+ ],
+ "extras": [
+  "paul_ricard",
+  "misano",
+  "portimao",
+  "mugello"
+ ],
+ "_sources": [
+  "https://en.wikipedia.org/wiki/2026_GT4_European_Series",
+  "https://www.gt4europeanseries.com/news/534/2026-calendar-portimao-to-host-season-showdown",
+  "https://en.wikipedia.org/wiki/2026_TCR_Europe_Touring_Car_Series",
+  "https://europe.tcr-series.com/index.php/news/item/tcr-europe-confirms-a-thrilling-new-calendar-for-2026",
+  "https://www.touringcars.net/2025/09/tcr-europe-confirms-2026-calendar-with-new-and-returning-circuits",
+  "https://www.monzanet.it/en/tcr-europe-2026-in-monza-from-september-25-27/",
+  "https://www.gt4europeanseries.com/results/2026/paul-ricard",
+  "https://europe.tcr-series.com/index.php/2026-ev/item/le-castellet"
+ ]
+}

@@ -1,0 +1,774 @@
+{
+ "_meta": {
+  "asOf": "2026-10-27"
+ },
+ "f1": {
+  "supplier": "Pirelli",
+  "rim": "18 in",
+  "note2026": "Narrower than 2025 (front ~25 mm, rear ~30 mm narrower; wikipedia states front width reduced 2.5 cm); exact sizes not retrieved",
+  "compounds": [
+   {
+    "id": "C1",
+    "hardness": "hardest",
+    "relPace": 0.0,
+    "degradation": "lowest",
+    "workingWindowC": "high (~110-140, unverified)"
+   },
+   {
+    "id": "C2",
+    "hardness": "hard",
+    "relPace": -0.4,
+    "degradation": "low",
+    "workingWindowC": "high (~110-135, unverified)"
+   },
+   {
+    "id": "C3",
+    "hardness": "medium",
+    "relPace": -0.8,
+    "degradation": "medium",
+    "workingWindowC": "mid (~95-125, unverified)"
+   },
+   {
+    "id": "C4",
+    "hardness": "soft",
+    "relPace": -1.2,
+    "degradation": "high",
+    "workingWindowC": "low (~90-115, unverified)"
+   },
+   {
+    "id": "C5",
+    "hardness": "softest",
+    "relPace": -1.5,
+    "degradation": "highest",
+    "workingWindowC": "low (~85-110, unverified)"
+   }
+  ],
+  "relPaceUnit": "seconds per lap vs C1 on a ~90 s lap - ILLUSTRATIVE model values; Pirelli publishes no numeric deltas for 2026, only that gaps were designed 'wide and consistent'",
+  "c6": "Dropped for 2026: C5 and C6 prototypes too close in lap time",
+  "intermediate": {
+   "available": true,
+   "use": "damp / light rain, crossover vs slicks typically ~ when dry line forms",
+   "verified": false
+  },
+  "fullWet": {
+   "available": true,
+   "verified": true
+  },
+  "blankets": "Allowed (temperature per Pirelli prescription; 2025 was 70 C - 2026 unverified)",
+  "verified": false,
+  "verifyNote": "Compound list, C6 drop, inter/wet existence verified (Pirelli press 24 Nov 2025). Deltas/windows are model estimates.",
+  "_sources": [
+   "https://press.pirelli.com/the-range-of-compounds-for-the-2026-season-has-been-set/",
+   "https://www.formula1.com/en/latest/article/pirelli-confirm-2026-tyre-compounds-as-f1-gets-set-for-a-new-era-of.6la0zKVsCYwWk9AAISz4Yw"
+  ]
+ },
+ "wec": {
+  "hyper": {
+   "supplier": "Michelin",
+   "range": "Pilot Sport Endurance 2026",
+   "compounds": [
+    {
+     "id": "soft",
+     "window": "cold conditions (~0-15 C per Michelin's 2025 description)",
+     "relPace": -0.3
+    },
+    {
+     "id": "medium",
+     "window": "~15-25 C",
+     "relPace": 0.0
+    },
+    {
+     "id": "hard",
+     "window": ">25 C",
+     "relPace": 0.4
+    },
+    {
+     "id": "wet",
+     "note": "new 2026 rain tyre debuted at 6h Barcelona (Oct 2026), designed for wet-to-drying transition; 57% renewable/recycled"
+    }
+   ],
+   "relPaceUnit": "illustrative s/lap vs medium (unverified)",
+   "verified": false,
+   "verifyNote": "Compound names/new wet verified (DSC, Racer); temperature windows from Michelin's 2025-season pages",
+   "_sources": [
+    "https://www.dailysportscar.com/2025/06/05/michelins-2026-hypercar-tyres-target-improvements-in-sustainability-warm-up.html",
+    "https://racer.com/2026/10/16/michelin-introduces-new-hypercar-rain-tire"
+   ]
+  },
+  "lmgt3": {
+   "supplier": "Goodyear",
+   "compounds": [
+    {
+     "id": "Eagle Medium (dry)",
+     "note": "only dry compound used across 2026 WEC; Eagle Hard shelved for WEC (ELMS only)"
+    },
+    {
+     "id": "wet",
+     "note": "dedicated wet"
+    }
+   ],
+   "contract": "Goodyear LMGT3 supplier through 2029",
+   "verified": true,
+   "_sources": [
+    "https://sportscar365.com/?p=146404",
+    "https://api.fia.com/news/wec-goodyear-remain-lmgt3-tyre-supplier-through-2029"
+   ]
+  }
+ },
+ "gt4": {
+  "supplier": "Pirelli",
+  "dry": {
+   "model": "P Zero DHG",
+   "size": "18 in (sizes per car model)"
+  },
+  "wet": {
+   "model": "Cinturato WHB (GT reference wet; GT4-specific use unverified)"
+  },
+  "singleSpec": true,
+  "blankets": false,
+  "verified": false,
+  "verifyNote": "DHG verified for GT4 in Tyrepress Apr 2026; wet model for GT4 not explicitly stated",
+  "_sources": [
+   "https://www.tyrepress.com/2026/04/pirelli-supplies-tyres-as-2026-gt-world-challenge-europe-begins-at-paul-ricard/"
+  ]
+ },
+ "tcr": {
+  "supplier": "Kumho",
+  "dry": {
+   "model": "Ecsta S700 slick"
+  },
+  "wet": {
+   "model": "Ecsta W701"
+  },
+  "size": "18 in (TCR standard, unverified)",
+  "blankets": false,
+  "verified": false,
+  "verifyNote": "Kumho named in TCR Europe Wikipedia infobox; S700/W701 are Kumho's TCR spec (World Tour, TCR Finland); not confirmed in a TCR Europe 2026 document",
+  "_sources": [
+   "https://en.wikipedia.org/wiki/TCR_Europe_Touring_Car_Series",
+   "https://tcr-series.com/news/item/tcr-finland-names-kumho-as-the-series-tyre-supplier",
+   "https://tcr-series.com/news/item/kumho-tire-named-title-sponsor-of-the-tcr-world-tour"
+  ]
+ },
+ "productionCars": [
+  {
+   "name": "Rimac Nevera",
+   "massKg": 2300,
+   "massType": "kerb",
+   "powerKW": 1408,
+   "drivetrain": "AWD (4 motors)",
+   "topSpeedKmh": 412,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport 4S (standard, per press reports)",
+    "front": "275/35 R20 (unverified)",
+    "rear": "315/30 R21 (unverified)"
+   },
+   "optionalTrackTyre": "Michelin Pilot Sport Cup 2 R (used for Nordschleife record)",
+   "tyreCategory": "UHP summer",
+   "nordschleife": {
+    "time": "7:05.298",
+    "length_m": 20832,
+    "time20600": "7:00.928",
+    "date": "2023-08-18",
+    "driver": "Martin Kodrić",
+    "official": true,
+    "tyre": "Michelin Cup 2 R"
+   },
+   "verified": false,
+   "verifyNote": "mass/power/top speed/Ring verified (Wikipedia); tyre sizes from memory - unverified; 412 km/h was record run (Papenburg).",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Rimac_Nevera",
+    "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times"
+   ]
+  },
+  {
+   "name": "Lamborghini Revuelto",
+   "massKg": 1772,
+   "massType": "dry",
+   "powerKW": 746.5,
+   "drivetrain": "AWD (V12 RWD + 2 front e-motors)",
+   "topSpeedKmh": 350,
+   "factoryTyre": {
+    "model": "Bridgestone Potenza Sport",
+    "front": "265/35 ZR20",
+    "rear": "345/30 ZR21"
+   },
+   "optionalTrackTyre": "Bridgestone Potenza Race",
+   "tyreCategory": "UHP summer",
+   "nordschleife": null,
+   "verified": false,
+   "verifyNote": "mass/power verified (Wikipedia); top speed '>350 km/h' and tyres from memory - unverified",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Lamborghini_Revuelto"
+   ]
+  },
+  {
+   "name": "Porsche 911 GT3 RS (992.1)",
+   "massKg": 1450,
+   "massType": "DIN kerb",
+   "powerKW": 386,
+   "drivetrain": "RWD",
+   "topSpeedKmh": 296,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport Cup 2",
+    "front": "275/35 ZR20",
+    "rear": "335/30 ZR21"
+   },
+   "optionalTrackTyre": "Michelin Pilot Sport Cup 2 R (N0)",
+   "tyreCategory": "track-focused",
+   "nordschleife": {
+    "time": "6:49.328",
+    "length_m": 20832,
+    "time20600": "6:44.848",
+    "date": "2022-10-05",
+    "driver": "Jörg Bergmeister",
+    "official": true,
+    "tyre": "Michelin Pilot Sport Cup 2 R",
+    "alsoManthey": "6:45.389 (2025-04-14, Manthey Kit)"
+   },
+   "verified": false,
+   "verifyNote": "Ring verified; mass/power/vmax/tyres from memory - unverified",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times",
+    "https://en.wikipedia.org/wiki/Porsche_911_GT3"
+   ]
+  },
+  {
+   "name": "Ferrari SF90 XX Stradale",
+   "massKg": 1560,
+   "massType": "dry",
+   "powerKW": 757,
+   "drivetrain": "AWD (hybrid, front e-axle)",
+   "topSpeedKmh": 320,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport Cup 2 R (unverified; Bridgestone Potenza Race also reported)",
+    "front": "255/35 ZR20",
+    "rear": "315/30 ZR20"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "track-focused",
+   "nordschleife": null,
+   "verified": false,
+   "verifyNote": "power 1030 PS verified (Wikipedia); mass, vmax and tyres unverified",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Ferrari_SF90_Stradale"
+   ]
+  },
+  {
+   "name": "McLaren Senna",
+   "massKg": 1198,
+   "massType": "dry (1374 kg per Wikipedia infobox = kerb-ish)",
+   "powerKW": 588,
+   "drivetrain": "RWD",
+   "topSpeedKmh": 335,
+   "factoryTyre": {
+    "model": "Pirelli P Zero Trofeo R",
+    "front": "245/35 R19",
+    "rear": "315/30 R20"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "R-compound",
+   "nordschleife": null,
+   "verified": false,
+   "verifyNote": "power/vmax/Trofeo R verified (Wikipedia); 1198 kg dry is McLaren's claim from memory; sizes unverified",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/McLaren_Senna"
+   ]
+  },
+  {
+   "name": "Aston Martin Valkyrie",
+   "massKg": 1355,
+   "massType": "dry (1340-1355 kg)",
+   "powerKW": 865,
+   "drivetrain": "RWD (hybrid)",
+   "topSpeedKmh": 350,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport Cup 2 (bespoke)",
+    "front": "265/35 ZR20",
+    "rear": "325/30 ZR21"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "track-focused",
+   "nordschleife": null,
+   "verified": false,
+   "verifyNote": "mass/power(1160 hp)/front size verified (Wikipedia); rear size and ~350 km/h vmax unverified",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Aston_Martin_Valkyrie"
+   ]
+  },
+  {
+   "name": "Mercedes-AMG ONE",
+   "massKg": 1695,
+   "massType": "kerb",
+   "powerKW": 782,
+   "drivetrain": "AWD (front e-axle)",
+   "topSpeedKmh": 352,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport Cup 2 R MO",
+    "front": "285/35 ZR19",
+    "rear": "335/30 ZR20"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "R-compound",
+   "nordschleife": {
+    "time": "6:29.090",
+    "length_m": 20832,
+    "time20600": "6:24.03",
+    "date": "2024-09-23",
+    "driver": "Maro Engel",
+    "official": true,
+    "tyre": "Michelin Pilot Sport Cup 2 R",
+    "previous": "6:35.183 (2022)"
+   },
+   "verified": true,
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Mercedes-AMG_One",
+    "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times"
+   ]
+  },
+  {
+   "name": "Porsche 918 Spyder",
+   "massKg": 1634,
+   "massType": "kerb (1634-1720 kg depending on spec)",
+   "powerKW": 652,
+   "drivetrain": "AWD (hybrid)",
+   "topSpeedKmh": 345,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport Cup 2 (N0)",
+    "front": "265/35 ZR20",
+    "rear": "325/30 ZR21"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "track-focused",
+   "nordschleife": {
+    "time": "6:57",
+    "length_m": 20600,
+    "date": "2013-09-04",
+    "driver": "Marc Lieb",
+    "official": true,
+    "tyre": "Michelin Pilot Sport Cup 2 N0, Weissach package"
+   },
+   "verified": false,
+   "verifyNote": "power 887 PS and Ring verified; sizes/vmax from memory",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Porsche_918_Spyder",
+    "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times"
+   ]
+  },
+  {
+   "name": "Ferrari F80",
+   "massKg": 1525,
+   "massType": "dry",
+   "powerKW": 883,
+   "drivetrain": "AWD (hybrid V6, front e-axle)",
+   "topSpeedKmh": 350,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport Cup 2 R (unverified)",
+    "front": "285/35 ZR20 (unverified)",
+    "rear": "345/30 ZR21 (unverified)"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "track-focused",
+   "nordschleife": null,
+   "verified": false,
+   "verifyNote": "mass/power/vmax verified (Wikipedia); tyres unverified",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Ferrari_F80"
+   ]
+  },
+  {
+   "name": "McLaren W1",
+   "massKg": 1399,
+   "massType": "dry",
+   "powerKW": 938,
+   "drivetrain": "RWD (hybrid)",
+   "topSpeedKmh": 350,
+   "factoryTyre": {
+    "model": "Pirelli P Zero Trofeo RS",
+    "front": "265/35 R19 (unverified)",
+    "rear": "335/30 R20 (unverified)"
+   },
+   "optionalTrackTyre": "Pirelli P Zero R / P Zero Winter 2 (unverified)",
+   "tyreCategory": "R-compound",
+   "nordschleife": null,
+   "verified": false,
+   "verifyNote": "mass/power/vmax verified (Wikipedia); tyres unverified; no official Ring time found",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/McLaren_W1"
+   ]
+  },
+  {
+   "name": "Chevrolet Corvette Z06 (C8)",
+   "massKg": 1656,
+   "massType": "kerb (approx.)",
+   "powerKW": 500,
+   "drivetrain": "RWD",
+   "topSpeedKmh": 312,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport 4S",
+    "front": "275/30 ZR20",
+    "rear": "345/25 ZR21"
+   },
+   "optionalTrackTyre": "Z07 package: Michelin Pilot Sport Cup 2 R ZP",
+   "tyreCategory": "UHP summer",
+   "nordschleife": {
+    "time": "7:11.826",
+    "length_m": 20832,
+    "date": "2025-06",
+    "driver": "Aaron Link",
+    "official": false,
+    "note": "GM test, classified prototype (US spec), Z07/Cup 2 R; Sport Auto 7:10.52 on 20.6 km (2024)"
+   },
+   "verified": false,
+   "verifyNote": "sizes and Z07 tyre verified (Wikipedia C8); mass/power/vmax from memory",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C8)",
+    "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times"
+   ]
+  },
+  {
+   "name": "Chevrolet Corvette ZR1 (C8)",
+   "massKg": 1720,
+   "massType": "kerb (approx.)",
+   "powerKW": 794,
+   "drivetrain": "RWD",
+   "topSpeedKmh": 375,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport 4S",
+    "front": "275/30 ZR20",
+    "rear": "345/25 ZR21"
+   },
+   "optionalTrackTyre": "Z07 package: Michelin Pilot Sport Cup 2 R",
+   "tyreCategory": "UHP summer",
+   "nordschleife": {
+    "time": "6:50.763",
+    "length_m": 20832,
+    "date": "2025-06",
+    "driver": "Brian Wallace",
+    "official": false,
+    "note": "GM test, Cup 2 R; ZR1X (AWD hybrid) did 6:49.275"
+   },
+   "verified": false,
+   "verifyNote": "Ring verified; mass/power(1064 hp)/vmax(233 mph) and tyre fitment from memory",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times"
+   ]
+  },
+  {
+   "name": "Ford Mustang GTD",
+   "massKg": 1950,
+   "massType": "kerb (approx., unverified)",
+   "powerKW": 608,
+   "drivetrain": "RWD",
+   "topSpeedKmh": 325,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport Cup 2 R",
+    "front": "325/30 R20",
+    "rear": "345/30 R21"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "R-compound",
+   "nordschleife": {
+    "time": "6:52.072",
+    "length_m": 20832,
+    "time20600": "6:47.26",
+    "date": "2025-05-01",
+    "driver": "Dirk Müller",
+    "official": false,
+    "note": "Ford test; earlier 6:57.685 (2024); GTD Competition 6:40.835 (2026-04-17, pre-production)"
+   },
+   "verified": false,
+   "verifyNote": "Ring and Cup 2 R verified; mass/power(815 hp)/vmax/sizes from memory",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times",
+    "https://en.wikipedia.org/wiki/Ford_Mustang_(seventh_generation)"
+   ]
+  },
+  {
+   "name": "Koenigsegg Jesko (Attack)",
+   "massKg": 1420,
+   "massType": "kerb (1320 kg dry)",
+   "powerKW": 1195,
+   "drivetrain": "RWD",
+   "topSpeedKmh": null,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport Cup 2",
+    "front": "265/35 R20",
+    "rear": "345/30 R21"
+   },
+   "optionalTrackTyre": "Michelin Pilot Sport Cup 2 R",
+   "tyreCategory": "track-focused",
+   "nordschleife": null,
+   "verified": true,
+   "verifyNote": "power 1600 hp on E85 (1280 hp petrol = 955 kW), dry mass, tyres verified (Wikipedia); no official vmax for Attack (Absolut theoretical >500 km/h)",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Koenigsegg_Jesko"
+   ]
+  },
+  {
+   "name": "Bugatti Chiron Super Sport",
+   "massKg": 1995,
+   "massType": "kerb (unverified)",
+   "powerKW": 1177,
+   "drivetrain": "AWD",
+   "topSpeedKmh": 440,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport Cup 2 (Bugatti-specific)",
+    "front": "285/30 R20 (unverified)",
+    "rear": "355/25 R21 (unverified)"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "track-focused",
+   "nordschleife": null,
+   "verified": false,
+   "verifyNote": "1600 PS and 440 km/h limited from Wikipedia; mass/sizes unverified",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Bugatti_Chiron"
+   ]
+  },
+  {
+   "name": "Lamborghini Huracán STO",
+   "massKg": 1339,
+   "massType": "dry",
+   "powerKW": 470,
+   "drivetrain": "RWD",
+   "topSpeedKmh": 310,
+   "factoryTyre": {
+    "model": "Bridgestone Potenza Sport",
+    "front": "245/30 R20",
+    "rear": "305/30 R20"
+   },
+   "optionalTrackTyre": "Bridgestone Potenza Race",
+   "tyreCategory": "UHP summer",
+   "nordschleife": null,
+   "verified": false,
+   "verifyNote": "all from memory except existence/power class (640 CV) - unverified",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n"
+   ]
+  },
+  {
+   "name": "Nissan GT-R Nismo (R35)",
+   "massKg": 1720,
+   "massType": "kerb (approx.)",
+   "powerKW": 441,
+   "drivetrain": "AWD",
+   "topSpeedKmh": 315,
+   "factoryTyre": {
+    "model": "Dunlop SP Sport Maxx GT600 DSST CTT (run-flat)",
+    "front": "255/40 ZRF20",
+    "rear": "285/35 ZRF20"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "UHP summer",
+   "nordschleife": {
+    "time": "7:08.679",
+    "length_m": 20600,
+    "date": "2013-09-30",
+    "driver": "Michael Krumm",
+    "official": false,
+    "note": "Nissan test with N Attack Package (pre-production)"
+   },
+   "verified": false,
+   "verifyNote": "tyre model and Ring verified; mass/vmax/rear size from memory",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Nissan_GT-R",
+    "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times"
+   ]
+  },
+  {
+   "name": "Honda Civic Type R (FL5)",
+   "massKg": 1429,
+   "massType": "kerb (EU)",
+   "powerKW": 235,
+   "drivetrain": "FWD",
+   "topSpeedKmh": 275,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport 4S",
+    "front": "265/30 ZR19",
+    "rear": "265/30 ZR19"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "UHP summer",
+   "nordschleife": {
+    "time": "7:44.881",
+    "length_m": 20832,
+    "time20600": "7:39.691",
+    "date": "2023-03-24",
+    "driver": "Néstor Girolami",
+    "official": false,
+    "note": "Honda test; aftermarket Michelin Pilot Sport Cup 2 Connect; FWD record"
+   },
+   "verified": false,
+   "verifyNote": "tyre and Ring verified; mass/power(329 PS EU)/vmax from memory",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Honda_Civic_Type_R",
+    "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times"
+   ]
+  },
+  {
+   "name": "Toyota GR Yaris (2024 update)",
+   "massKg": 1280,
+   "massType": "kerb (approx.)",
+   "powerKW": 206,
+   "drivetrain": "AWD",
+   "topSpeedKmh": 230,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport 4S (Circuit pack)",
+    "front": "225/40 ZR18",
+    "rear": "225/40 ZR18"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "UHP summer",
+   "nordschleife": {
+    "time": "8:14.93",
+    "length_m": 20600,
+    "date": "2021-04-07",
+    "driver": "Christian Gebhardt (Sport Auto)",
+    "official": false,
+    "note": "pre-facelift 261 PS car, Michelin PS4S"
+   },
+   "verified": false,
+   "verifyNote": "Ring verified; 2024 figures (280 PS) from memory",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/Toyota_GR_Yaris",
+    "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times"
+   ]
+  },
+  {
+   "name": "BMW M4 CSL (G82)",
+   "massKg": 1625,
+   "massType": "DIN kerb",
+   "powerKW": 405,
+   "drivetrain": "RWD",
+   "topSpeedKmh": 307,
+   "factoryTyre": {
+    "model": "Michelin Pilot Sport Cup 2 R",
+    "front": "275/35 R19",
+    "rear": "285/30 R20"
+   },
+   "optionalTrackTyre": null,
+   "tyreCategory": "R-compound",
+   "nordschleife": {
+    "time": "7:20.207",
+    "length_m": 20832,
+    "time20600": "7:15.677",
+    "date": "2022-04-12",
+    "driver": "Jörg Weidinger",
+    "official": true,
+    "later": "7:18.137 on 20.832 km (2023-09-01)"
+   },
+   "verified": false,
+   "verifyNote": "Ring and Cup 2 R verified; mass/sizes/vmax from memory",
+   "_sources": [
+    "https://en.wikipedia.org/wiki/BMW_M4",
+    "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times"
+   ]
+  }
+ ],
+ "roadTyreCategories": {
+  "_note": "Generic modelling values (verified=false). Relative grip = peak lateral mu vs Michelin Pilot Sport Cup 2 R on a warm dry track (=1.00). Based on typical published magazine comparisons, not on manufacturer data.",
+  "categories": [
+   {
+    "id": "all_season",
+    "examples": [
+     "Michelin CrossClimate 2",
+     "Continental AllSeasonContact"
+    ],
+    "relGrip": 0.78,
+    "tempWindowC": [
+     -10,
+     45
+    ],
+    "overheatAboveC": 60,
+    "trackWearLaps": "~10-20 hot laps (heavy blistering/chunking risk)",
+    "wet": {
+     "relGripWet": 0.85,
+     "aquaplaning": "good"
+    },
+    "verified": false
+   },
+   {
+    "id": "uhp_summer",
+    "examples": [
+     "Michelin Pilot Sport 4S",
+     "Bridgestone Potenza Sport",
+     "Pirelli P Zero (PZ4)",
+     "Dunlop SP Sport Maxx GT600"
+    ],
+    "relGrip": 0.88,
+    "tempWindowC": [
+     10,
+     80
+    ],
+    "optimalTreadC": [
+     60,
+     85
+    ],
+    "trackWearLaps": "~40-80 Nordschleife-equivalent km before heat fade; long road life (~20,000+ km)",
+    "wet": {
+     "relGripWet": 1.0,
+     "note": "best wet performer of the track-capable tyres"
+    },
+    "verified": false
+   },
+   {
+    "id": "track_focused",
+    "examples": [
+     "Michelin Pilot Sport Cup 2",
+     "Pirelli P Zero Trofeo R",
+     "Bridgestone Potenza Race"
+    ],
+    "relGrip": 0.95,
+    "tempWindowC": [
+     15,
+     100
+    ],
+    "optimalTreadC": [
+     75,
+     100
+    ],
+    "trackWearLaps": "~1-3 track days (300-800 km on track)",
+    "wet": {
+     "relGripWet": 0.75,
+     "note": "limited tread; aquaplaning risk in standing water"
+    },
+    "verified": false
+   },
+   {
+    "id": "r_compound",
+    "examples": [
+     "Michelin Pilot Sport Cup 2 R",
+     "Pirelli P Zero Trofeo RS"
+    ],
+    "relGrip": 1.0,
+    "tempWindowC": [
+     20,
+     110
+    ],
+    "optimalTreadC": [
+     85,
+     110
+    ],
+    "trackWearLaps": "~150-400 km on track; poor below 10 C",
+    "wet": {
+     "relGripWet": 0.6,
+     "note": "near-slick; very poor in standing water, unsafe below ~7 C"
+    },
+    "verified": false
+   }
+  ],
+  "wetBehaviour": {
+   "note": "Wet grip roughly scales with tread void; full-wet race tyres (e.g. Pirelli WH, Michelin rain) ~1.3x a UHP summer tyre in heavy rain; slicks unusable when water film > ~1 mm",
+   "verified": false
+  }
+ },
+ "_sources": [
+  "https://press.pirelli.com/the-range-of-compounds-for-the-2026-season-has-been-set/",
+  "https://racer.com/2026/10/16/michelin-introduces-new-hypercar-rain-tire",
+  "https://sportscar365.com/?p=146404",
+  "https://www.tyrepress.com/2026/04/pirelli-supplies-tyres-as-2026-gt-world-challenge-europe-begins-at-paul-ricard/",
+  "https://en.wikipedia.org/wiki/TCR_Europe_Touring_Car_Series",
+  "https://en.wikipedia.org/wiki/List_of_N%C3%BCrburgring_Nordschleife_lap_times"
+ ]
+}

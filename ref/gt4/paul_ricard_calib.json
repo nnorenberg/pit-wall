@@ -1,0 +1,144 @@
+{
+ "gt4": {
+  "year": 2026,
+  "layout": "Circuit Paul Ricard 5822m",
+  "pole": 131.609,
+  "poleDrv": "T.Rackl / G.Piana",
+  "poleCar": "BMW M4 GT4 G82 EVO",
+  "poleSession": "Q2",
+  "q1Pole": {
+   "t": "2:11.952",
+   "drv": "L.Ibanez / A.Papadopulos",
+   "car": "Mercedes-AMG GT4"
+  },
+  "q2Pole": {
+   "t": "2:11.609",
+   "drv": "T.Rackl / G.Piana",
+   "car": "BMW M4 GT4 G82 EVO"
+  },
+  "qualiGaps": {
+   "BMW M4 GT4 G82 EVO": 0.0,
+   "Aston Martin Vantage AMR GT4 EVO": 0.246,
+   "Mercedes-AMG GT4": 0.343,
+   "Audi R8 LMS GT4": 0.556,
+   "Toyota GR Supra GT4 EVO 2": 0.868,
+   "Ford Mustang GT4": 0.983,
+   "Lotus Emira GT4": 1.13,
+   "Porsche 718 Cayman GT4 RS CS": 1.147,
+   "McLaren Artura GT4": 1.274,
+   "Ginetta G56 Evo": 1.312
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 18.9,
+    "track": 39.4,
+    "wet": false,
+    "cond": "Dry"
+   },
+   "q2": {
+    "air": 18.9,
+    "track": 38.6,
+    "wet": false,
+    "cond": "Dry"
+   }
+  },
+  "raceFastest": 133.346,
+  "raceFastestRace": "R1",
+  "raceMedianTop5": null,
+  "raceLaps": 26,
+  "raceDuration": 3692.691,
+  "winnerTime": "1:01:32.691",
+  "races": {
+   "r1": {
+    "date": "2026-04-12",
+    "winner": "E.Förderer / C.Fuchs",
+    "winnerCar": "Mercedes-AMG GT4",
+    "winnerTime": "1:01:32.691",
+    "raceDuration": 3692.691,
+    "raceLaps": 26,
+    "fastest": 133.346,
+    "fastestDrv": "E.Förderer / C.Fuchs",
+    "fastestCar": "Mercedes-AMG GT4",
+    "avgLapTop5": 142.304,
+    "started": 40,
+    "classified": 36,
+    "scPhases": 1,
+    "fcyPhases": 0,
+    "weatherStart": {
+     "air": 14.4,
+     "track": 19.8,
+     "wet": false,
+     "cond": "Dry"
+    },
+    "weatherEnd": {
+     "air": 17.5,
+     "track": 22.2,
+     "wet": false
+    },
+    "greenFlag": "10:59:46",
+    "chequeredFlag": "12:01:18"
+   },
+   "r2": {
+    "date": "2026-04-12",
+    "winner": "L.Cartelle / H.Schwartz",
+    "winnerCar": "Toyota GR Supra GT4 EVO 2",
+    "winnerTime": "1:01:45.515",
+    "raceDuration": 3705.515,
+    "raceLaps": 26,
+    "fastest": 133.581,
+    "fastestDrv": "R.Leurs / H.Conde",
+    "fastestCar": "Toyota GR Supra GT4 EVO 2",
+    "avgLapTop5": 142.652,
+    "started": 40,
+    "classified": 36,
+    "scPhases": 1,
+    "fcyPhases": 1,
+    "weatherStart": {
+     "air": 16.6,
+     "track": 25.5,
+     "wet": false,
+     "cond": "Dry"
+    },
+    "weatherEnd": {
+     "air": 16.4,
+     "track": 23.0,
+     "wet": false
+    },
+    "greenFlag": "16:30:05",
+    "chequeredFlag": "17:31:50"
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": true,
+   "driverChange": true,
+   "pitWindow": "pit-entry line crossed between 25:00.00 and 34:59.99 after the official start (window can be delayed/extended under SC/FCY)",
+   "minPitStopTime": "pit-lane delta (pit-in to pit-out at 50.0 km/h) + 50 s, measured pit-in to pit-out; exact figure issued per event in a Stewards' bulletin",
+   "minPitStopTimeSec": null,
+   "tyreChange": "not permitted except wet<->dry change of all four (min 3:00 pit-in to pit-out if done in the mandatory window) or confirmed damage",
+   "compensationTime": "Pro-Am/Am crew compensations and derogation pit-time penalties may be added (Art. 10.4.7)",
+   "regsSource": "2024 GT4 European Series Sporting Regulations S02, Art. 20 (latest regulations published on gt4europeanseries.com)"
+  },
+  "pitLaneSpeedKph": 50,
+  "weather": {
+   "air": 14.4,
+   "track": 19.8,
+   "wet": false,
+   "cond": "Dry"
+  },
+  "notes": "R1: 1 SC phase(s); R2: 1 SC phase(s), 1 FCY phase(s); pole = fastest lap of Q1/Q2 (two separate sessions, each setting its own race grid, different drivers of each crew); raceDuration/raceLaps/winnerTime are Race 1; Race 2 under races.r2; no lap charts/pit timing published (results.sro.com unavailable), so raceMedianTop5/pit figures are null; avgLapTop5 = total time / laps of the lead-lap top 5 (includes start lap, SC/FCY and the mandatory stop)"
+ },
+ "_sources": [
+  "https://www.gt4europeanseries.com/results/2026/paul-ricard",
+  "https://www.gt4europeanseries.com/images/results/78/GTWCEU_GT4_FP2_ResultList_1.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/78/GTWCEU_GT4_Q1_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/78/GTWCEU_GT4_Q2_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/78/GTWCEU_GT4_R1_ResultList_3.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/78/GTWCEU_GT4_R2_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+ ]
+}

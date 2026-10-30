@@ -1,0 +1,123 @@
+{
+ "_sources": [
+  "https://files.alkamelcloud.com/wec/results/14_2025/01_LOSAIL/579_FIA%20WEC/202502271700_Qualifying%20LMGT3/03_Classification_Qualifying%20LMGT3.CSV",
+  "https://files.alkamelcloud.com/wec/results/14_2025/01_LOSAIL/579_FIA%20WEC/202502271720_Hyperpole%20LMGT3/03_Classification_Hyperpole%20LMGT3.CSV",
+  "https://files.alkamelcloud.com/wec/results/14_2025/01_LOSAIL/579_FIA%20WEC/202502271740_Qualifying%20HYPERCAR/03_Classification_Qualifying%20HYPERCAR.CSV",
+  "https://files.alkamelcloud.com/wec/results/14_2025/01_LOSAIL/579_FIA%20WEC/202502271800_Hyperpole%20HYPERCAR/03_Classification_Hyperpole%20HYPERCAR.CSV",
+  "https://files.alkamelcloud.com/wec/results/14_2025/01_LOSAIL/579_FIA%20WEC/202502271820_Qualifying/90_Classification_Qualifying.CSV",
+  "https://files.alkamelcloud.com/wec/results/14_2025/01_LOSAIL/579_FIA%20WEC/202502281400_Race/10_Hour%2010/03_Classification_Race_Hour%2010.CSV",
+  "https://files.alkamelcloud.com/wec/results/14_2025/01_LOSAIL/579_FIA%20WEC/202502281400_Race/10_Hour%2010/23_Analysis_Race_Hour%2010.CSV",
+  "https://files.alkamelcloud.com/wec/results/14_2025/01_LOSAIL/579_FIA%20WEC/202502281400_Race/10_Hour%2010/26_Weather_Race_Hour%2010.CSV"
+ ],
+ "hyper": {
+  "year": 2025,
+  "layout": "Lusail International Circuit (GP)",
+  "event": "Losail",
+  "round": 1,
+  "pole": 98.35900000000001,
+  "poleDrv": "Alessandro Pier Guidi / James Calado / Antonio Giovinazzi",
+  "poleCar": "Ferrari 499P #51",
+  "poleSource": "Hyperpole",
+  "qualiGaps": {
+   "Ferrari 499P": 0.0,
+   "BMW M Hybrid V8": 0.136,
+   "Cadillac V-Series.R": 0.364,
+   "Toyota GR010 Hybrid": 0.92,
+   "Alpine A424": 1.147,
+   "Peugeot 9X8": 1.315,
+   "Porsche 963": 1.587,
+   "Aston Martin Valkyrie": 3.407
+  },
+  "raceFastest": 101.259,
+  "raceFastestBy": "Ferrari 499P #51",
+  "raceLaps": 318,
+  "raceDuration": 36099.098,
+  "winnerTime": "10:01:39.098",
+  "winner": "Ferrari 499P #50",
+  "raceMedianTop5": 104.026,
+  "raceMedianTop5N": 1344,
+  "lapLengthKm": 5.418,
+  "stintLaps": 32,
+  "stintLapsP75": 34,
+  "pitLaneTime": 30.4,
+  "stationaryBasisStops": 140,
+  "stationary": 50.0,
+  "stationaryRefuelOnly": 45.2,
+  "stationaryRefuelTyres": 56.6,
+  "tyreChangeExtra": 11.4,
+  "stopMix": {
+   "short": 64,
+   "long": 76
+  },
+  "pitTimeMedian": 80.4,
+  "stopLossTotal": 91.4,
+  "pitLoss": 38.2,
+  "topSpeed": 308.6,
+  "topSpeedMedianCarBest": 303.8,
+  "topSpeedDiscarded": [
+   326.3
+  ],
+  "weather": {
+   "air": 17.3,
+   "track": 22.9,
+   "wet": false
+  },
+  "notes": "SC laps 70-73 (~2.2 h); SC laps 76-78 (~2.5 h); FCY laps 115-115 (~3.7 h); SC laps 159-162 (~5.1 h); SC laps 165-169 (~5.4 h); FCY laps 237-237 (~7.6 h)",
+  "flag": "no 2026 event at this circuit yet (as of 2026-10-27): 2025 data used"
+ },
+ "gt3": {
+  "year": 2025,
+  "layout": "Lusail International Circuit (GP)",
+  "event": "Losail",
+  "round": 1,
+  "pole": 114.239,
+  "poleDrv": "Darren Leung / Sean Gelael / Marino Sato",
+  "poleCar": "McLaren 720S LMGT3 Evo #95",
+  "poleSource": "Hyperpole",
+  "qualiGaps": {
+   "McLaren 720S LMGT3 Evo": 0.0,
+   "Lexus RC F LMGT3": 0.245,
+   "Ferrari 296 LMGT3": 0.355,
+   "Aston Martin Vantage AMR LMGT3": 0.516,
+   "BMW M4 LMGT3": 0.75,
+   "Corvette Z06 LMGT3.R": 1.185,
+   "Ford Mustang LMGT3": 1.193,
+   "Porsche 911 GT3 R LMGT3": 2.195,
+   "Mercedes-AMG LMGT3": 4.315
+  },
+  "raceFastest": 114.048,
+  "raceFastestBy": "McLaren 720S LMGT3 Evo #59",
+  "raceLaps": 287,
+  "raceDuration": 36184.05,
+  "winnerTime": "10:03:04.050",
+  "winner": "Corvette Z06 LMGT3.R #33",
+  "raceMedianTop5": 116.43,
+  "raceMedianTop5N": 1168,
+  "lapLengthKm": 5.418,
+  "stintLaps": 26,
+  "stintLapsP75": 27,
+  "pitLaneTime": 30.4,
+  "stationaryBasisStops": 130,
+  "stationary": 53.2,
+  "stationaryRefuelOnly": 45.2,
+  "stationaryRefuelTyres": 58.7,
+  "tyreChangeExtra": 13.5,
+  "stopMix": {
+   "short": 45,
+   "long": 85
+  },
+  "pitTimeMedian": 83.5,
+  "stopLossTotal": 90.1,
+  "pitLoss": 32.4,
+  "topSpeed": 262.1,
+  "topSpeedMedianCarBest": 254.7,
+  "weather": {
+   "air": 17.3,
+   "track": 22.9,
+   "wet": false
+  },
+  "notes": "SC laps 70-73 (~2.2 h); SC laps 76-78 (~2.5 h); FCY laps 115-115 (~3.7 h); SC laps 159-162 (~5.1 h); SC laps 165-169 (~5.4 h); FCY laps 237-237 (~7.6 h)",
+  "flag": "no 2026 event at this circuit yet (as of 2026-10-27): 2025 data used"
+ },
+ "_fields": "pole/qualiGaps: grid-order classification (Qualifying + Hyperpole) and each car model's best lap over all qualifying segments, gap in s to pole. raceMedianTop5: median of top-5 class finishers' laps with green flag at the line, previous lap also green, no pit in/out, within 107% of the car's own green median. pitLaneTime: pit-lane transit from the drive-through cluster of PIT_TIME (pit entry to exit, no stop). pitTimeMedian: median PIT_TIME of normal stops (<180 s). stationary = pitTimeMedian - pitLaneTime; stationaryRefuelOnly / stationaryRefuelTyres: 2-means split of the stops that ended a near-full stint (>=70% of stintLaps; WEC: refuel and tyre change are sequential). stopLossTotal: median (in-lap + out-lap - 2 x car green median) for stops with green laps; pitLoss: per-stop median of (stop loss - (PIT_TIME - pitLaneTime)) = time lost to the pit lane alone, excluding stationary time. stintLaps: median laps between consecutive normal stops (>=5 laps). topSpeed: highest per-car best TOP_SPEED (speed trap) in the race, after discarding implausible trap readings >105% of the class median car-best (listed in topSpeedDiscarded); topSpeedMedianCarBest also given. lapLengthKm: derived from KPH x lap time. Notes: SC (SF flag) / FCY periods on the overall winner's lap numbers."
+}

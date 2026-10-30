@@ -1,0 +1,126 @@
+{
+ "tcr": {
+  "year": 2026,
+  "layout": "Circuit de Barcelona-Catalunya 4657m",
+  "pole": 108.587,
+  "poleDrv": "Mike Halder",
+  "poleCar": "Honda Civic Type R FL5 TCR",
+  "poleSession": "Q1",
+  "officialPole": {
+   "t": "1:48.703",
+   "drv": "Mike Halder",
+   "car": "Honda Civic Type R FL5 TCR",
+   "note": "Q2 (top 12) P1 = Race 1 pole"
+  },
+  "qualiGaps": {
+   "Honda Civic Type R FL5": 0.0,
+   "Cupra Leon VZ": 0.129,
+   "Hyundai Elantra N": 0.209,
+   "Audi RS 3 LMS": 0.877
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 14.4,
+    "track": 17.6,
+    "wet": true,
+    "humidity": 74,
+    "trackStatus": "WET"
+   },
+   "q2": {
+    "air": 14.4,
+    "track": 18.7,
+    "wet": true,
+    "humidity": 72,
+    "trackStatus": "WET"
+   }
+  },
+  "raceFastest": 110.442,
+  "raceFastestRace": "R1",
+  "raceMedianTop5": null,
+  "raceLaps": 15,
+  "raceDuration": 1683.041,
+  "winnerTime": "28:03.041",
+  "races": {
+   "r1": {
+    "date": "2026-10-24",
+    "winner": "Adam Shepherd",
+    "winnerCar": "Cupra Leon VZ TCR",
+    "winnerTime": "28:03.041",
+    "raceDuration": 1683.041,
+    "raceLaps": 15,
+    "fastest": 110.442,
+    "fastestDrv": "Gabriele Covini",
+    "fastestCar": "Hyundai Elantra N TCR",
+    "avgLapTop5": null,
+    "classified": 18,
+    "weather": {
+     "air": 18.2,
+     "track": 23.1,
+     "wet": true,
+     "humidity": 63,
+     "trackStatus": "WET"
+    },
+    "penalties": [
+     "STW Decision: Car n. 37 - 5 secs time penalty - jump start - Decision Number 8",
+     "STW Decision: Car n.19 - 10 secs time penalty - causing a collision with car n.12 in T6 - Decision Number 9",
+     "STW Decision: Car n.24 - 5 secs time penalty - not respecting RD instructions in T1 - Decision Number 10",
+     "STW Decision: Car n. 97 - 5 secs time penalty - Decision Number 11 (causing a collision with car 37, T10)",
+     "STW Decision: Car n.73 - 5 secs time penalty - Decision Number 12 (not respecting RD instructions in T1)"
+    ]
+   },
+   "r2": {
+    "date": "2026-10-25",
+    "winner": "Junesung Park",
+    "winnerCar": "Hyundai Elantra N TCR",
+    "winnerTime": "27:48.677",
+    "raceDuration": 1668.677,
+    "raceLaps": 14,
+    "fastest": 110.559,
+    "fastestDrv": "Junesung Park",
+    "fastestCar": "Hyundai Elantra N TCR",
+    "avgLapTop5": null,
+    "classified": 16,
+    "weather": {
+     "air": 18.6,
+     "track": 29.4,
+     "wet": false,
+     "humidity": 58,
+     "trackStatus": "DRY"
+    },
+    "penalties": [
+     "CAR #85 - 10 SECONDS TIME PENALTY STEWARDS DECISION NUMBER 14",
+     "CAR #76 - 5 SECONDS TIME PENALTY STEWARDS DECISION NUMBER 15"
+    ]
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": false,
+   "minPitStopTimeSec": null,
+   "raceFormat": "2 races of 25 min + 1 lap, no mandatory stop (pit lane used only for drive-through penalties/repairs)",
+   "regsSource": "2026 TCR Europe Sporting Regulations V3, Art. 13 and 94"
+  },
+  "pitLaneSpeedKph": 60,
+  "weather": {
+   "air": 18.2,
+   "track": 23.1,
+   "wet": true,
+   "humidity": 63,
+   "trackStatus": "WET"
+  },
+  "notes": "R1 sheet shows Track Status WET (damp start), R2 dry.; pole = fastest lap across Q1 (20 min, all cars) and Q2 (10 min, top 12); BoP/compensation weight apply per event; raceDuration/raceLaps/winnerTime are Race 1; Race 2 (reversed top 10 grid) under races.r2; no lap charts published for races, so raceMedianTop5 is null; avgLapTop5 = winner-lap top-5 total time / laps (includes standing start and any SC); weather null where the official sheet carries none (getraceresults/Creventic layout)"
+ },
+ "_sources": [
+  "https://europe.tcr-series.com/images/events/2026/06_Barcelona/TCR_EU_R6_Barcelona_Free_Practice_2.pdf",
+  "https://europe.tcr-series.com/images/events/2026/06_Barcelona/TCR_EU_R6_Barcelona_Qualifying_1.pdf",
+  "https://europe.tcr-series.com/images/events/2026/06_Barcelona/TCR_EU_R6_Barcelona_Qualifying_2.pdf",
+  "https://europe.tcr-series.com/images/events/2026/06_Barcelona/TCR_EU_R6_Barcelona_Race_1_Final.pdf",
+  "https://europe.tcr-series.com/images/events/2026/06_Barcelona/TCR_EU_R6_Barcelona_Race_2_Final.pdf",
+  "https://europe.tcr-series.com/index.php/2026-ev/item/circuit-de-barcelona-catalunya",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf"
+ ]
+}

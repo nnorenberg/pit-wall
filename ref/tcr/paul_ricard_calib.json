@@ -1,0 +1,96 @@
+{
+ "tcr": {
+  "year": 2026,
+  "layout": "Circuit Paul Ricard 5842m (TCR layout per timing sheet)",
+  "pole": 130.72,
+  "poleDrv": "Viktor Andersson",
+  "poleCar": "Cupra Leon VZ TCR",
+  "poleSession": "Q2",
+  "officialPole": {
+   "t": "2:10.720",
+   "drv": "Viktor Andersson",
+   "car": "Cupra Leon VZ TCR",
+   "note": "Q2 (top 12) P1 = Race 1 pole"
+  },
+  "qualiGaps": {
+   "Cupra Leon VZ": 0.0,
+   "Honda Civic Type R FL5": 0.22,
+   "Audi RS 3 LMS": 0.419,
+   "Hyundai Elantra N": 0.621
+  },
+  "qualiWeather": {
+   "q1": null,
+   "q2": null
+  },
+  "raceFastest": 132.607,
+  "raceFastestRace": "R1",
+  "raceMedianTop5": null,
+  "raceLaps": 13,
+  "raceDuration": 1748.631,
+  "winnerTime": "29:08.631",
+  "races": {
+   "r1": {
+    "date": "2026-06-06",
+    "winner": "Nicola Baldan",
+    "winnerCar": "Audi RS 3 LMS TCR",
+    "winnerTime": "29:08.631",
+    "raceDuration": 1748.631,
+    "raceLaps": 13,
+    "fastest": 132.607,
+    "fastestDrv": "Mikhail Simonov",
+    "fastestCar": "Cupra Leon VZ TCR",
+    "avgLapTop5": 135.104,
+    "classified": 22,
+    "weather": null,
+    "penalties": [
+     "Car n. 37 - 5 secs time penalty for jump start (DEcision 6)",
+     "Car n. 27 - 5 secs time panalty leaving the track, overtaking and gaining lasting advantage (Decision 9)",
+     "Car n. 33 - 5 secs penalty - causing a collision (Decision 10)"
+    ]
+   },
+   "r2": {
+    "date": "2026-06-07",
+    "winner": "Nicolas Taylor",
+    "winnerCar": "Audi RS 3 LMS TCR",
+    "winnerTime": "29:07.552",
+    "raceDuration": 1747.552,
+    "raceLaps": 13,
+    "fastest": 133.04,
+    "fastestDrv": "Victor Weyrich",
+    "fastestCar": "Cupra Leon VZ TCR",
+    "avgLapTop5": 134.825,
+    "classified": 19,
+    "weather": null,
+    "penalties": [
+     "Car n.10 time penalty + 10 secs for jump start; Car n. 76 - 5 secs time penalty - causing a collision in T8",
+     "Time penalty of 2x5 secs for cars n. 29 cutting in t2and t9; Decision 21 - Car 8 decision 13 (right of review) canceled",
+     "Car n.29 time penalty 5 secs - TL abuse (6th infringement); Car n.29 time penalty 5 secs for TL abuse (7th infringement)",
+     "Car n. 7 - drive trough converted to 30 secs time penalty (causing a collosion)"
+    ]
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": false,
+   "minPitStopTimeSec": null,
+   "raceFormat": "2 races of 25 min + 1 lap, no mandatory stop (pit lane used only for drive-through penalties/repairs)",
+   "regsSource": "2026 TCR Europe Sporting Regulations V3, Art. 13 and 94"
+  },
+  "pitLaneSpeedKph": 60,
+  "weather": null,
+  "notes": "pole = fastest lap across Q1 (20 min, all cars) and Q2 (10 min, top 12); BoP/compensation weight apply per event; raceDuration/raceLaps/winnerTime are Race 1; Race 2 (reversed top 10 grid) under races.r2; no lap charts published for races, so raceMedianTop5 is null; avgLapTop5 = winner-lap top-5 total time / laps (includes standing start and any SC); weather null where the official sheet carries none (getraceresults/Creventic layout)"
+ },
+ "_sources": [
+  "https://europe.tcr-series.com/images/events/2026/03_Paul%20Ricard/TCR_EU_R3_Paul_Ricard_Free_Practice_2.pdf",
+  "https://europe.tcr-series.com/images/events/2026/03_Paul%20Ricard/TCR_EU_R3_Paul_Ricard_Qualifying_1.pdf",
+  "https://europe.tcr-series.com/images/events/2026/03_Paul%20Ricard/TCR_EU_R3_Paul_Ricard_Qualifying_2.pdf",
+  "https://europe.tcr-series.com/images/events/2026/03_Paul%20Ricard/TCR_EU_R3_Paul_Ricard_Race_1_Final.pdf",
+  "https://europe.tcr-series.com/images/events/2026/03_Paul%20Ricard/TCR_EU_R3_Paul_Ricard_Race_2_Final.pdf",
+  "https://europe.tcr-series.com/index.php/2026-ev/item/le-castellet",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf"
+ ]
+}

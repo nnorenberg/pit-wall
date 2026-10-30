@@ -1,0 +1,81 @@
+{
+ "f1": {
+  "year": 2025,
+  "round": 7,
+  "event": "Emilia Romagna Grand Prix",
+  "layout": "Autodromo Enzo e Dino Ferrari",
+  "pole": 74.67,
+  "poleDrv": "Oscar Piastri",
+  "poleCar": "McLaren MCL39",
+  "qualiGaps": {
+   "McLaren MCL39": 0.0,
+   "Red Bull RB21": 0.034,
+   "Mercedes W16": 0.137,
+   "Williams FW47": 0.528,
+   "Aston Martin AMR25": 0.761,
+   "Alpine A525": 0.835,
+   "Racing Bulls VCARB 02": 0.84,
+   "Ferrari SF-25": 0.934,
+   "Kick Sauber C45": 1.59,
+   "Haas VF-25": 1.943
+  },
+  "raceFastest": 77.988,
+  "raceFastestDrv": "Max Verstappen",
+  "raceMedianTop5": 81.067,
+  "raceMedianTop5N": 238,
+  "raceLaps": 63,
+  "raceDuration": 5493.199,
+  "winnerTime": "1:31:33.199",
+  "winner": "Max Verstappen",
+  "winnerCar": "Red Bull RB21",
+  "pitLoss": 29.5,
+  "pitLossN": 4,
+  "pitLaneTime": 30.3,
+  "stationary": 2.8,
+  "pitStopsN": 11,
+  "stintLaps": 18,
+  "topSpeed": null,
+  "scLaps": [
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54
+  ],
+  "vscLaps": [
+   29,
+   30,
+   31
+  ],
+  "redFlagLaps": [],
+  "weather": {
+   "air": 24.0,
+   "track": 41.3,
+   "wet": false,
+   "humidity": 38.0
+  },
+  "notes": "VSC laps 29-31; SC laps 46-53 (from race control); 2025 event: no 2026 race at this circuit yet; 2026 cars (new chassis/PU regulations) differ, so scale accordingly; raceMedianTop5: median of top-5 finishers laps excluding lap 1, in/out laps, SC/VSC/red-flag laps (+SC restart lap, and the lap before each neutralisation because race-control lap numbers follow the leader) and laps >110% of that driver median; pitLaneTime = median Jolpica pitstop duration (pit entry to exit) of green-flag stops; pitLoss = median (in-lap + out-lap - 2x clean lap) of green-flag stops by the top-10 finishers"
+ },
+ "_sources": [
+  "https://api.jolpi.ca/ergast/f1/2025/7/results.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/qualifying.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/pitstops.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/drivers/max_verstappen/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/drivers/norris/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/drivers/piastri/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/drivers/hamilton/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/drivers/albon/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/drivers/leclerc/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/drivers/russell/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/drivers/sainz/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/drivers/hadjar/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/7/drivers/tsunoda/laps.json",
+  "https://api.openf1.org/v1/race_control?session_key=9987",
+  "https://api.openf1.org/v1/weather?session_key=9987",
+  "https://api.openf1.org/v1/pit?session_key=9987"
+ ]
+}

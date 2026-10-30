@@ -1,0 +1,386 @@
+{
+ "season": 2026,
+ "asOf": "2026-10-26",
+ "completed": 18,
+ "scheduled": 23,
+ "rounds": [
+  {
+   "round": 1,
+   "name": "Australian Grand Prix",
+   "circuit": "albert_park",
+   "circuitName": "Albert Park Grand Prix Circuit",
+   "date": "2026-03-08",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C3",
+    "medium": "C4",
+    "soft": "C5"
+   },
+   "tyreSource": "https://press.pirelli.com/complete-f1-tyre-range-for-the-first-three-grands-prix-of-2026/"
+  },
+  {
+   "round": 2,
+   "name": "Chinese Grand Prix",
+   "circuit": "shanghai",
+   "circuitName": "Shanghai International Circuit",
+   "date": "2026-03-15",
+   "sprint": true,
+   "status": "completed",
+   "tyres": {
+    "hard": "C2",
+    "medium": "C3",
+    "soft": "C4"
+   },
+   "tyreSource": "https://press.pirelli.com/complete-f1-tyre-range-for-the-first-three-grands-prix-of-2026/"
+  },
+  {
+   "round": 3,
+   "name": "Japanese Grand Prix",
+   "circuit": "suzuka",
+   "circuitName": "Suzuka Circuit",
+   "date": "2026-03-29",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C1",
+    "medium": "C2",
+    "soft": "C3"
+   },
+   "tyreSource": "https://press.pirelli.com/complete-f1-tyre-range-for-the-first-three-grands-prix-of-2026/"
+  },
+  {
+   "round": 4,
+   "name": "Miami Grand Prix",
+   "circuit": "miami",
+   "circuitName": "Miami International Autodrome",
+   "date": "2026-05-03",
+   "sprint": true,
+   "status": "completed",
+   "tyres": {
+    "hard": "C3",
+    "medium": "C4",
+    "soft": "C5"
+   },
+   "tyreSource": "https://www.f1technical.net/news/28436 (Pirelli selection for Miami and Montreal)"
+  },
+  {
+   "round": 5,
+   "name": "Canadian Grand Prix",
+   "circuit": "montreal",
+   "circuitName": "Circuit Gilles Villeneuve",
+   "date": "2026-05-24",
+   "sprint": true,
+   "status": "completed",
+   "tyres": {
+    "hard": "C3",
+    "medium": "C4",
+    "soft": "C5"
+   },
+   "tyreSource": "https://www.f1technical.net/news/28436 (Pirelli selection for Miami and Montreal)"
+  },
+  {
+   "round": 6,
+   "name": "Monaco Grand Prix",
+   "circuit": "monaco",
+   "circuitName": "Circuit de Monaco",
+   "date": "2026-06-07",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C3",
+    "medium": "C4",
+    "soft": "C5"
+   },
+   "tyreSource": "https://www.mercedesamgf1.com/news/what-are-the-tyre-options-for-the-2026-monaco-gp"
+  },
+  {
+   "round": 7,
+   "name": "Barcelona Grand Prix",
+   "circuit": "barcelona",
+   "circuitName": "Circuit de Barcelona-Catalunya",
+   "date": "2026-06-14",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C2",
+    "medium": "C3",
+    "soft": "C4"
+   },
+   "tyreSource": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-barcelona-catalunya-grand-prix.2wVnaPZmlQUuj9P72FrjuA"
+  },
+  {
+   "round": 8,
+   "name": "Austrian Grand Prix",
+   "circuit": "red_bull_ring",
+   "circuitName": "Red Bull Ring",
+   "date": "2026-06-28",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C3",
+    "medium": "C4",
+    "soft": "C5"
+   },
+   "tyreSource": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-austrian-grand-prix.2bhUStvp9xxGLpN2gvTeib"
+  },
+  {
+   "round": 9,
+   "name": "British Grand Prix",
+   "circuit": "silverstone",
+   "circuitName": "Silverstone Circuit",
+   "date": "2026-07-05",
+   "sprint": true,
+   "status": "completed",
+   "tyres": {
+    "hard": "C1",
+    "medium": "C2",
+    "soft": "C3"
+   },
+   "tyreSource": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-british-grand-prix.3qD9d5o8X4x3se0F7Zg5i1"
+  },
+  {
+   "round": 10,
+   "name": "Belgian Grand Prix",
+   "circuit": "spa",
+   "circuitName": "Circuit de Spa-Francorchamps",
+   "date": "2026-07-19",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C2",
+    "medium": "C3",
+    "soft": "C4"
+   },
+   "tyreSource": "https://formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-belgian-grand-prix.5RaQVyMqM9Fl5ON3xTcVO0"
+  },
+  {
+   "round": 11,
+   "name": "Hungarian Grand Prix",
+   "circuit": "hungaroring",
+   "circuitName": "Hungaroring",
+   "date": "2026-07-26",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C3",
+    "medium": "C4",
+    "soft": "C5"
+   },
+   "tyreSource": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-hungarian-grand-prix.RikSxOCPXMkPloK0RRmqQ"
+  },
+  {
+   "round": 12,
+   "name": "Dutch Grand Prix",
+   "circuit": "zandvoort",
+   "circuitName": "Circuit Park Zandvoort",
+   "date": "2026-08-23",
+   "sprint": true,
+   "status": "completed",
+   "tyres": {
+    "hard": "C2",
+    "medium": "C3",
+    "soft": "C4"
+   },
+   "tyreSource": "https://www.motorbox.com/auto/sport/f1/news/ufficiale-f1-2026-gomme-pirelli-per-gp-olanda-italia-spagna-zandvoort-monza-madrid"
+  },
+  {
+   "round": 13,
+   "name": "Italian Grand Prix",
+   "circuit": "monza",
+   "circuitName": "Autodromo Nazionale di Monza",
+   "date": "2026-09-06",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C3",
+    "medium": "C4",
+    "soft": "C5"
+   },
+   "tyreSource": "https://formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-italian-grand-prix.7nOpWdCgvCBFDGlnODs0gk"
+  },
+  {
+   "round": 14,
+   "name": "Spanish Grand Prix",
+   "circuit": "madring",
+   "circuitName": "Madring",
+   "date": "2026-09-13",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C2",
+    "medium": "C3",
+    "soft": "C4"
+   },
+   "tyreSource": "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-spanish-grand-prix.2vlcVOBnZUFRCooVcqWG7n"
+  },
+  {
+   "round": 15,
+   "name": "Azerbaijan Grand Prix",
+   "circuit": "baku",
+   "circuitName": "Baku City Circuit",
+   "date": "2026-09-26",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C3",
+    "medium": "C4",
+    "soft": "C5"
+   },
+   "tyreSource": "https://press.pirelli.com/tyre-compound-selections-for-baku-sepang-and-singapore/"
+  },
+  {
+   "round": 16,
+   "name": "Bahrain Grand Prix in Malaysia",
+   "circuit": "sepang",
+   "circuitName": "Sepang International Circuit",
+   "date": "2026-10-04",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C2",
+    "medium": "C3",
+    "soft": "C4"
+   },
+   "tyreSource": "https://press.pirelli.com/tyre-compound-selections-for-baku-sepang-and-singapore/"
+  },
+  {
+   "round": 17,
+   "name": "Singapore Grand Prix",
+   "circuit": "marina_bay",
+   "circuitName": "Marina Bay Street Circuit",
+   "date": "2026-10-11",
+   "sprint": true,
+   "status": "completed",
+   "tyres": {
+    "hard": "C3",
+    "medium": "C4",
+    "soft": "C5"
+   },
+   "tyreSource": "https://press.pirelli.com/tyre-compound-selections-for-baku-sepang-and-singapore/"
+  },
+  {
+   "round": 18,
+   "name": "United States Grand Prix",
+   "circuit": "cota",
+   "circuitName": "Circuit of the Americas",
+   "date": "2026-10-25",
+   "sprint": false,
+   "status": "completed",
+   "tyres": {
+    "hard": "C2",
+    "medium": "C3",
+    "soft": "C4"
+   },
+   "tyreSource": "https://press.pirelli.com/the-compound-selection-for-austin-mexico-city-and-so-paulo/"
+  },
+  {
+   "round": 19,
+   "name": "Mexico City Grand Prix",
+   "circuit": "mexico",
+   "circuitName": "Autódromo Hermanos Rodríguez",
+   "date": "2026-11-01",
+   "sprint": false,
+   "status": "upcoming",
+   "tyres": {
+    "hard": "C3",
+    "medium": "C4",
+    "soft": "C5"
+   },
+   "tyreSource": "https://press.pirelli.com/the-compound-selection-for-austin-mexico-city-and-so-paulo/"
+  },
+  {
+   "round": 20,
+   "name": "Brazilian Grand Prix",
+   "circuit": "interlagos",
+   "circuitName": "Autódromo José Carlos Pace",
+   "date": "2026-11-08",
+   "sprint": false,
+   "status": "upcoming",
+   "tyres": {
+    "hard": "C3",
+    "medium": "C4",
+    "soft": "C5"
+   },
+   "tyreSource": "https://press.pirelli.com/the-compound-selection-for-austin-mexico-city-and-so-paulo/"
+  },
+  {
+   "round": 21,
+   "name": "Las Vegas Grand Prix",
+   "circuit": "las_vegas",
+   "circuitName": "Las Vegas Strip Street Circuit",
+   "date": "2026-11-22",
+   "sprint": false,
+   "status": "upcoming",
+   "tyres": null,
+   "tyreSource": "not yet announced by Pirelli as of 2026-10-26"
+  },
+  {
+   "round": 22,
+   "name": "Qatar Grand Prix",
+   "circuit": "lusail",
+   "circuitName": "Lusail International Circuit",
+   "date": "2026-11-29",
+   "sprint": false,
+   "status": "upcoming",
+   "tyres": null,
+   "tyreSource": "not yet announced by Pirelli as of 2026-10-26"
+  },
+  {
+   "round": 23,
+   "name": "Abu Dhabi Grand Prix",
+   "circuit": "yas_marina",
+   "circuitName": "Yas Marina Circuit",
+   "date": "2026-12-06",
+   "sprint": false,
+   "status": "upcoming",
+   "tyres": null,
+   "tyreSource": "not yet announced by Pirelli as of 2026-10-26"
+  }
+ ],
+ "cancelled": [
+  {
+   "round": null,
+   "originalRound": 4,
+   "name": "Bahrain Grand Prix",
+   "circuit": "bahrain",
+   "date": "2026-04-12",
+   "sprint": false,
+   "status": "cancelled",
+   "note": "Cancelled at Sakhir; the Bahrain Grand Prix title was run at Sepang on 2026-10-04 (round 16).",
+   "tyres": null
+  },
+  {
+   "round": null,
+   "originalRound": 5,
+   "name": "Saudi Arabian Grand Prix",
+   "circuit": "jeddah",
+   "date": "2026-04-19",
+   "sprint": false,
+   "status": "cancelled",
+   "note": "Cancelled, not rescheduled.",
+   "tyres": null
+  }
+ ],
+ "tyreRange": "Pirelli 2026 slick range is C1 (hardest) to C5 (softest); the C6 used in 2025 was dropped for 2026.",
+ "_sources": [
+  "https://api.jolpi.ca/ergast/f1/2026/races.json",
+  "https://api.jolpi.ca/ergast/f1/2026/results/1.json",
+  "https://api.openf1.org/v1/meetings?year=2026 (is_cancelled flags for Bahrain/Saudi)",
+  "https://www.formula1.com/en/results/2026/races",
+  "https://www.formula1.com/en/results/2026/races/1308/bahrain/race-result (venue: Sepang International Circuit)",
+  "https://formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-belgian-grand-prix.5RaQVyMqM9Fl5ON3xTcVO0",
+  "https://formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-italian-grand-prix.7nOpWdCgvCBFDGlnODs0gk",
+  "https://press.pirelli.com/complete-f1-tyre-range-for-the-first-three-grands-prix-of-2026/",
+  "https://press.pirelli.com/the-compound-selection-for-austin-mexico-city-and-so-paulo/",
+  "https://press.pirelli.com/tyre-compound-selections-for-baku-sepang-and-singapore/",
+  "https://www.f1technical.net/news/28436 (Pirelli selection for Miami and Montreal)",
+  "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-austrian-grand-prix.2bhUStvp9xxGLpN2gvTeib",
+  "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-barcelona-catalunya-grand-prix.2wVnaPZmlQUuj9P72FrjuA",
+  "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-british-grand-prix.3qD9d5o8X4x3se0F7Zg5i1",
+  "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-hungarian-grand-prix.RikSxOCPXMkPloK0RRmqQ",
+  "https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-spanish-grand-prix.2vlcVOBnZUFRCooVcqWG7n",
+  "https://www.mercedesamgf1.com/news/what-are-the-tyre-options-for-the-2026-monaco-gp",
+  "https://www.motorbox.com/auto/sport/f1/news/ufficiale-f1-2026-gomme-pirelli-per-gp-olanda-italia-spagna-zandvoort-monza-madrid"
+ ]
+}

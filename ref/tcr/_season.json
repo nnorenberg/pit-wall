@@ -1,0 +1,202 @@
+{
+ "series": "TCR Europe Touring Car Series",
+ "season": 2026,
+ "calendar": [
+  {
+   "round": 1,
+   "event": "Mugello",
+   "circuit": "mugello",
+   "dates": {
+    "start": "2026-03-20",
+    "end": "2026-03-22"
+   },
+   "sessionDates": {
+    "prac": "2026-03-20",
+    "q1": "2026-03-21",
+    "q2": "2026-03-21",
+    "r1": "2026-03-21",
+    "r2": "2026-03-22"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "25 min + 1 lap",
+    "qualifying": "one 35-min session: Q1 20 min (all cars) + Q2 10 min (top 12); R1 grid = Q2/Q1 order, R2 grid = top 10 reversed",
+    "mandatoryPitStop": "none"
+   },
+   "status": "completed",
+   "resultsUrl": "https://europe.tcr-series.com/index.php/2026-ev/item/mugello-circuit",
+   "note": "12H Mugello (Creventic) support"
+  },
+  {
+   "round": 2,
+   "event": "Spa-Francorchamps",
+   "circuit": "spa",
+   "dates": {
+    "start": "2026-05-15",
+    "end": "2026-05-17"
+   },
+   "sessionDates": {
+    "prac": "2026-05-15",
+    "r1": "2026-05-16",
+    "r2": "2026-05-17"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "25 min + 1 lap",
+    "qualifying": "one 35-min session: Q1 20 min (all cars) + Q2 10 min (top 12); R1 grid = Q2/Q1 order, R2 grid = top 10 reversed",
+    "mandatoryPitStop": "none"
+   },
+   "status": "completed",
+   "resultsUrl": "https://europe.tcr-series.com/index.php/2026-ev/item/spa-francorchamps"
+  },
+  {
+   "round": 3,
+   "event": "Circuit Paul Ricard",
+   "circuit": "paul_ricard",
+   "dates": {
+    "start": "2026-06-05",
+    "end": "2026-06-07"
+   },
+   "sessionDates": {
+    "prac": "2026-06-05",
+    "q1": "2026-06-06",
+    "q2": "2026-06-06",
+    "r1": "2026-06-06",
+    "r2": "2026-06-07"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "25 min + 1 lap",
+    "qualifying": "one 35-min session: Q1 20 min (all cars) + Q2 10 min (top 12); R1 grid = Q2/Q1 order, R2 grid = top 10 reversed",
+    "mandatoryPitStop": "none"
+   },
+   "status": "completed",
+   "resultsUrl": "https://europe.tcr-series.com/index.php/2026-ev/item/le-castellet",
+   "note": "12H Paul Ricard (Creventic) support"
+  },
+  {
+   "round": 4,
+   "event": "Hungaroring",
+   "circuit": "hungaroring",
+   "dates": {
+    "start": "2026-07-03",
+    "end": "2026-07-05"
+   },
+   "sessionDates": {
+    "prac": "2026-07-03",
+    "q1": "2026-07-04",
+    "q2": "2026-07-04",
+    "r1": "2026-07-05",
+    "r2": "2026-07-05"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "25 min + 1 lap",
+    "qualifying": "one 35-min session: Q1 20 min (all cars) + Q2 10 min (top 12); R1 grid = Q2/Q1 order, R2 grid = top 10 reversed",
+    "mandatoryPitStop": "none"
+   },
+   "status": "completed",
+   "resultsUrl": "https://europe.tcr-series.com/index.php/2026-ev/item/hungaroring"
+  },
+  {
+   "round": 5,
+   "event": "Monza",
+   "circuit": "monza",
+   "dates": {
+    "start": "2026-09-25",
+    "end": "2026-09-27"
+   },
+   "sessionDates": {
+    "prac": "2026-09-25",
+    "r1": "2026-09-26",
+    "r2": "2026-09-27"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "25 min + 1 lap",
+    "qualifying": "one 35-min session: Q1 20 min (all cars) + Q2 10 min (top 12); R1 grid = Q2/Q1 order, R2 grid = top 10 reversed",
+    "mandatoryPitStop": "none"
+   },
+   "status": "completed",
+   "resultsUrl": "https://europe.tcr-series.com/index.php/2026-ev/item/autodromo-di-monza"
+  },
+  {
+   "round": 6,
+   "event": "Circuit de Barcelona-Catalunya",
+   "circuit": "barcelona",
+   "dates": {
+    "start": "2026-10-23",
+    "end": "2026-10-25"
+   },
+   "sessionDates": {
+    "prac": "2026-10-23",
+    "q1": "2026-10-24",
+    "q2": "2026-10-24",
+    "r1": "2026-10-24",
+    "r2": "2026-10-25"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "25 min + 1 lap",
+    "qualifying": "one 35-min session: Q1 20 min (all cars) + Q2 10 min (top 12); R1 grid = Q2/Q1 order, R2 grid = top 10 reversed",
+    "mandatoryPitStop": "none"
+   },
+   "status": "completed",
+   "resultsUrl": "https://europe.tcr-series.com/index.php/2026-ev/item/circuit-de-barcelona-catalunya",
+   "note": "season finale"
+  }
+ ],
+ "champion": "Marco Butti (Monlau Motorsport, Cupra Leon VZ TCR) per europe.tcr-series.com news",
+ "points": {
+  "races": {
+   "scale": [
+    30,
+    25,
+    22,
+    20,
+    18,
+    16,
+    14,
+    12,
+    10,
+    8,
+    6,
+    4,
+    3,
+    2,
+    1
+   ],
+   "appliesTo": "each race (drivers and teams)"
+  },
+  "qualifying": {
+   "scale": [
+    10,
+    8,
+    6,
+    4,
+    2,
+    1
+   ],
+   "appliesTo": "combined Q1+Q2 result"
+  },
+  "shortenedRace": "suspended & not resumed: <40% distance no points; <75% half points; >=75% full points",
+  "note": "cars on a temporary TCR technical form score no points",
+  "source": "2026 TCR Europe Sporting Regulations V3 final, Art. 17-18"
+ },
+ "tyres": {
+  "supplier": "Kumho (official TCR Europe tyre supplier since 2022; Kumho is the tyre partner on the 2026 TCR Europe site)",
+  "dry": "Kumho Ecsta S700",
+  "wet": "Kumho Ecsta W701",
+  "limits2026": "R1: max 12 new dry tyres; from R2: max 14 dry of which max 8 new (+2 new at Paul Ricard and Monza); max 12 wet per event",
+  "note": "Not Goodyear (the brief's guess): Kumho has been the TCR Europe supplier since 2022. 2026 compound names are from the 2022 supply announcement; no 2026-specific compound announcement found."
+ },
+ "pitLaneSpeedKph": 60,
+ "_sources": [
+  "https://europe.tcr-series.com/index.php/events/tcr-europe-series",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf",
+  "https://europe.tcr-series.com/index.php/news/item/marco-butti-crowned-tcr-europe-champion-after-closely-fought-2026-season",
+  "https://www.tiretechnologyinternational.com/news/motorsport/tcr-europe-race-series-appoints-kumho-as-official-tire-supplier.html",
+  "https://pmw-magazine.com/news/tires/tcr-europe-race-series-appoints-kumho-as-official-tire-supplier.html",
+  "https://www.tcr-series.com/news/item/kumho-tire-develop-bespoke-tyre-for-tcr-competition"
+ ]
+}

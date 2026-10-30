@@ -1,0 +1,120 @@
+{
+ "tcr": {
+  "year": 2025,
+  "layout": "Autódromo Internacional do Algarve 4653m",
+  "pole": 110.671,
+  "poleDrv": "Marco Butti",
+  "poleCar": "Honda Civic Type R FL5 TCR",
+  "poleSession": "Q1",
+  "officialPole": {
+   "t": "1:50.798",
+   "drv": "Jimmy Clairet",
+   "car": "Audi RS 3 LMS TCR",
+   "note": "Q2 (top 12) P1 = Race 1 pole"
+  },
+  "qualiGaps": {
+   "Honda Civic Type R FL5": 0.0,
+   "Audi RS 3 LMS": 0.099,
+   "Cupra Leon VZ": 0.186,
+   "Hyundai Elantra N": 0.364,
+   "Lynk & Co 03": 0.41
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 17.7,
+    "track": 14.3,
+    "wet": false,
+    "humidity": 56,
+    "trackStatus": "DRY"
+   },
+   "q2": {
+    "air": 17.3,
+    "track": 14.4,
+    "wet": false,
+    "humidity": 59,
+    "trackStatus": "DRY"
+   }
+  },
+  "raceFastest": 112.042,
+  "raceFastestRace": "R1",
+  "raceMedianTop5": null,
+  "raceLaps": 15,
+  "raceDuration": 1705.974,
+  "winnerTime": "28:25.974",
+  "races": {
+   "r1": {
+    "date": "2025-04-26",
+    "winner": "Jimmy Clairet",
+    "winnerCar": "Audi RS 3 LMS TCR",
+    "winnerTime": "28:25.974",
+    "raceDuration": 1705.974,
+    "raceLaps": 15,
+    "fastest": 112.042,
+    "fastestDrv": "Eric Gené",
+    "fastestCar": "Cupra Leon VZ TCR",
+    "avgLapTop5": null,
+    "classified": 15,
+    "weather": {
+     "air": 21.8,
+     "track": 34.3,
+     "wet": false,
+     "trackStatus": "DRY"
+    },
+    "penalties": [
+     "CAR #19 - 5 SECONDS TIME PENALTY ADDED TO RACE TIME STEWARDS DECISION NUMBER 5",
+     "CAR #28 - 10 SECONDS TIME PENALTY ADDED TO RACE TIME STEWARDS DECISION NUMBER 6"
+    ]
+   },
+   "r2": {
+    "date": "2025-04-27",
+    "winner": "Jenson Brickley",
+    "winnerCar": "Cupra Leon VZ TCR",
+    "winnerTime": "27:47.328",
+    "raceDuration": 1667.328,
+    "raceLaps": 13,
+    "fastest": 112.045,
+    "fastestDrv": "Jenson Brickley",
+    "fastestCar": "Cupra Leon VZ TCR",
+    "avgLapTop5": null,
+    "classified": 13,
+    "weather": {
+     "air": 25.7,
+     "track": 32.2,
+     "wet": false,
+     "trackStatus": "DRY"
+    },
+    "penalties": [
+     "CAR N.45: 10 SEC PENALTY - CAUSING COLLISION WITH CAR N.3"
+    ]
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": false,
+   "minPitStopTimeSec": null,
+   "raceFormat": "2 races of 25 min + 1 lap, no mandatory stop (pit lane used only for drive-through penalties/repairs)",
+   "regsSource": "2026 TCR Europe Sporting Regulations V3, Art. 13 and 94"
+  },
+  "pitLaneSpeedKph": 60,
+  "weather": {
+   "air": 21.8,
+   "track": 34.3,
+   "wet": false,
+   "trackStatus": "DRY"
+  },
+  "notes": "pole = fastest lap across Q1 (20 min, all cars) and Q2 (10 min, top 12); BoP/compensation weight apply per event; raceDuration/raceLaps/winnerTime are Race 1; Race 2 (reversed top 10 grid) under races.r2; no lap charts published for races, so raceMedianTop5 is null; avgLapTop5 = winner-lap top-5 total time / laps (includes standing start and any SC); weather null where the official sheet carries none (getraceresults/Creventic layout)"
+ },
+ "_sources": [
+  "https://europe.tcr-series.com/images/events/2025/01_Portimao/2025_R1_Portimao_FP2.pdf",
+  "https://europe.tcr-series.com/images/events/2025/01_Portimao/2025_R1_Portimao_Q1.pdf",
+  "https://europe.tcr-series.com/images/events/2025/01_Portimao/2025_R1_Portimao_Q2.pdf",
+  "https://europe.tcr-series.com/images/events/2025/01_Portimao/2025_R1_Portimao_R1_Final.pdf",
+  "https://europe.tcr-series.com/images/events/2025/01_Portimao/2025_R2_Portimao_R2_Final.pdf",
+  "https://europe.tcr-series.com/index.php/events/2025/autodromo-di-algarve",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf"
+ ]
+}

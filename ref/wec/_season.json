@@ -1,0 +1,172 @@
+{
+ "season": 2026,
+ "asOf": "2026-10-27",
+ "prologue": {
+  "event": "Official Prologue",
+  "circuit": "imola",
+  "date": "2026-04-14",
+  "status": "completed"
+ },
+ "rounds": [
+  {
+   "round": 1,
+   "event": "6 Hours of Imola",
+   "circuit": "imola",
+   "date": "2026-04-19",
+   "raceStartLocal": "13:00",
+   "duration": "6 Hours",
+   "durationSec": 21610.939,
+   "laps": 213,
+   "status": "completed",
+   "winners": {
+    "Hypercar": "#8 Toyota Racing Toyota TR010 Hybrid (Sébastien Buemi / Brendon Hartley / Ryo Hirakawa)",
+    "LMGT3": "#69 Team WRT BMW M4 LMGT3 Evo (Anthony McIntosh / Parker Thompson / Daniel Harper)"
+   },
+   "notes": ""
+  },
+  {
+   "round": 2,
+   "event": "TotalEnergies 6 Hours of Spa-Francorchamps",
+   "circuit": "spa",
+   "date": "2026-05-09",
+   "raceStartLocal": "14:00",
+   "duration": "6 Hours",
+   "durationSec": 21677.036,
+   "laps": 151,
+   "status": "completed",
+   "winners": {
+    "Hypercar": "#20 BMW M Team WRT BMW M Hybrid V8 (Robin Frijns / René Rast / Sheldon Van Der Linde)",
+    "LMGT3": "#10 Garage 59 McLaren 720S LMGT3 Evo (Antares Au / Thomas Fleming / Marvin Kirchhöfer)"
+   },
+   "notes": ""
+  },
+  {
+   "round": 3,
+   "event": "24 Hours of Le Mans",
+   "circuit": "le_mans",
+   "date": "2026-06-13",
+   "raceStartLocal": "16:00",
+   "duration": "24 Hours",
+   "durationSec": 86581.03,
+   "laps": 381,
+   "status": "completed",
+   "winners": {
+    "Hypercar": "#7 Toyota Racing Toyota TR010 Hybrid (Mike Conway / Kamui Kobayashi / Nyck De Vries)",
+    "LMGT3": "#33 TF Sport Corvette Z06 LMGT3.R (Ben Keating / Jonny Edgar / Nicky Catsburg)"
+   },
+   "notes": ""
+  },
+  {
+   "round": 4,
+   "event": "Rolex 6 Hours of São Paulo",
+   "circuit": "interlagos",
+   "date": "2026-07-12",
+   "raceStartLocal": "11:30",
+   "duration": "6 Hours",
+   "durationSec": 21626.462,
+   "laps": 242,
+   "status": "completed",
+   "winners": {
+    "Hypercar": "#15 BMW M Team WRT BMW M Hybrid V8 (Kevin Magnussen / Raffaele Marciello / Dries Vanthoor)",
+    "LMGT3": "#34 Racing Team Turkey by TF Corvette Z06 LMGT3.R (Peter Dempsey / Salih Yoluç / Charlie Eastwood)"
+   },
+   "notes": ""
+  },
+  {
+   "round": 5,
+   "event": "Lone Star Le Mans",
+   "circuit": "cota",
+   "date": "2026-09-06",
+   "raceStartLocal": "13:00",
+   "duration": "6 Hours",
+   "durationSec": 21607.219,
+   "laps": 167,
+   "status": "completed",
+   "winners": {
+    "Hypercar": "#50 Ferrari AF Corse Ferrari 499P (Antonio Fuoco / Miguel Molina / Nicklas Nielsen)",
+    "LMGT3": "#27 Heart of Racing Team Aston Martin Vantage AMR LMGT3 (Ian James / Zacharie Robichon / Mattia Drudi)"
+   },
+   "notes": ""
+  },
+  {
+   "round": 6,
+   "event": "6 Hours of Fuji",
+   "circuit": "fuji",
+   "date": "2026-09-27",
+   "raceStartLocal": "11:00",
+   "duration": "6 Hours",
+   "durationSec": 21661.299,
+   "laps": 203,
+   "status": "completed",
+   "winners": {
+    "Hypercar": "#8 Toyota Racing Toyota TR010 Hybrid (Sébastien Buemi / Brendon Hartley / Ryo Hirakawa)",
+    "LMGT3": "#32 Team WRT BMW M4 LMGT3 Evo (Darren Leung / Sean Gelael / Augusto Farfus)"
+   },
+   "notes": "Qualifying and Hyperpole (both classes) cancelled; grid by stewards decision nr.14 (best FP1/FP2 lap)."
+  },
+  {
+   "round": 7,
+   "event": "6 Hours of Barcelona presented by Visit Qatar",
+   "circuit": "barcelona",
+   "date": "2026-10-18",
+   "raceStartLocal": "12:00",
+   "duration": "6 Hours",
+   "durationSec": 21680.906,
+   "laps": 198,
+   "status": "completed",
+   "winners": {
+    "Hypercar": "#8 Toyota Racing Toyota TR010 Hybrid (Sébastien Buemi / Brendon Hartley / Ryo Hirakawa)",
+    "LMGT3": "#92 The Bend Manthey Porsche 911 GT3 R LMGT3 (Yasser Shahin / Riccardo Pera / Richard Lietz)"
+   },
+   "notes": "First WEC visit; replaced the cancelled Qatar/Bahrain rounds. Race started on a wet track (fiawec.com)."
+  },
+  {
+   "round": 8,
+   "event": "6 Hours of Monza",
+   "circuit": "monza",
+   "date": "2026-11-08",
+   "duration": "6 Hours",
+   "status": "scheduled (6-8 Nov 2026; season finale)",
+   "notes": "Replaces the cancelled Bahrain 8 Hours."
+  }
+ ],
+ "cancelled": [
+  {
+   "event": "Qatar 1812km",
+   "circuit": "lusail",
+   "status": "cancelled",
+   "notes": "Season opener postponed from March; then cancelled (FIA/ACO announcement 28 Jul 2026: regional developments in the Middle East affecting freight and travel). Replaced by Barcelona."
+  },
+  {
+   "event": "Bapco Energies 8 Hours of Bahrain",
+   "circuit": "bahrain",
+   "status": "cancelled",
+   "notes": "Cancelled for the same reason (28 Jul 2026 announcement); replaced by Monza 6-8 Nov. Stale fiawec.com event pages still show Qatar 22-24 Oct and Bahrain 5-7 Nov 2026."
+  }
+ ],
+ "bop": {
+  "public": false,
+  "notes": "From 2026 the FIA/ACO no longer publish the per-round Balance of Performance tables (weight, power, energy/stint); they are shared only with the competitors (announced at the Imola media briefing). No BoP document appears on the Al Kamel WEC noticeboard for 2026. Only the driver-weight compensation ballast rules are public (committee decisions WEC_2026_D06 / D13).",
+  "sources": [
+   "https://www.pitdebrief.com/?p=110315",
+   "https://www.fanpage.it/sport/motori/la-fia-spiega-la-strana-scelta-di-secretare-il-bop-nel-wec-2026-e-difficile-spiegarlo-alla-gente/",
+   "https://files.alkamelcloud.com/wec/results_noticeboard/14_2026/committee/02_Decisions/WEC_2026_D06_All_Compensation_ballast_amended_02072026.pdf"
+  ],
+  "perRound": null
+ },
+ "_sources": [
+  "https://www.fiawec.com/en/calendar/80",
+  "https://www.fiawec.com/en/news/fia-wec-and-fia-confirm-venues-for-final-two-rounds-of-2026/13698",
+  "https://www.fiawec.com/en/race/6-hours-of-fuji-2026",
+  "https://www.fiawec.com/en/race/6-hours-of-monza-2026",
+  "https://www.fiawec.com/en/news/entries-out-for-season-s-final-showdown/13900",
+  "https://files.alkamelcloud.com/wec/manifests/results_15_2026.json",
+  "https://files.alkamelcloud.com/wec/results/15_2026/01_IMOLA/645_FIA%20WEC/202604191300_Race/06_Hour%206/03_Classification_Race_Hour%206.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/02_SPA%20FRANCORCHAMPS/653_FIA%20WEC/202605091400_Race/06_Hour%206/03_Classification_Race_Hour%206.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/03_LE%20MANS/657_FIA%20WEC/202606131600_Race/24_Hour%2024/03_Classification_Race_Hour%2024.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/04_SAO%20PAULO/666_FIA%20WEC/202607121130_Race/06_Hour%206/03_Classification_Race_Hour%206.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/05_CIRCUIT%20OF%20THE%20AMERICAS/673_FIA%20WEC/202609061300_Race/06_Hour%206/03_Classification_Race_Hour%206_Final.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/06_FUJI%20SPEEDWAY/679_FIA%20WEC/202609271100_Race/06_Hour%206/03_Classification_Race_Hour%206_Final.CSV",
+  "https://files.alkamelcloud.com/wec/results/15_2026/07_BARCELONA-CATALUNYA/688_FIA%20WEC/202610181200_Race/06_Hour%206/03_Classification_Race_Hour%206_Final.CSV"
+ ]
+}

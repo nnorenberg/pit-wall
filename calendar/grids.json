@@ -1,0 +1,1819 @@
+{
+ "_meta": {
+  "asOf": "2026-10-27"
+ },
+ "f1": {
+  "season": 2026,
+  "gridSize": 22,
+  "teams": 11,
+  "tyre": "Pirelli",
+  "asOfRound": 18,
+  "teamsList": [
+   {
+    "team": "Mercedes-AMG Petronas F1 Team",
+    "constructor": "Mercedes",
+    "car": "F1 W17",
+    "powerUnit": "Mercedes-AMG F1 M17",
+    "drivers": [
+     {
+      "number": 12,
+      "name": "Kimi Antonelli",
+      "nationality": "Italian",
+      "dateOfBirth": "2006-08-25",
+      "rounds": "1-18",
+      "heightCm": 178,
+      "weightKg": null,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 63,
+      "name": "George Russell",
+      "nationality": "British",
+      "dateOfBirth": "1998-02-15",
+      "rounds": "1-18",
+      "heightCm": 185,
+      "weightKg": 70,
+      "heightWeightVerified": false
+     }
+    ]
+   },
+   {
+    "team": "Scuderia Ferrari HP",
+    "constructor": "Ferrari",
+    "car": "SF-26",
+    "powerUnit": "Ferrari 067/6",
+    "drivers": [
+     {
+      "number": 16,
+      "name": "Charles Leclerc",
+      "nationality": "Monegasque",
+      "dateOfBirth": "1997-10-16",
+      "rounds": "1-18",
+      "heightCm": 180,
+      "weightKg": 69,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 44,
+      "name": "Lewis Hamilton",
+      "nationality": "British",
+      "dateOfBirth": "1985-01-07",
+      "rounds": "1-18",
+      "heightCm": 174,
+      "weightKg": 73,
+      "heightWeightVerified": false
+     }
+    ]
+   },
+   {
+    "team": "Oracle Red Bull Racing",
+    "constructor": "Red Bull Racing-Red Bull Ford",
+    "car": "RB22",
+    "powerUnit": "Red Bull Ford DM01",
+    "drivers": [
+     {
+      "number": 3,
+      "name": "Max Verstappen",
+      "nationality": "Dutch",
+      "dateOfBirth": "1997-09-30",
+      "rounds": "1-18",
+      "heightCm": 181,
+      "weightKg": 72,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 6,
+      "name": "Isack Hadjar",
+      "nationality": "French",
+      "dateOfBirth": "2004-09-28",
+      "rounds": "1-11, 15-18",
+      "heightCm": 167,
+      "weightKg": null,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 30,
+      "name": "Liam Lawson",
+      "nationality": "New Zealander",
+      "dateOfBirth": "2002-02-11",
+      "rounds": "12-14",
+      "heightCm": 174,
+      "weightKg": null,
+      "heightWeightVerified": false
+     }
+    ],
+    "note": "Hadjar wrist injury: Lawson substituted at Dutch, Italian and Spanish GPs."
+   },
+   {
+    "team": "McLaren Mastercard F1 Team",
+    "constructor": "McLaren-Mercedes",
+    "car": "MCL40",
+    "powerUnit": "Mercedes-AMG F1 M17",
+    "drivers": [
+     {
+      "number": 1,
+      "name": "Lando Norris",
+      "nationality": "British",
+      "dateOfBirth": "1999-11-13",
+      "rounds": "1-18",
+      "heightCm": 170,
+      "weightKg": 68,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 81,
+      "name": "Oscar Piastri",
+      "nationality": "Australian",
+      "dateOfBirth": "2001-04-06",
+      "rounds": "1-18",
+      "heightCm": 178,
+      "weightKg": 68,
+      "heightWeightVerified": false
+     }
+    ],
+    "note": "Norris uses #1 as 2025 World Champion (per entry list)."
+   },
+   {
+    "team": "Visa Cash App Racing Bulls F1 Team",
+    "constructor": "Racing Bulls-Red Bull Ford",
+    "car": "VCARB 03",
+    "powerUnit": "Red Bull Ford DM01",
+    "drivers": [
+     {
+      "number": 30,
+      "name": "Liam Lawson",
+      "nationality": "New Zealander",
+      "dateOfBirth": "2002-02-11",
+      "rounds": "1-11, 15-18",
+      "heightCm": 174,
+      "weightKg": null,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 22,
+      "name": "Yuki Tsunoda",
+      "nationality": "Japanese",
+      "dateOfBirth": "2000-05-11",
+      "rounds": "12-14",
+      "heightCm": 159,
+      "weightKg": 54,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 41,
+      "name": "Arvid Lindblad",
+      "nationality": "British",
+      "dateOfBirth": "2007-08-08",
+      "rounds": "1-18",
+      "heightCm": null,
+      "weightKg": null,
+      "heightWeightVerified": false
+     }
+    ]
+   },
+   {
+    "team": "BWT Alpine F1 Team",
+    "constructor": "Alpine-Mercedes",
+    "car": "A526",
+    "powerUnit": "Mercedes-AMG F1 M17",
+    "drivers": [
+     {
+      "number": 10,
+      "name": "Pierre Gasly",
+      "nationality": "French",
+      "dateOfBirth": "1996-02-07",
+      "rounds": "1-18",
+      "heightCm": 177,
+      "weightKg": 70,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 43,
+      "name": "Franco Colapinto",
+      "nationality": "Argentine",
+      "dateOfBirth": "2003-05-27",
+      "rounds": "1-18",
+      "heightCm": null,
+      "weightKg": null,
+      "heightWeightVerified": false
+     }
+    ]
+   },
+   {
+    "team": "TGR Haas F1 Team",
+    "constructor": "Haas-Ferrari",
+    "car": "VF-26",
+    "powerUnit": "Ferrari 067/6",
+    "drivers": [
+     {
+      "number": 31,
+      "name": "Esteban Ocon",
+      "nationality": "French",
+      "dateOfBirth": "1996-09-17",
+      "rounds": "1-18",
+      "heightCm": 186,
+      "weightKg": 66,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 87,
+      "name": "Oliver Bearman",
+      "nationality": "British",
+      "dateOfBirth": "2005-05-08",
+      "rounds": "1-18",
+      "heightCm": 184,
+      "weightKg": null,
+      "heightWeightVerified": false
+     }
+    ]
+   },
+   {
+    "team": "Audi Revolut F1 Team",
+    "constructor": "Audi",
+    "car": "R26",
+    "powerUnit": "Audi AFR 26 Hybrid",
+    "drivers": [
+     {
+      "number": 5,
+      "name": "Gabriel Bortoleto",
+      "nationality": "Brazilian",
+      "dateOfBirth": "2004-10-14",
+      "rounds": "1-18",
+      "heightCm": null,
+      "weightKg": null,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 27,
+      "name": "Nico Hülkenberg",
+      "nationality": "German",
+      "dateOfBirth": "1987-08-19",
+      "rounds": "1-18",
+      "heightCm": 184,
+      "weightKg": 78,
+      "heightWeightVerified": false
+     }
+    ]
+   },
+   {
+    "team": "Atlassian Williams F1 Team",
+    "constructor": "Williams-Mercedes",
+    "car": "FW48",
+    "powerUnit": "Mercedes-AMG F1 M17",
+    "drivers": [
+     {
+      "number": 23,
+      "name": "Alexander Albon",
+      "nationality": "Thai",
+      "dateOfBirth": "1996-03-23",
+      "rounds": "1-18",
+      "heightCm": 186,
+      "weightKg": 74,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 55,
+      "name": "Carlos Sainz Jr.",
+      "nationality": "Spanish",
+      "dateOfBirth": "1994-09-01",
+      "rounds": "1-18",
+      "heightCm": 178,
+      "weightKg": 66,
+      "heightWeightVerified": false
+     }
+    ]
+   },
+   {
+    "team": "Aston Martin Aramco F1 Team",
+    "constructor": "Aston Martin Aramco-Honda",
+    "car": "AMR26",
+    "powerUnit": "Honda RA626H",
+    "drivers": [
+     {
+      "number": 14,
+      "name": "Fernando Alonso",
+      "nationality": "Spanish",
+      "dateOfBirth": "1981-07-29",
+      "rounds": "1-18",
+      "heightCm": 171,
+      "weightKg": 68,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 18,
+      "name": "Lance Stroll",
+      "nationality": "Canadian",
+      "dateOfBirth": "1998-10-29",
+      "rounds": "1-18",
+      "heightCm": 182,
+      "weightKg": 70,
+      "heightWeightVerified": false
+     }
+    ]
+   },
+   {
+    "team": "Cadillac Formula 1 Team",
+    "constructor": "Cadillac-Ferrari",
+    "car": "MAC-26",
+    "powerUnit": "Ferrari 067/6",
+    "drivers": [
+     {
+      "number": 11,
+      "name": "Sergio Pérez",
+      "nationality": "Mexican",
+      "dateOfBirth": "1990-01-26",
+      "rounds": "1-18",
+      "heightCm": 173,
+      "weightKg": 63,
+      "heightWeightVerified": false
+     },
+     {
+      "number": 77,
+      "name": "Valtteri Bottas",
+      "nationality": "Finnish",
+      "dateOfBirth": "1989-08-28",
+      "rounds": "1-18",
+      "heightCm": 173,
+      "weightKg": 69,
+      "heightWeightVerified": false
+     }
+    ]
+   }
+  ],
+  "heightWeightNote": "Height/weight are commonly media-reported figures (team/fan sites, Wikipedia); not official FIA data and they change over time. verified=false.",
+  "verified": true,
+  "verifyNote": "Teams/cars/PUs/numbers/nationalities/DOB verified (Wikipedia entry table citing FIA entry lists; Jolpica). Heights/weights NOT verified."
+ },
+ "wec": {
+  "season": 2026,
+  "hyper": {
+   "tyre": "Michelin",
+   "fullSeasonCars": 17,
+   "leMansEntries": 18,
+   "driverCategorisationRule": "Hypercar crews may not include a Bronze driver (Sporting Regs 13.3.2); individual FIA ratings (Platinum/Gold/Silver) not retrieved.",
+   "entries": [
+    {
+     "team": "Toyota Racing",
+     "car": "Toyota TR010 Hybrid",
+     "engine": "Toyota H8909 3.5 L twin-turbo V6",
+     "hybrid": true,
+     "cars": [
+      {
+       "number": 7,
+       "drivers": [
+        "Mike Conway",
+        "Kamui Kobayashi",
+        "Nyck de Vries"
+       ]
+      },
+      {
+       "number": 8,
+       "drivers": [
+        "Sébastien Buemi",
+        "Brendon Hartley",
+        "Ryō Hirakawa"
+       ]
+      }
+     ]
+    },
+    {
+     "team": "Ferrari AF Corse",
+     "car": "Ferrari 499P",
+     "engine": "Ferrari F163CG 3.0 L twin-turbo V6",
+     "hybrid": true,
+     "cars": [
+      {
+       "number": 50,
+       "drivers": [
+        "Antonio Fuoco",
+        "Miguel Molina",
+        "Nicklas Nielsen"
+       ]
+      },
+      {
+       "number": 51,
+       "drivers": [
+        "James Calado",
+        "Antonio Giovinazzi",
+        "Alessandro Pier Guidi"
+       ]
+      }
+     ]
+    },
+    {
+     "team": "AF Corse (privateer)",
+     "car": "Ferrari 499P",
+     "engine": "Ferrari F163CG 3.0 L twin-turbo V6",
+     "hybrid": true,
+     "cars": [
+      {
+       "number": 83,
+       "drivers": [
+        "Phil Hanson",
+        "Robert Kubica",
+        "Yifei Ye"
+       ]
+      }
+     ]
+    },
+    {
+     "team": "BMW M Team WRT",
+     "car": "BMW M Hybrid V8",
+     "engine": "BMW P66/3 4.0 L twin-turbo V8",
+     "hybrid": true,
+     "cars": [
+      {
+       "number": 15,
+       "drivers": [
+        "Kevin Magnussen",
+        "Raffaele Marciello",
+        "Dries Vanthoor (R2-7)"
+       ]
+      },
+      {
+       "number": 20,
+       "drivers": [
+        "Robin Frijns",
+        "René Rast",
+        "Sheldon van der Linde (R2-7)"
+       ]
+      }
+     ]
+    },
+    {
+     "team": "Cadillac Hertz Team Jota",
+     "car": "Cadillac V-Series.R",
+     "engine": "Cadillac LMC55R 5.5 L V8",
+     "hybrid": true,
+     "cars": [
+      {
+       "number": 12,
+       "drivers": [
+        "Norman Nato",
+        "Will Stevens",
+        "Louis Delétraz (R2-3)",
+        "Ricky Taylor (R5)",
+        "Alex Lynn (R7)"
+       ]
+      },
+      {
+       "number": 38,
+       "drivers": [
+        "Earl Bamber",
+        "Sébastien Bourdais",
+        "Jack Aitken (R2-7)"
+       ]
+      }
+     ]
+    },
+    {
+     "team": "Alpine Endurance Team",
+     "car": "Alpine A424",
+     "engine": "Alpine V634 3.4 L twin-turbo V6",
+     "hybrid": true,
+     "cars": [
+      {
+       "number": 35,
+       "drivers": [
+        "Ferdinand Habsburg",
+        "Charles Milesi",
+        "António Félix da Costa (R1-5)"
+       ]
+      },
+      {
+       "number": 36,
+       "drivers": [
+        "Jules Gounon",
+        "Victor Martins",
+        "Frédéric Makowiecki (R1-5)"
+       ]
+      }
+     ]
+    },
+    {
+     "team": "Peugeot TotalEnergies",
+     "car": "Peugeot 9X8",
+     "engine": "Peugeot X6H 2.6 L twin-turbo V6",
+     "hybrid": true,
+     "cars": [
+      {
+       "number": 93,
+       "drivers": [
+        "Nick Cassidy",
+        "Paul di Resta",
+        "Stoffel Vandoorne (R1-6)",
+        "Alex Quinn (R7-)"
+       ]
+      },
+      {
+       "number": 94,
+       "drivers": [
+        "Loïc Duval",
+        "Malthe Jakobsen",
+        "Théo Pourchaire"
+       ]
+      }
+     ]
+    },
+    {
+     "team": "Aston Martin THOR Team",
+     "car": "Aston Martin Valkyrie (AMR-LMH)",
+     "engine": "Aston Martin RA 6.5 L V12",
+     "hybrid": false,
+     "cars": [
+      {
+       "number": 7,
+       "drivers": [
+        "Tom Gamble",
+        "Harry Tincknell",
+        "Ross Gunn (Le Mans)"
+       ],
+       "raceNumberDisplay": "007"
+      },
+      {
+       "number": 9,
+       "drivers": [
+        "Alex Riberas",
+        "Marco Sørensen",
+        "Roman De Angelis (Le Mans)"
+       ],
+       "raceNumberDisplay": "009"
+      }
+     ]
+    },
+    {
+     "team": "Genesis Magma Racing",
+     "car": "Genesis GMR-001",
+     "engine": "Genesis G8MR 3.2 L twin-turbo V8",
+     "hybrid": true,
+     "cars": [
+      {
+       "number": 17,
+       "drivers": [
+        "Pipo Derani",
+        "Mathys Jaubert",
+        "André Lotterer"
+       ]
+      },
+      {
+       "number": 19,
+       "drivers": [
+        "Paul-Loup Chatin",
+        "Mathieu Jaminet",
+        "Daniel Juncadella"
+       ]
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Porsche Penske withdrew from Hypercar for 2026.",
+    "Genesis (Oreca-built LMDh) debuted.",
+    "Toyota renamed GR010 to TR010 Hybrid and team to 'Toyota Racing'.",
+    "Aston Martin race numbers are 007 and 009 (stored as 7/9 with raceNumberDisplay)."
+   ]
+  },
+  "lmgt3": {
+   "tyre": "Goodyear",
+   "fullSeasonCars": 18,
+   "leMansEntries": 25,
+   "crewRule": "2-3 drivers incl. at least one Bronze plus another Bronze or a Silver (Sporting Regs 13.3.3). Bronze must drive qualifying, Silver drives Hyperpole.",
+   "bronzeNote": "bronzeDriverLikely = the gentleman/Bronze-rated driver as generally reported; FIA ratings list not retrieved, verified=false.",
+   "entries": [
+    {
+     "team": "Garage 59",
+     "car": "McLaren 720S GT3 Evo",
+     "cars": [
+      {
+       "number": 10,
+       "drivers": [
+        "Antares Au",
+        "Tom Fleming",
+        "Marvin Kirchhöfer"
+       ],
+       "bronzeDriverLikely": "Antares Au"
+      },
+      {
+       "number": 58,
+       "drivers": [
+        "Finn Gehrsitz",
+        "Benjamin Goethe",
+        "Alexander West"
+       ],
+       "bronzeDriverLikely": "Alexander West"
+      }
+     ]
+    },
+    {
+     "team": "Vista AF Corse",
+     "car": "Ferrari 296 GT3 Evo",
+     "cars": [
+      {
+       "number": 21,
+       "drivers": [
+        "François Hériau",
+        "Simon Mann",
+        "Alessio Rovera"
+       ],
+       "bronzeDriverLikely": "François Hériau"
+      },
+      {
+       "number": 54,
+       "drivers": [
+        "Francesco Castellacci",
+        "Thomas Flohr",
+        "Davide Rigon"
+       ],
+       "bronzeDriverLikely": "Thomas Flohr"
+      }
+     ]
+    },
+    {
+     "team": "Heart of Racing Team",
+     "car": "Aston Martin Vantage AMR GT3 Evo",
+     "cars": [
+      {
+       "number": 23,
+       "drivers": [
+        "Jonny Adam",
+        "Gray Newell",
+        "Kobe Pauwels (R1,4)",
+        "Eduardo Barrichello (R2-3,5-7)"
+       ]
+      },
+      {
+       "number": 27,
+       "drivers": [
+        "Mattia Drudi",
+        "Ian James",
+        "Zacharie Robichon"
+       ],
+       "bronzeDriverLikely": "Ian James"
+      }
+     ]
+    },
+    {
+     "team": "Team WRT",
+     "car": "BMW M4 GT3 Evo",
+     "cars": [
+      {
+       "number": 32,
+       "drivers": [
+        "Augusto Farfus",
+        "Sean Gelael",
+        "Darren Leung"
+       ],
+       "bronzeDriverLikely": "Darren Leung"
+      },
+      {
+       "number": 69,
+       "drivers": [
+        "Dan Harper",
+        "Anthony McIntosh",
+        "Parker Thompson"
+       ],
+       "bronzeDriverLikely": "Anthony McIntosh"
+      }
+     ]
+    },
+    {
+     "team": "TF Sport",
+     "car": "Chevrolet Corvette Z06 GT3.R",
+     "cars": [
+      {
+       "number": 33,
+       "drivers": [
+        "Jonny Edgar",
+        "Nicky Catsburg (R1-3,5-7)",
+        "Blake McDonald (R1-2)",
+        "Ben Keating (R3-7)",
+        "Nicolás Varrone (R4)"
+       ],
+       "bronzeDriverLikely": "Ben Keating"
+      }
+     ]
+    },
+    {
+     "team": "Racing Team Turkey by TF",
+     "car": "Chevrolet Corvette Z06 GT3.R",
+     "cars": [
+      {
+       "number": 34,
+       "drivers": [
+        "Peter Dempsey",
+        "Charlie Eastwood",
+        "Salih Yoluç"
+       ],
+       "bronzeDriverLikely": "Salih Yoluç"
+      }
+     ]
+    },
+    {
+     "team": "Iron Lynx",
+     "car": "Mercedes-AMG GT3 Evo",
+     "cars": [
+      {
+       "number": 61,
+       "drivers": [
+        "Rui Andrade",
+        "Martin Berry",
+        "Maxime Martin"
+       ],
+       "bronzeDriverLikely": "Martin Berry"
+      },
+      {
+       "number": 79,
+       "drivers": [
+        "Matteo Cressoni",
+        "Lin Hodenius",
+        "Johannes Zelger"
+       ]
+      }
+     ]
+    },
+    {
+     "team": "Proton Competition",
+     "car": "Ford Mustang GT3 Evo",
+     "cars": [
+      {
+       "number": 77,
+       "drivers": [
+        "Eric Powell",
+        "Sebastian Priaulx",
+        "Ben Tuck"
+       ],
+       "bronzeDriverLikely": "Eric Powell"
+      },
+      {
+       "number": 88,
+       "drivers": [
+        "Stefano Gattuso",
+        "Giammarco Levorato",
+        "Logan Sargeant"
+       ],
+       "bronzeDriverLikely": "Stefano Gattuso"
+      }
+     ]
+    },
+    {
+     "team": "Akkodis ASP Team",
+     "car": "Lexus RC F GT3",
+     "cars": [
+      {
+       "number": 78,
+       "drivers": [
+        "Hadrien David",
+        "Tom Van Rompuy",
+        "Esteban Masson (R1-2,4-7)",
+        "Jack Hawksworth (R3)"
+       ],
+       "bronzeDriverLikely": "Tom Van Rompuy"
+      },
+      {
+       "number": 87,
+       "drivers": [
+        "José María López",
+        "Clemens Schmid",
+        "Petru Umbrărescu"
+       ],
+       "bronzeDriverLikely": "Petru Umbrărescu"
+      }
+     ]
+    },
+    {
+     "team": "Manthey DK Engineering",
+     "car": "Porsche 911 GT3 R (992.2)",
+     "cars": [
+      {
+       "number": 91,
+       "drivers": [
+        "Timur Boguslavskiy",
+        "James Cottingham",
+        "Ayhancan Güven"
+       ],
+       "bronzeDriverLikely": "James Cottingham"
+      }
+     ]
+    },
+    {
+     "team": "The Bend Manthey",
+     "car": "Porsche 911 GT3 R (992.2)",
+     "cars": [
+      {
+       "number": 92,
+       "drivers": [
+        "Richard Lietz",
+        "Riccardo Pera",
+        "Yasser Shahin"
+       ],
+       "bronzeDriverLikely": "Yasser Shahin"
+      }
+     ]
+    }
+   ]
+  },
+  "verified": true,
+  "verifyNote": "Entries from Wikipedia 2026 WEC page (citing official entry lists). bronzeDriverLikely fields are NOT verified."
+ },
+ "gt4": {
+  "season": 2026,
+  "tyre": "Pirelli",
+  "categories": [
+   "Silver",
+   "Pro-Am",
+   "Am"
+  ],
+  "categoryRules": "Silver Cup: two Silver-rated drivers; Pro-Am: Silver/Gold + Bronze; Am: Bronze drivers (SRO categorisation; derogations announced per event).",
+  "carModels": [
+   "Alpine A110 GT4+",
+   "Aston Martin Vantage AMR GT4 Evo",
+   "Audi R8 LMS GT4 Evo",
+   "BMW M4 GT4 Evo (G82)",
+   "Ford Mustang GT4 (S650)",
+   "Ginetta G56 GT4 Evo",
+   "Lotus Emira GT4",
+   "McLaren Artura GT4",
+   "Mercedes-AMG GT4",
+   "Porsche 718 Cayman GT4 RS Clubsport",
+   "Toyota GR Supra GT4 Evo2"
+  ],
+  "seasonEntriesTotal": 52,
+  "typicalGridPerEvent": {
+   "total": "~40-45",
+   "verified": false,
+   "verifyNote": "Per-event starter counts not retrieved; season entry list has 52 car numbers, many part-season."
+  },
+  "entries": [
+   {
+    "number": 1,
+    "team": "Team Speedcar",
+    "car": "Audi R8 LMS GT4 Evo",
+    "category": "Silver",
+    "drivers": [
+     "Robert Consani",
+     "Benjamin Lariche"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 2,
+    "team": "JW Raceservice",
+    "car": "Porsche 718 Cayman GT4 RS Clubsport",
+    "category": "Silver",
+    "drivers": [
+     "Leon van Verseveld",
+     "Bas Visser"
+    ],
+    "rounds": "1–5"
+   },
+   {
+    "number": 3,
+    "team": "Team Speedcar",
+    "car": "Audi R8 LMS GT4 Evo",
+    "category": "Pro-Am",
+    "drivers": [
+     "Viny Beltramelli",
+     "Sacha Bottemanne"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 4,
+    "team": "Speedy Motorsport",
+    "car": "Toyota GR Supra GT4 Evo2",
+    "category": "Silver",
+    "drivers": [
+     "Lachlan Evennett",
+     "Mees Houben"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 5,
+    "team": "Mirage Racing",
+    "car": "Toyota GR Supra GT4 Evo2",
+    "category": "Silver",
+    "drivers": [
+     "Ruben del Sarte",
+     "James Sherrington"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 6,
+    "team": "Speedy Motorsport",
+    "car": "Toyota GR Supra GT4 Evo2",
+    "category": "Silver",
+    "drivers": [
+     "Tomás Guedes",
+     "Pedro Perino"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 8,
+    "team": "Team Speedcar",
+    "car": "Audi R8 LMS GT4 Evo",
+    "category": "Silver",
+    "drivers": [
+     "Grégory Guilvert",
+     "Paul Petit"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 9,
+    "team": "Mirage Racing",
+    "car": "Toyota GR Supra GT4 Evo2",
+    "category": "Silver",
+    "drivers": [
+     "Roméo Leurs",
+     "Hugo Conde",
+     "Victor Nielsen",
+     "Roberto Faria"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 11,
+    "team": "Borusan Otomotiv Motorsport",
+    "car": "BMW M4 GT4 Evo (G82)",
+    "category": "Silver",
+    "drivers": [
+     "Bati Ege Yildirim",
+     "Yağiz Gedik"
+    ],
+    "rounds": "1–2, 4–6"
+   },
+   {
+    "number": 12,
+    "team": "Borusan Otomotiv Motorsport",
+    "car": "BMW M4 GT4 Evo (G82)",
+    "category": "Silver",
+    "drivers": [
+     "Gabriele Piana",
+     "Thomas Rackl"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 15,
+    "team": "NM Racing Team",
+    "car": "Mercedes-AMG GT4",
+    "category": "Silver",
+    "drivers": [
+     "Lluc Ibáñez",
+     "Alexandre Papadopulos"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 16,
+    "team": "NM Racing Team",
+    "car": "Mercedes-AMG GT4",
+    "category": "Pro-Am",
+    "drivers": [
+     "Max Huber",
+     "Maximus Mayer"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 17,
+    "team": "NM Racing Team",
+    "car": "Mercedes-AMG GT4",
+    "category": "Silver",
+    "drivers": [
+     "Diesel Thomas",
+     "Joshua Thomas"
+    ],
+    "rounds": "3"
+   },
+   {
+    "number": 21,
+    "team": "Toyota Gazoo Racing Caetano Portugal",
+    "car": "Toyota GR Supra GT4 Evo2",
+    "category": "Pro-Am",
+    "drivers": [
+     "Francisco Mora",
+     "José Carlos Pires"
+    ],
+    "rounds": "6"
+   },
+   {
+    "number": 23,
+    "team": "Grange Racing by FSR",
+    "car": "Aston Martin Vantage AMR GT4 Evo",
+    "category": "Pro-Am",
+    "drivers": [
+     "Daniel Lavery",
+     "Darren Turner"
+    ],
+    "rounds": "3"
+   },
+   {
+    "number": 24,
+    "team": "JSB Compétition",
+    "car": "Porsche 718 Cayman GT4 RS Clubsport",
+    "category": "Am",
+    "drivers": [
+     "Julien Briché",
+     "Nicco Ferrarin"
+    ],
+    "rounds": "1"
+   },
+   {
+    "number": 26,
+    "team": "Lotus PB Racing",
+    "car": "Lotus Emira GT4",
+    "category": "Pro-Am",
+    "drivers": [
+     "Massimo Abbati",
+     "Stefano d'Aste"
+    ],
+    "rounds": "1–4"
+   },
+   {
+    "number": 27,
+    "team": "Nova Racing",
+    "car": "Porsche 718 Cayman GT4 RS Clubsport",
+    "category": "Pro-Am",
+    "drivers": [
+     "Edvin Hellsten",
+     "Daniel Nilsson"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 28,
+    "team": "Racar Motorsport",
+    "car": "Aston Martin Vantage AMR GT4 Evo",
+    "category": "Pro-Am",
+    "drivers": [
+     "Mathieu Martins",
+     "Vasco Oliveira"
+    ],
+    "rounds": "6"
+   },
+   {
+    "number": 29,
+    "team": "Toyota Gazoo Racing Sweden",
+    "car": "Toyota GR Supra GT4 Evo2",
+    "category": "Silver",
+    "drivers": [
+     "Maximilian Boström",
+     "Henry Joslyn",
+     "Javier Sagrera",
+     "Simone Bianco"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 30,
+    "team": "W&S Motorsport",
+    "car": "Porsche 718 Cayman GT4 RS Clubsport",
+    "category": "Am",
+    "drivers": [
+     "Daniel Blickle",
+     "Moritz Berrenberg",
+     "Max Kronberg"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 31,
+    "team": "W&S Motorsport",
+    "car": "Porsche 718 Cayman GT4 RS Clubsport",
+    "category": "Pro-Am",
+    "drivers": [
+     "Alon Gabbay",
+     "Tim Horrell"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 32,
+    "team": "W&S Motorsport",
+    "car": "Porsche 718 Cayman GT4 RS Clubsport",
+    "category": "Pro-Am",
+    "drivers": [
+     "Joachim Bölting",
+     "Hendrik Still"
+    ],
+    "rounds": "1–5"
+   },
+   {
+    "number": 44,
+    "team": "Team Speedcar",
+    "car": "Audi R8 LMS GT4 Evo",
+    "category": "Am",
+    "drivers": [
+     "Julien Ripert"
+    ],
+    "rounds": "1–3"
+   },
+   {
+    "number": 51,
+    "team": "CMR",
+    "car": "Ginetta G56 GT4 Evo",
+    "category": "Pro-Am",
+    "drivers": [
+     "Hugo Mogica",
+     "Thibaut Mogica"
+    ],
+    "rounds": "1–3"
+   },
+   {
+    "number": 53,
+    "team": "W&D Racing Team",
+    "car": "BMW M4 GT4 Evo (G82)",
+    "category": "Pro-Am",
+    "drivers": [
+     "Davide Meloni",
+     "Paolo Meloni"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 55,
+    "team": "Toyota Gazoo Racing Sweden",
+    "car": "Toyota GR Supra GT4 Evo2",
+    "category": "Am",
+    "drivers": [
+     "Christoffer Brunnhagen",
+     "Mikael Brunnhagen"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 56,
+    "team": "Lotus PB Racing",
+    "car": "Lotus Emira GT4",
+    "category": "Pro-Am",
+    "drivers": [
+     "Maurizio Copetti",
+     "Massimiliano Schiavone"
+    ],
+    "rounds": "1–4"
+   },
+   {
+    "number": 60,
+    "team": "Razoon – more than racing",
+    "car": "BMW M4 GT4 Evo (G82)",
+    "category": "Pro-Am",
+    "drivers": [
+     "Önder Erdem",
+     "Gustavo Xavier"
+    ],
+    "rounds": "1–5"
+   },
+   {
+    "number": 61,
+    "team": "Academy Motorsport",
+    "car": "Ford Mustang GT4 (S650)",
+    "category": "Silver",
+    "drivers": [
+     "Erik Evans",
+     "Nathan Vanspringel",
+     "Cameron McLeod"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 62,
+    "team": "Academy Motorsport",
+    "car": "Ford Mustang GT4 (S650)",
+    "category": "Silver",
+    "drivers": [
+     "Marco Signoretti",
+     "Jenson Altzman",
+     "Cameron McLeod",
+     "William Lucas",
+     "Michiel Haverans",
+     "Michael Tosi",
+     "Nathan Vanspringel"
+    ],
+    "rounds": "1–2"
+   },
+   {
+    "number": 65,
+    "team": "CMR",
+    "car": "Ginetta G56 GT4 Evo",
+    "category": "Silver",
+    "drivers": [
+     "Georgi Dimitrov",
+     "Jack Mitchell"
+    ],
+    "rounds": "2"
+   },
+   {
+    "number": 66,
+    "team": "ME Motorsport",
+    "car": "BMW M4 GT4 Evo (G82)",
+    "category": "Silver",
+    "drivers": [
+     "Philip Wiskirchen",
+     "Linus Hahne",
+     "Lukas Stiefelhagen"
+    ],
+    "rounds": "3, 5"
+   },
+   {
+    "number": 68,
+    "team": "TeamFloral",
+    "car": "Ford Mustang GT4 (S650)",
+    "category": "Silver",
+    "drivers": [
+     "Sam Paley",
+     "Michiel Haverans",
+     "Kiano Blum"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 70,
+    "team": "Razoon – more than racing",
+    "car": "BMW M4 GT4 Evo (G82)",
+    "category": "Pro-Am",
+    "drivers": [
+     "Daniel Drexel",
+     "Chris Salkeld"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 71,
+    "team": "Elite Motorsport with Entire Race Engineering",
+    "car": "McLaren Artura GT4",
+    "category": "Pro-Am",
+    "drivers": [
+     "Ravi Ramyead",
+     "Charlie Robertson"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 72,
+    "team": "Racing Spirit of Léman",
+    "car": "Aston Martin Vantage AMR GT4 Evo",
+    "category": "Pro-Am",
+    "drivers": [
+     "Florent Grizaud",
+     "Louka Desgranges",
+     "David Kullmann"
+    ],
+    "rounds": "1–5"
+   },
+   {
+    "number": 74,
+    "team": "Racing Spirit of Léman",
+    "car": "Aston Martin Vantage AMR GT4 Evo",
+    "category": "Silver",
+    "drivers": [
+     "Clément Seyler",
+     "Pedro Garcia",
+     "David Kullman"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 75,
+    "team": "Race Lab",
+    "car": "McLaren Artura GT4",
+    "category": "Silver",
+    "drivers": [
+     "Colin Cronin",
+     "Robert Cronin",
+     "Jayden Kelly",
+     "George King"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 77,
+    "team": "Elite Motorsport with Entire Race Engineering",
+    "car": "McLaren Artura GT4",
+    "category": "Silver",
+    "drivers": [
+     "Yani Stevenheydens",
+     "Harri Reynolds",
+     "Henry Joslyn"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 78,
+    "team": "Elite Motorsport with Entire Race Engineering",
+    "car": "McLaren Artura GT4",
+    "category": "Silver",
+    "drivers": [
+     "McKenzy Cresswell",
+     "Charlie Hart"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 85,
+    "team": "SRS Team Sorg Rennsport",
+    "car": "Porsche 718 Cayman GT4 RS Clubsport",
+    "category": "Pro-Am",
+    "drivers": [
+     "Calvin De Groot",
+     "Ross Poole"
+    ],
+    "rounds": "2–3"
+   },
+   {
+    "number": 87,
+    "team": "CRT-Sport",
+    "car": "Toyota GR Supra GT4 Evo2",
+    "category": "Silver",
+    "drivers": [
+     "Lucas Cartelle",
+     "Hudson Schwartz"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 88,
+    "team": "Gianfranco Motorsport",
+    "car": "Toyota GR Supra GT4 Evo2",
+    "category": "Pro-Am",
+    "drivers": [
+     "Nuno Afonso",
+     "Alexandre Areia"
+    ],
+    "rounds": "6"
+   },
+   {
+    "number": 93,
+    "team": "Chazel Technologie Course",
+    "car": "Alpine A110 GT4+",
+    "category": "Pro-Am",
+    "drivers": [
+     "Laurent Hurgon",
+     "Lazare Lartigau"
+    ],
+    "rounds": "3"
+   },
+   {
+    "number": 97,
+    "team": "Lestrup Racing Team",
+    "car": "BMW M4 GT4 Evo (G82)",
+    "category": "Pro-Am",
+    "drivers": [
+     "Stefan Nilsson",
+     "Daniel Varverud"
+    ],
+    "rounds": "3"
+   },
+   {
+    "number": 98,
+    "team": "Schubert Motorsport",
+    "car": "BMW M4 GT4 Evo (G82)",
+    "category": "Pro-Am",
+    "drivers": [
+     "Victor Bouveng",
+     "Joakim Walde"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 110,
+    "team": "SR Motorsport by Schnitzelalm",
+    "car": "Mercedes-AMG GT4",
+    "category": "Silver",
+    "drivers": [
+     "Julien Apotheloz",
+     "Marcel Marchewicz",
+     "Joel Mesch",
+     "Weng Hin Liu",
+     "Jay Mo Härtling"
+    ],
+    "rounds": "2–3"
+   },
+   {
+    "number": 111,
+    "team": "SR Motorsport by Schnitzelalm",
+    "car": "Mercedes-AMG GT4",
+    "category": "Silver",
+    "drivers": [
+     "Enrico Förderer",
+     "Cedric Fuchs"
+    ],
+    "rounds": "All"
+   },
+   {
+    "number": 127,
+    "team": "Willi Motorsport",
+    "car": "Audi R8 LMS GT4 Evo",
+    "category": "Pro-Am",
+    "drivers": [
+     "Eric Bodgan Ciorioanu",
+     "Adrian Zelca"
+    ],
+    "rounds": "1–2"
+   },
+   {
+    "number": 151,
+    "team": "Ebimotors",
+    "car": "Porsche 718 Cayman GT4 RS Clubsport",
+    "category": "Pro-Am",
+    "drivers": [
+     "Paolo Gnemmi",
+     "Riccardo Pera"
+    ],
+    "rounds": "2"
+   },
+   {
+    "number": 310,
+    "team": "Willi Motorsport",
+    "car": "Audi R8 LMS GT4 Evo",
+    "category": "Silver",
+    "drivers": [
+     "Tudor Tudurachi",
+     "Sergiu Nicolae",
+     "Ivan Klymenko"
+    ],
+    "rounds": "1–5"
+   }
+  ],
+  "verified": true,
+  "verifyNote": "Entry list from Wikipedia 2026 GT4 European Series (driver lists include mid-season changes)."
+ },
+ "tcr": {
+  "season": 2026,
+  "tyre": {
+   "supplier": "Kumho",
+   "verified": false,
+   "verifyNote": "Wikipedia series infobox lists Kumho; no 2026 TCR Europe tyre announcement retrieved."
+  },
+  "carModels": [
+   "Audi RS 3 LMS TCR (2021)",
+   "Cupra León VZ TCR",
+   "Honda Civic Type R TCR (FL5)",
+   "Hyundai Elantra N TCR",
+   "Hyundai Elantra N TCR (2024)",
+   "Hyundai i30 N TCR"
+  ],
+  "trophies": {
+   "U21": "TCR Europe Under 21 (Youth) Trophy",
+   "Diamond": "TCR Europe Diamond Trophy (amateur/gentleman)"
+  },
+  "fullSeasonCars": 17,
+  "typicalGridPerEvent": {
+   "value": "~20-24",
+   "verified": false,
+   "verifyNote": "Estimated from entry list (17 full-season cars plus 2-6 one-offs per event)."
+  },
+  "entries": [
+   {
+    "number": 7,
+    "team": "ALM Motorsport",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Mike Halder",
+    "trophy": null,
+    "rounds": "All"
+   },
+   {
+    "number": 8,
+    "team": "PMA Motorsport",
+    "car": "Audi RS 3 LMS TCR (2021)",
+    "driver": "Nicola Baldan",
+    "trophy": null,
+    "rounds": "All"
+   },
+   {
+    "number": 9,
+    "team": "SP Competition",
+    "car": "Cupra León VZ TCR",
+    "driver": "Tom Chiappe",
+    "trophy": null,
+    "rounds": "1-3"
+   },
+   {
+    "number": 10,
+    "team": "Monlau Motorsport",
+    "car": "Cupra León VZ TCR",
+    "driver": "Viktor Andersson",
+    "trophy": "U21",
+    "rounds": "All"
+   },
+   {
+    "number": 11,
+    "team": "JH Racing",
+    "car": "Audi RS 3 LMS TCR (2021)",
+    "driver": "Jac Constable",
+    "trophy": null,
+    "rounds": "2"
+   },
+   {
+    "number": 12,
+    "team": "BRC Racing Team",
+    "car": "Hyundai Elantra N TCR",
+    "driver": "Gabriele Covini",
+    "trophy": "U21",
+    "rounds": "All"
+   },
+   {
+    "number": 17,
+    "team": "PMA Motorsport",
+    "car": "Audi RS 3 LMS TCR (2021)",
+    "driver": "Nicolas Taylor",
+    "trophy": "U21",
+    "rounds": "All"
+   },
+   {
+    "number": 18,
+    "team": "RC2 Racing Team",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Michael Markussen",
+    "trophy": null,
+    "rounds": "2-3"
+   },
+   {
+    "number": 19,
+    "team": "RC2 Racing Team",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Felipe Fernández",
+    "trophy": null,
+    "rounds": "All"
+   },
+   {
+    "number": 20,
+    "team": "Vannin Motorsport",
+    "car": "Audi RS 3 LMS TCR (2021)",
+    "driver": "Teddy Clairet",
+    "trophy": null,
+    "rounds": "5"
+   },
+   {
+    "number": 22,
+    "team": "Aikoa Racing",
+    "car": "Audi RS 3 LMS TCR (2021)",
+    "driver": "Giacomo Prandelli",
+    "trophy": null,
+    "rounds": "All"
+   },
+   {
+    "number": 24,
+    "team": "JSB Compétition",
+    "car": "Hyundai Elantra N TCR (2024)",
+    "driver": "Julien Briché",
+    "trophy": null,
+    "rounds": "1-2,5-6"
+   },
+   {
+    "number": 27,
+    "team": "ALM Motorsport",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Ruben Volt",
+    "trophy": "U21",
+    "rounds": "All"
+   },
+   {
+    "number": 29,
+    "team": "Herrero Racing",
+    "car": "Cupra León VZ TCR",
+    "driver": "Matéo Herrero",
+    "trophy": null,
+    "rounds": "3"
+   },
+   {
+    "number": 33,
+    "team": "Aikoa Racing",
+    "car": "Audi RS 3 LMS TCR (2021)",
+    "driver": "Santiago Concepción",
+    "trophy": "U21",
+    "rounds": "1-3"
+   },
+   {
+    "number": 33,
+    "team": "Squadra Martino",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Santiago Concepción",
+    "trophy": "U21",
+    "rounds": "4-5"
+   },
+   {
+    "number": 34,
+    "team": "Stian Paulsen Racing",
+    "car": "Audi RS 3 LMS TCR (2021)",
+    "driver": "Stian Paulsen",
+    "trophy": null,
+    "rounds": "2"
+   },
+   {
+    "number": 37,
+    "team": "RC2 Racing Team",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Victor Chan",
+    "trophy": null,
+    "rounds": "All"
+   },
+   {
+    "number": 38,
+    "team": "SP Competition",
+    "car": "Cupra León VZ TCR",
+    "driver": "Tom Pussier",
+    "trophy": null,
+    "rounds": "5"
+   },
+   {
+    "number": 41,
+    "team": "ALM Motorsport",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Carl Boardley",
+    "trophy": null,
+    "rounds": "5-6"
+   },
+   {
+    "number": 46,
+    "team": "Speed Technika",
+    "car": "Hyundai i30 N TCR",
+    "driver": "János Csik",
+    "trophy": null,
+    "rounds": "4"
+   },
+   {
+    "number": 48,
+    "team": "ALM Motorsport",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Mikael Karlsson",
+    "trophy": "Diamond",
+    "rounds": "5"
+   },
+   {
+    "number": 66,
+    "team": "ALM Motorsport",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Gary Kwok",
+    "trophy": null,
+    "rounds": "6"
+   },
+   {
+    "number": 69,
+    "team": "ALM Motorsport",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Max Hart",
+    "trophy": null,
+    "rounds": "1-5"
+   },
+   {
+    "number": 72,
+    "team": "PMA Motorsport / SP Competition",
+    "car": "Cupra León VZ TCR",
+    "driver": "Sandro Pelatti",
+    "trophy": "Diamond",
+    "rounds": "All (PMA R1,5; SP R2-4)"
+   },
+   {
+    "number": 73,
+    "team": "RC2 Racing Team",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Victor Fernández",
+    "trophy": "Diamond",
+    "rounds": "All"
+   },
+   {
+    "number": 74,
+    "team": "Herrero Racing",
+    "car": "Cupra León VZ TCR",
+    "driver": "Victor Weyrich",
+    "trophy": null,
+    "rounds": "1-3,5"
+   },
+   {
+    "number": 76,
+    "team": "BRC Racing Team",
+    "car": "Hyundai Elantra N TCR",
+    "driver": "Alex Ley",
+    "trophy": "U21",
+    "rounds": "All"
+   },
+   {
+    "number": 85,
+    "team": "Squadra Martino",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Tiago Pernía",
+    "trophy": "U21",
+    "rounds": "All"
+   },
+   {
+    "number": 87,
+    "team": "Solite Indigo Racing",
+    "car": "Hyundai Elantra N TCR (2024)",
+    "driver": "Park Jun-ui",
+    "trophy": "U21",
+    "rounds": "All"
+   },
+   {
+    "number": 97,
+    "team": "Solite Indigo Racing",
+    "car": "Hyundai Elantra N TCR (2024)",
+    "driver": "Park June-sung",
+    "trophy": null,
+    "rounds": "All"
+   },
+   {
+    "number": 111,
+    "team": "Monlau Motorsport",
+    "car": "Cupra León VZ TCR",
+    "driver": "Marco Butti",
+    "trophy": "U21",
+    "rounds": "All"
+   },
+   {
+    "number": 112,
+    "team": "SP Competition",
+    "car": "Cupra León VZ TCR",
+    "driver": "Mikhail Simonov",
+    "trophy": null,
+    "rounds": "1,3,5-6"
+   },
+   {
+    "number": 115,
+    "team": "Vannin Motorsport",
+    "car": "Audi RS 3 LMS TCR (2021)",
+    "driver": "Luke Sargeant",
+    "trophy": null,
+    "rounds": "5"
+   },
+   {
+    "number": 117,
+    "team": "Monlau Motorsport",
+    "car": "Cupra León VZ TCR",
+    "driver": "Adam Shepherd",
+    "trophy": null,
+    "rounds": "All"
+   },
+   {
+    "number": 145,
+    "team": "JSB Compétition",
+    "car": "Hyundai Elantra N TCR (2024)",
+    "driver": "Raphael Fournier",
+    "trophy": null,
+    "rounds": "1-2,5"
+   },
+   {
+    "number": 441,
+    "team": "ALM Motorsport",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "René Povlsen",
+    "trophy": "Diamond",
+    "rounds": "5"
+   },
+   {
+    "number": 486,
+    "team": "MM Motorsport",
+    "car": "Honda Civic Type R TCR (FL5)",
+    "driver": "Rubén Fernández",
+    "trophy": null,
+    "rounds": "5"
+   }
+  ],
+  "verified": true,
+  "verifyNote": "From Wikipedia 2026 TCR Europe entry table; single-driver cars."
+ },
+ "typicalGridSizes": {
+  "f1": {
+   "cars": 22,
+   "verified": true
+  },
+  "wec_hyper": {
+   "sixHourEvent": 17,
+   "leMans": 18,
+   "verified": true
+  },
+  "wec_lmgt3": {
+   "sixHourEvent": 18,
+   "leMans": 25,
+   "verified": true
+  },
+  "wec_lmp2_leMansOnly": {
+   "leMans": 19,
+   "verified": true
+  },
+  "gt4": {
+   "perEvent": "~40-45 (Silver ~20, Pro-Am ~15, Am ~4-6)",
+   "verified": false,
+   "verifyNote": "estimate from season entry list"
+  },
+  "tcr": {
+   "perEvent": "~20-24",
+   "verified": false,
+   "verifyNote": "estimate from season entry list"
+  }
+ },
+ "_sources": [
+  "https://en.wikipedia.org/wiki/2026_Formula_One_World_Championship",
+  "https://www.fia.com/system/files/decision-document/2026_australian_grand_prix_-_entry_list_v2.pdf",
+  "https://api.jolpi.ca/ergast/f1/2026/driverstandings.json",
+  "https://en.wikipedia.org/wiki/2026_FIA_World_Endurance_Championship",
+  "https://en.wikipedia.org/wiki/2026_24_Hours_of_Le_Mans",
+  "https://www.fia.com/system/files/documents/2026_fia_world_endurance_championship_sporting_regulations_clean_v1.2wmsc.pdf",
+  "https://en.wikipedia.org/wiki/2026_GT4_European_Series",
+  "https://en.wikipedia.org/wiki/2026_TCR_Europe_Touring_Car_Series",
+  "https://en.wikipedia.org/wiki/TCR_Europe_Touring_Car_Series"
+ ]
+}

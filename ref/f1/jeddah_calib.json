@@ -1,0 +1,72 @@
+{
+ "f1": {
+  "year": 2025,
+  "round": 5,
+  "event": "Saudi Arabian Grand Prix",
+  "layout": "Jeddah Corniche Circuit",
+  "pole": 87.294,
+  "poleDrv": "Max Verstappen",
+  "poleCar": "Red Bull RB21",
+  "qualiGaps": {
+   "Red Bull RB21": 0.0,
+   "McLaren MCL39": 0.01,
+   "Mercedes W16": 0.113,
+   "Ferrari SF-25": 0.376,
+   "Williams FW47": 0.73,
+   "Alpine A525": 0.731,
+   "Racing Bulls VCARB 02": 0.897,
+   "Aston Martin AMR25": 1.009,
+   "Haas VF-25": 1.242,
+   "Kick Sauber C45": 1.488
+  },
+  "raceFastest": 91.778,
+  "raceFastestDrv": "Lando Norris",
+  "raceMedianTop5": 93.371,
+  "raceMedianTop5N": 220,
+  "raceLaps": 50,
+  "raceDuration": 4866.758,
+  "winnerTime": "1:21:06.758",
+  "winner": "Oscar Piastri",
+  "winnerCar": "McLaren MCL39",
+  "pitLoss": 20.4,
+  "pitLossN": 8,
+  "pitLaneTime": 20.7,
+  "stationary": 2.9,
+  "pitStopsN": 16,
+  "stintLaps": 27.5,
+  "topSpeed": null,
+  "scLaps": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "vscLaps": [],
+  "redFlagLaps": [],
+  "weather": {
+   "air": 29.7,
+   "track": 37.4,
+   "wet": false,
+   "humidity": 56.0
+  },
+  "notes": "SC laps 1-3 (from race control); 2025 event: no 2026 race at this circuit yet; 2026 cars (new chassis/PU regulations) differ, so scale accordingly; raceMedianTop5: median of top-5 finishers laps excluding lap 1, in/out laps, SC/VSC/red-flag laps (+SC restart lap, and the lap before each neutralisation because race-control lap numbers follow the leader) and laps >110% of that driver median; pitLaneTime = median Jolpica pitstop duration (pit entry to exit) of green-flag stops; pitLoss = median (in-lap + out-lap - 2x clean lap) of green-flag stops by the top-10 finishers"
+ },
+ "_sources": [
+  "https://api.jolpi.ca/ergast/f1/2025/5/results.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/qualifying.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/pitstops.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/drivers/piastri/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/drivers/max_verstappen/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/drivers/leclerc/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/drivers/norris/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/drivers/russell/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/drivers/antonelli/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/drivers/hamilton/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/drivers/sainz/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/drivers/albon/laps.json",
+  "https://api.jolpi.ca/ergast/f1/2025/5/drivers/hadjar/laps.json",
+  "https://api.openf1.org/v1/race_control?session_key=10022",
+  "https://api.openf1.org/v1/weather?session_key=10022",
+  "https://api.openf1.org/v1/pit?session_key=10022"
+ ]
+}

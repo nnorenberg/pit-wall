@@ -1,0 +1,142 @@
+{
+ "gt4": {
+  "year": 2026,
+  "layout": "Portimao 4653m",
+  "pole": 109.617,
+  "poleDrv": "C.Hart / M.Cresswell",
+  "poleCar": "McLaren Artura GT4",
+  "poleSession": "Q2",
+  "q1Pole": {
+   "t": "1:50.012",
+   "drv": "A.Gabbay / T.Horrell",
+   "car": "Porsche 718 Cayman GT4 RS CS"
+  },
+  "q2Pole": {
+   "t": "1:49.617",
+   "drv": "C.Hart / M.Cresswell",
+   "car": "McLaren Artura GT4"
+  },
+  "qualiGaps": {
+   "McLaren Artura GT4": 0.0,
+   "Mercedes-AMG GT4": 0.195,
+   "Porsche 718 Cayman GT4 RS CS": 0.395,
+   "Audi R8 LMS GT4": 0.446,
+   "Ford Mustang GT4": 0.686,
+   "Toyota GR Supra GT4 EVO 2": 0.704,
+   "Aston Martin Vantage AMR GT4 EVO": 0.839,
+   "BMW M4 GT4 G82 EVO": 1.007
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 22.8,
+    "track": 27.1,
+    "wet": false,
+    "cond": "Dry"
+   },
+   "q2": {
+    "air": 22.8,
+    "track": 28.4,
+    "wet": false,
+    "cond": "Dry"
+   }
+  },
+  "raceFastest": 111.499,
+  "raceFastestRace": "R2",
+  "raceMedianTop5": null,
+  "raceLaps": 27,
+  "raceDuration": 3638.559,
+  "winnerTime": "1:00:38.559",
+  "races": {
+   "r1": {
+    "date": "2026-10-17",
+    "winner": "J.Mesch / J.Härtling",
+    "winnerCar": "Mercedes-AMG GT4",
+    "winnerTime": "1:00:38.559",
+    "raceDuration": 3638.559,
+    "raceLaps": 27,
+    "fastest": 111.664,
+    "fastestDrv": "C.Robertson / R.Ramyead",
+    "fastestCar": "McLaren Artura GT4",
+    "avgLapTop5": 135.347,
+    "started": 35,
+    "classified": 26,
+    "scPhases": 1,
+    "fcyPhases": 3,
+    "weatherStart": {
+     "air": 25.2,
+     "track": 34.1,
+     "wet": false,
+     "cond": "Dry"
+    },
+    "weatherEnd": {
+     "air": 25.0,
+     "track": 30.9,
+     "wet": false
+    },
+    "greenFlag": "15:08:49",
+    "chequeredFlag": "16:09:27"
+   },
+   "r2": {
+    "date": "2026-10-18",
+    "winner": "G.Guilvert / P.Petit",
+    "winnerCar": "Audi R8 LMS GT4",
+    "winnerTime": "1:01:38.568",
+    "raceDuration": 3698.568,
+    "raceLaps": 32,
+    "fastest": 111.499,
+    "fastestDrv": "B.Lariche / R.Consani",
+    "fastestCar": "Audi R8 LMS GT4",
+    "avgLapTop5": 115.639,
+    "started": 35,
+    "classified": 33,
+    "scPhases": 0,
+    "fcyPhases": 0,
+    "weatherStart": {
+     "air": 20.5,
+     "track": 27.9,
+     "wet": false,
+     "cond": "Dry"
+    },
+    "weatherEnd": {
+     "air": 21.8,
+     "track": 30.3,
+     "wet": false
+    },
+    "greenFlag": "11:43:54",
+    "chequeredFlag": "12:45:32"
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": true,
+   "driverChange": true,
+   "pitWindow": "pit-entry line crossed between 25:00.00 and 34:59.99 after the official start (window can be delayed/extended under SC/FCY)",
+   "minPitStopTime": "pit-lane delta (pit-in to pit-out at 50.0 km/h) + 50 s, measured pit-in to pit-out; exact figure issued per event in a Stewards' bulletin",
+   "minPitStopTimeSec": null,
+   "tyreChange": "not permitted except wet<->dry change of all four (min 3:00 pit-in to pit-out if done in the mandatory window) or confirmed damage",
+   "compensationTime": "Pro-Am/Am crew compensations and derogation pit-time penalties may be added (Art. 10.4.7)",
+   "regsSource": "2024 GT4 European Series Sporting Regulations S02, Art. 20 (latest regulations published on gt4europeanseries.com)"
+  },
+  "pitLaneSpeedKph": 50,
+  "weather": {
+   "air": 25.2,
+   "track": 34.1,
+   "wet": false,
+   "cond": "Dry"
+  },
+  "notes": "R1: 1 SC phase(s), 3 FCY phase(s); pole = fastest lap of Q1/Q2 (two separate sessions, each setting its own race grid, different drivers of each crew); raceDuration/raceLaps/winnerTime are Race 1; Race 2 under races.r2; no lap charts/pit timing published (results.sro.com unavailable), so raceMedianTop5/pit figures are null; avgLapTop5 = total time / laps of the lead-lap top 5 (includes start lap, SC/FCY and the mandatory stop)"
+ },
+ "_sources": [
+  "https://www.gt4europeanseries.com/results/2026/portimao",
+  "https://www.gt4europeanseries.com/images/results/76/GTWCEU_GT4%20Portimao_FP2_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/76/GTWCEU_GT4%20Portimao_Q1_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/76/GTWCEU_GT4%20Portimao_Q2_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/76/GTWCEU_GT4%20Portimao_R1_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/76/GTWCEU_GT4%20Portimao_R2_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+ ]
+}

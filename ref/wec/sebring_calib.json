@@ -1,0 +1,63 @@
+{
+ "_sources": [
+  "https://files.alkamelcloud.com/wec/results/12_2023/01_SEBRING/460_FIA%20WEC/202303161920_Qualifying%20HYPERCAR/03_Classification_Qualifying%20HYPERCAR.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/01_SEBRING/460_FIA%20WEC/202303161940_Qualifying/90_Classification_Qualifying.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/01_SEBRING/460_FIA%20WEC/202303171200_Race/Hour%208/03_Classification_Race_Hour%208.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/01_SEBRING/460_FIA%20WEC/202303171200_Race/Hour%208/23_Analysis_Race_Hour%208.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/01_SEBRING/460_FIA%20WEC/202303171200_Race/Hour%208/26_Weather_Race_Hour%208.CSV"
+ ],
+ "hyper": {
+  "year": 2023,
+  "layout": "Sebring International Raceway (full course)",
+  "event": "Sebring",
+  "round": 1,
+  "pole": 105.06700000000001,
+  "poleDrv": "Antonio Fuoco / Miguel Molina / Nicklas Nielsen",
+  "poleCar": "Ferrari 499P #50",
+  "poleSource": "Qualifying",
+  "qualiGaps": {
+   "Ferrari 499P": 0.0,
+   "Toyota GR010 Hybrid": 0.214,
+   "Cadillac V-Series.R": 1.015,
+   "Porsche 963": 2.126,
+   "Peugeot 9X8": 2.388,
+   "Glickenhaus 007 LMH": 4.097,
+   "Vanwall Vandervell 680": 4.262
+  },
+  "raceFastest": 107.88499999999999,
+  "raceFastestBy": "Toyota GR010 Hybrid #8",
+  "raceLaps": 239,
+  "raceDuration": 28819.877,
+  "winnerTime": "8:00:19.877",
+  "winner": "Toyota GR010 Hybrid #7",
+  "raceMedianTop5": 110.415,
+  "raceMedianTop5N": 1026,
+  "lapLengthKm": 6.019,
+  "stintLaps": 29,
+  "stintLapsP75": 30,
+  "pitLaneTime": 33.7,
+  "stationaryBasisStops": 62,
+  "stationary": 56.9,
+  "stationaryRefuelOnly": 45.6,
+  "stationaryRefuelTyres": 59.7,
+  "tyreChangeExtra": 14.1,
+  "stopMix": {
+   "short": 17,
+   "long": 45
+  },
+  "pitTimeMedian": 90.6,
+  "stopLossTotal": 90.4,
+  "pitLoss": 32.6,
+  "topSpeed": 298.6,
+  "topSpeedMedianCarBest": 294.7,
+  "weather": {
+   "air": 27.3,
+   "track": 37.2,
+   "wet": false
+  },
+  "notes": "SC laps 5-11 (~0.2 h); FCY laps 27-27 (~1.1 h); FCY laps 67-67 (~2.4 h); FCY laps 82-82 (~2.9 h); FCY laps 149-149 (~5.0 h); FCY laps 181-183 (~6.1 h)",
+  "flag": "STALE: last WEC visit was 2023 (no 2024-2026 event). Hypercar regs then (LMH/LMDh) but BoP, tyres and the field differ from 2026."
+ },
+ "_note": "No WEC event here under current class structure since 2023; gt3 omitted (2023 GT class was LMGTE Am, not LMGT3).",
+ "_fields": "pole/qualiGaps: grid-order classification (Qualifying + Hyperpole) and each car model's best lap over all qualifying segments, gap in s to pole. raceMedianTop5: median of top-5 class finishers' laps with green flag at the line, previous lap also green, no pit in/out, within 107% of the car's own green median. pitLaneTime: pit-lane transit from the drive-through cluster of PIT_TIME (pit entry to exit, no stop). pitTimeMedian: median PIT_TIME of normal stops (<180 s). stationary = pitTimeMedian - pitLaneTime; stationaryRefuelOnly / stationaryRefuelTyres: 2-means split of the stops that ended a near-full stint (>=70% of stintLaps; WEC: refuel and tyre change are sequential). stopLossTotal: median (in-lap + out-lap - 2 x car green median) for stops with green laps; pitLoss: per-stop median of (stop loss - (PIT_TIME - pitLaneTime)) = time lost to the pit lane alone, excluding stationary time. stintLaps: median laps between consecutive normal stops (>=5 laps). topSpeed: highest per-car best TOP_SPEED (speed trap) in the race, after discarding implausible trap readings >105% of the class median car-best (listed in topSpeedDiscarded); topSpeedMedianCarBest also given. lapLengthKm: derived from KPH x lap time. Notes: SC (SF flag) / FCY periods on the overall winner's lap numbers."
+}

@@ -1,0 +1,187 @@
+{
+ "series": "GT4 European Series",
+ "season": 2026,
+ "calendar": [
+  {
+   "round": 1,
+   "event": "Circuit Paul Ricard",
+   "circuit": "paul_ricard",
+   "dates": {
+    "start": "2026-04-10",
+    "end": "2026-04-12"
+   },
+   "sessionDates": {
+    "prac": "2026-04-11",
+    "q1": "2026-04-11",
+    "q2": "2026-04-11",
+    "r1": "2026-04-12",
+    "r2": "2026-04-12"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "60 min (+ finishing lap)",
+    "qualifying": "Q1 and Q2 (one per driver), each sets the grid of one race",
+    "mandatoryPitStop": "1 per race, driver change, window 25:00-34:59.99"
+   },
+   "status": "completed",
+   "resultsUrl": "https://www.gt4europeanseries.com/results/2026/paul-ricard"
+  },
+  {
+   "round": 2,
+   "event": "Monza",
+   "circuit": "monza",
+   "dates": {
+    "start": "2026-05-28",
+    "end": "2026-05-31"
+   },
+   "sessionDates": {
+    "prac": "2026-05-29",
+    "q1": "2026-05-30",
+    "q2": "2026-05-30",
+    "r1": "2026-05-30",
+    "r2": "2026-05-31"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "60 min (+ finishing lap)",
+    "qualifying": "Q1 and Q2 (one per driver), each sets the grid of one race",
+    "mandatoryPitStop": "1 per race, driver change, window 25:00-34:59.99"
+   },
+   "status": "completed",
+   "resultsUrl": "https://www.gt4europeanseries.com/results/2026/monza"
+  },
+  {
+   "round": 3,
+   "event": "Spa-Francorchamps",
+   "circuit": "spa",
+   "dates": {
+    "start": "2026-06-23",
+    "end": "2026-06-27"
+   },
+   "sessionDates": {
+    "prac": "2026-06-25",
+    "q1": "2026-06-26",
+    "q2": "2026-06-26",
+    "r1": "2026-06-26",
+    "r2": "2026-06-27"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "60 min (+ finishing lap)",
+    "qualifying": "Q1 and Q2 (one per driver), each sets the grid of one race",
+    "mandatoryPitStop": "1 per race, driver change, window 25:00-34:59.99"
+   },
+   "status": "completed",
+   "resultsUrl": "https://www.gt4europeanseries.com/results/2026/spa-francorchamps"
+  },
+  {
+   "round": 4,
+   "event": "Misano",
+   "circuit": "misano",
+   "dates": {
+    "start": "2026-07-16",
+    "end": "2026-07-19"
+   },
+   "sessionDates": {
+    "prac": "2026-07-17",
+    "q1": "2026-07-18",
+    "q2": "2026-07-18",
+    "r1": "2026-07-18",
+    "r2": "2026-07-19"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "60 min (+ finishing lap)",
+    "qualifying": "Q1 and Q2 (one per driver), each sets the grid of one race",
+    "mandatoryPitStop": "1 per race, driver change, window 25:00-34:59.99"
+   },
+   "status": "completed",
+   "resultsUrl": "https://www.gt4europeanseries.com/results/2026/misano"
+  },
+  {
+   "round": 5,
+   "event": "Zandvoort",
+   "circuit": "zandvoort",
+   "dates": {
+    "start": "2026-09-18",
+    "end": "2026-09-20"
+   },
+   "sessionDates": {
+    "prac": "2026-09-18",
+    "q1": "2026-09-19",
+    "q2": "2026-09-19",
+    "r1": "2026-09-19",
+    "r2": "2026-09-20"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "60 min (+ finishing lap)",
+    "qualifying": "Q1 and Q2 (one per driver), each sets the grid of one race",
+    "mandatoryPitStop": "1 per race, driver change, window 25:00-34:59.99"
+   },
+   "status": "completed",
+   "resultsUrl": "https://www.gt4europeanseries.com/results/2026/zandvoort"
+  },
+  {
+   "round": 6,
+   "event": "Portimão",
+   "circuit": "portimao",
+   "dates": {
+    "start": "2026-10-15",
+    "end": "2026-10-18"
+   },
+   "sessionDates": {
+    "prac": "2026-10-16",
+    "q1": "2026-10-17",
+    "q2": "2026-10-17",
+    "r1": "2026-10-17",
+    "r2": "2026-10-18"
+   },
+   "format": {
+    "races": 2,
+    "raceLength": "60 min (+ finishing lap)",
+    "qualifying": "Q1 and Q2 (one per driver), each sets the grid of one race",
+    "mandatoryPitStop": "1 per race, driver change, window 25:00-34:59.99"
+   },
+   "status": "completed",
+   "resultsUrl": "https://www.gt4europeanseries.com/results/2026/portimao"
+  }
+ ],
+ "points": {
+  "races": {
+   "scale": [
+    25,
+    18,
+    15,
+    12,
+    10,
+    8,
+    6,
+    4,
+    2,
+    1
+   ],
+   "appliesTo": "each race, separately per cup (Silver, Pro-Am, Am) for drivers and teams; only highest-finishing car per team scores team points"
+  },
+  "qualifying": "1 point to the fastest car per cup in Q1 and in Q2",
+  "shortenedRace": "suspended & not resumed: <2 laps no points; <75% of scheduled time half points; >=75% full points",
+  "source": "2024 GT4 European Series Sporting Regulations S02 Art. 7 (latest regulations PDF published on gt4europeanseries.com/about/regulations; 2026 text not published there)"
+ },
+ "tyres": {
+  "supplier": "Pirelli (sole supplier; SRO-Pirelli deal runs to at least 2028)",
+  "dry": "Pirelli P Zero DHG (introduced 2025, used 2025-2026)",
+  "wet": "Pirelli Cinturato WHB",
+  "earlier": "2024: P Zero DHF dry (introduced 2022)",
+  "size": "18-inch",
+  "note": "The 'P Zero DHF' in the brief is the pre-2025 compound; 2026 runs the DHG."
+ },
+ "pitLaneSpeedKph": 50,
+ "_sources": [
+  "https://www.gt4europeanseries.com/calendar",
+  "https://www.gt4europeanseries.com/results",
+  "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf",
+  "https://www.tyrepress.com/2026/04/pirelli-supplies-tyres-as-2026-gt-world-challenge-europe-begins-at-paul-ricard/",
+  "https://www.italpress.com/?p=522567",
+  "https://racecar.com/news/84386/motorsport/pirelli-continues-to-supply-gt4-european-series"
+ ]
+}

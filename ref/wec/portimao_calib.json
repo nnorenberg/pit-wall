@@ -1,0 +1,63 @@
+{
+ "_sources": [
+  "https://files.alkamelcloud.com/wec/results/12_2023/02_AUTODROMO%20DO%20ALGARVE/461_FIA%20WEC/202304151620_Qualifying%20HYPERCAR/03_Classification_Qualifying%20HYPERCAR.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/02_AUTODROMO%20DO%20ALGARVE/461_FIA%20WEC/202304151640_Qualifying/90_Classification_Qualifying.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/02_AUTODROMO%20DO%20ALGARVE/461_FIA%20WEC/202304161200_Race/Hour%206/03_Classification_Race_Hour%206.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/02_AUTODROMO%20DO%20ALGARVE/461_FIA%20WEC/202304161200_Race/Hour%206/23_Analysis_Race_Hour%206.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/02_AUTODROMO%20DO%20ALGARVE/461_FIA%20WEC/202304161200_Race/Hour%206/26_Weather_Race_Hour%206.CSV"
+ ],
+ "hyper": {
+  "year": 2023,
+  "layout": "Autodromo Internacional do Algarve (GP)",
+  "event": "Autodromo Do Algarve",
+  "round": 2,
+  "pole": 90.17099999999999,
+  "poleDrv": "Sébastien Buemi / Brendon Hartley / Ryo Hirakawa",
+  "poleCar": "Toyota GR010 Hybrid #8",
+  "poleSource": "Qualifying",
+  "qualiGaps": {
+   "Toyota GR010 Hybrid": 0.0,
+   "Ferrari 499P": 1.425,
+   "Porsche 963": 2.233,
+   "Peugeot 9X8": 2.346,
+   "Cadillac V-Series.R": 2.411,
+   "Glickenhaus 007 LMH": 3.172,
+   "Vanwall Vandervell 680": 3.665
+  },
+  "raceFastest": 92.13499999999999,
+  "raceFastestBy": "Toyota GR010 Hybrid #7",
+  "raceLaps": 222,
+  "raceDuration": 21686.343,
+  "winnerTime": "6:01:26.343",
+  "winner": "Toyota GR010 Hybrid #8",
+  "raceMedianTop5": 94.837,
+  "raceMedianTop5N": 1017,
+  "lapLengthKm": 4.653,
+  "stintLaps": 36,
+  "stintLapsP75": 37,
+  "pitLaneTime": 28.7,
+  "stationaryBasisStops": 52,
+  "stationary": 55.0,
+  "stationaryRefuelOnly": 46.0,
+  "stationaryRefuelTyres": 59.4,
+  "tyreChangeExtra": 13.4,
+  "stopMix": {
+   "short": 16,
+   "long": 36
+  },
+  "pitTimeMedian": 83.7,
+  "stopLossTotal": 91.1,
+  "pitLoss": 35.0,
+  "topSpeed": 316.7,
+  "topSpeedMedianCarBest": 314.0,
+  "weather": {
+   "air": 28.0,
+   "track": 44.7,
+   "wet": false
+  },
+  "notes": "SC laps 184-187 (~4.9 h)",
+  "flag": "STALE: last WEC visit was 2023 (no 2024-2026 event). Hypercar regs then (LMH/LMDh) but BoP, tyres and the field differ from 2026."
+ },
+ "_note": "No WEC event here under current class structure since 2023; gt3 omitted (2023 GT class was LMGTE Am, not LMGT3).",
+ "_fields": "pole/qualiGaps: grid-order classification (Qualifying + Hyperpole) and each car model's best lap over all qualifying segments, gap in s to pole. raceMedianTop5: median of top-5 class finishers' laps with green flag at the line, previous lap also green, no pit in/out, within 107% of the car's own green median. pitLaneTime: pit-lane transit from the drive-through cluster of PIT_TIME (pit entry to exit, no stop). pitTimeMedian: median PIT_TIME of normal stops (<180 s). stationary = pitTimeMedian - pitLaneTime; stationaryRefuelOnly / stationaryRefuelTyres: 2-means split of the stops that ended a near-full stint (>=70% of stintLaps; WEC: refuel and tyre change are sequential). stopLossTotal: median (in-lap + out-lap - 2 x car green median) for stops with green laps; pitLoss: per-stop median of (stop loss - (PIT_TIME - pitLaneTime)) = time lost to the pit lane alone, excluding stationary time. stintLaps: median laps between consecutive normal stops (>=5 laps). topSpeed: highest per-car best TOP_SPEED (speed trap) in the race, after discarding implausible trap readings >105% of the class median car-best (listed in topSpeedDiscarded); topSpeedMedianCarBest also given. lapLengthKm: derived from KPH x lap time. Notes: SC (SF flag) / FCY periods on the overall winner's lap numbers."
+}

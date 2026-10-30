@@ -1,0 +1,118 @@
+{
+ "tcr": {
+  "year": 2025,
+  "layout": "Hockenheimring GP 4574m",
+  "pole": 107.711,
+  "poleDrv": "Felice Jelmini",
+  "poleCar": "Audi RS 3 LMS TCR",
+  "poleSession": "Q1",
+  "officialPole": {
+   "t": "1:47.886",
+   "drv": "Marco Butti",
+   "car": "Honda Civic Type R FL5 TCR",
+   "note": "Q2 (top 12) P1 = Race 1 pole"
+  },
+  "qualiGaps": {
+   "Audi RS 3 LMS": 0.0,
+   "Honda Civic Type R FL5": 0.175,
+   "Hyundai Elantra N": 0.263,
+   "Cupra Leon VZ": 0.633,
+   "Lynk & Co 03": 0.669
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 18.3,
+    "track": 19.9,
+    "wet": true,
+    "humidity": 79,
+    "trackStatus": "WET"
+   },
+   "q2": {
+    "air": 18.2,
+    "track": 19.9,
+    "wet": true,
+    "humidity": 79,
+    "trackStatus": "WET"
+   }
+  },
+  "raceFastest": 108.321,
+  "raceFastestRace": "R1",
+  "raceMedianTop5": null,
+  "raceLaps": 14,
+  "raceDuration": 1699.898,
+  "winnerTime": "28:19.898",
+  "races": {
+   "r1": {
+    "date": "2025-06-07",
+    "winner": "Max Hart",
+    "winnerCar": "Hyundai Elantra N TCR",
+    "winnerTime": "28:19.898",
+    "raceDuration": 1699.898,
+    "raceLaps": 14,
+    "fastest": 108.321,
+    "fastestDrv": "Jimmy Clairet",
+    "fastestCar": "Audi RS 3 LMS TCR",
+    "avgLapTop5": null,
+    "classified": 13,
+    "weather": {
+     "air": 20.3,
+     "track": 26.0,
+     "wet": true,
+     "trackStatus": "WET"
+    },
+    "penalties": [
+     "CAR #17 - 10 SECONDS PENALTY - DUE TO DECISION N5"
+    ]
+   },
+   "r2": {
+    "date": "2025-06-08",
+    "winner": "Felice Jelmini",
+    "winnerCar": "Audi RS 3 LMS TCR",
+    "winnerTime": "28:46.446",
+    "raceDuration": 1726.446,
+    "raceLaps": 12,
+    "fastest": 124.519,
+    "fastestDrv": "Julien Briché",
+    "fastestCar": "Hyundai Elantra N TCR",
+    "avgLapTop5": 144.643,
+    "classified": 18,
+    "weather": {
+     "air": 15.1,
+     "track": 17.1,
+     "wet": true,
+     "humidity": 78,
+     "trackStatus": "WET"
+    },
+    "penalties": []
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": false,
+   "minPitStopTimeSec": null,
+   "raceFormat": "2 races of 25 min + 1 lap, no mandatory stop (pit lane used only for drive-through penalties/repairs)",
+   "regsSource": "2026 TCR Europe Sporting Regulations V3, Art. 13 and 94"
+  },
+  "pitLaneSpeedKph": 60,
+  "weather": {
+   "air": 20.3,
+   "track": 26.0,
+   "wet": true,
+   "trackStatus": "WET"
+  },
+  "notes": "R1 sheet shows Track Status WET; R2 was a wet race (fastest lap 2:04.5 vs ~1:48 dry).; pole = fastest lap across Q1 (20 min, all cars) and Q2 (10 min, top 12); BoP/compensation weight apply per event; raceDuration/raceLaps/winnerTime are Race 1; Race 2 (reversed top 10 grid) under races.r2; no lap charts published for races, so raceMedianTop5 is null; avgLapTop5 = winner-lap top-5 total time / laps (includes standing start and any SC); weather null where the official sheet carries none (getraceresults/Creventic layout)"
+ },
+ "_sources": [
+  "https://europe.tcr-series.com/images/events/2025/03_Hockenheim/TCR_EU_R3_Hockenheim_Free_Practice_2.pdf",
+  "https://europe.tcr-series.com/images/events/2025/03_Hockenheim/TCR_EU_R3_Hockenheim_Qualifying_1.pdf",
+  "https://europe.tcr-series.com/images/events/2025/03_Hockenheim/TCR_EU_R3_Hockenheim_Qualifying_2.pdf",
+  "https://europe.tcr-series.com/images/events/2025/03_Hockenheim/TCR_EU_R3_Hockenheim_Race_1_Final.pdf",
+  "https://europe.tcr-series.com/images/events/2025/03_Hockenheim/TCR_EU_R3_Hockenheim_Race_2.pdf",
+  "https://europe.tcr-series.com/index.php/events/2025/hockenheimring",
+  "https://europe.tcr-series.com/pdf/2026_TCR_Europe_Sporting_Regs_V3_final.pdf"
+ ]
+}

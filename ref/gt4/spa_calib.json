@@ -1,0 +1,145 @@
+{
+ "gt4": {
+  "year": 2026,
+  "layout": "Circuit de Spa Francorchamps 7004m",
+  "pole": 147.749,
+  "poleDrv": "C.Hart / M.Cresswell",
+  "poleCar": "McLaren Artura GT4",
+  "poleSession": "Q1",
+  "q1Pole": {
+   "t": "2:27.749",
+   "drv": "C.Hart / M.Cresswell",
+   "car": "McLaren Artura GT4"
+  },
+  "q2Pole": {
+   "t": "2:28.436",
+   "drv": "C.Hart / M.Cresswell",
+   "car": "McLaren Artura GT4"
+  },
+  "qualiGaps": {
+   "McLaren Artura GT4": 0.0,
+   "Audi R8 LMS GT4": 0.961,
+   "Lotus Emira GT4": 0.972,
+   "BMW M4 GT4 G82 EVO": 1.077,
+   "Toyota GR Supra GT4 EVO 2": 1.094,
+   "Ford Mustang GT4": 1.424,
+   "Porsche 718 Cayman GT4 RS CS": 1.474,
+   "Mercedes-AMG GT4": 1.698,
+   "Aston Martin Vantage AMR GT4 EVO": 1.975,
+   "Ginetta G56 Evo": 3.115,
+   "Alpine A110 GT4+": 3.52
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 30.3,
+    "track": 39.4,
+    "wet": false,
+    "cond": "Dry"
+   },
+   "q2": {
+    "air": 30.9,
+    "track": 41.7,
+    "wet": false,
+    "cond": "Dry"
+   }
+  },
+  "raceFastest": 150.539,
+  "raceFastestRace": "R2",
+  "raceMedianTop5": null,
+  "raceLaps": 23,
+  "raceDuration": 3626.127,
+  "winnerTime": "1:00:26.127",
+  "races": {
+   "r1": {
+    "date": "2026-06-26",
+    "winner": "T.Rackl / G.Piana",
+    "winnerCar": "BMW M4 GT4 G82 EVO",
+    "winnerTime": "1:00:26.127",
+    "raceDuration": 3626.127,
+    "raceLaps": 23,
+    "fastest": 150.696,
+    "fastestDrv": "C.Hart / M.Cresswell",
+    "fastestCar": "McLaren Artura GT4",
+    "avgLapTop5": 157.973,
+    "started": 45,
+    "classified": 39,
+    "scPhases": 0,
+    "fcyPhases": 0,
+    "weatherStart": {
+     "air": 25.4,
+     "track": 40.9,
+     "wet": true,
+     "cond": "Wet"
+    },
+    "weatherEnd": {
+     "air": 24.0,
+     "track": 36.9,
+     "wet": true
+    },
+    "greenFlag": "21:01:28",
+    "chequeredFlag": "22:01:42"
+   },
+   "r2": {
+    "date": "2026-06-27",
+    "winner": "T.Rackl / G.Piana",
+    "winnerCar": "BMW M4 GT4 G82 EVO",
+    "winnerTime": "1:01:13.679",
+    "raceDuration": 3673.679,
+    "raceLaps": 22,
+    "fastest": 150.539,
+    "fastestDrv": "T.Rackl / G.Piana",
+    "fastestCar": "BMW M4 GT4 G82 EVO",
+    "avgLapTop5": 167.69,
+    "started": 45,
+    "classified": 37,
+    "scPhases": 1,
+    "fcyPhases": 1,
+    "weatherStart": {
+     "air": 32.5,
+     "track": 41.9,
+     "wet": false,
+     "cond": "Dry"
+    },
+    "weatherEnd": {
+     "air": 33.6,
+     "track": 46.9,
+     "wet": false
+    },
+    "greenFlag": "10:43:45",
+    "chequeredFlag": "11:44:59"
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": true,
+   "driverChange": true,
+   "pitWindow": "pit-entry line crossed between 25:00.00 and 34:59.99 after the official start (window can be delayed/extended under SC/FCY)",
+   "minPitStopTime": "pit-lane delta (pit-in to pit-out at 50.0 km/h) + 50 s, measured pit-in to pit-out; exact figure issued per event in a Stewards' bulletin",
+   "minPitStopTimeSec": null,
+   "tyreChange": "not permitted except wet<->dry change of all four (min 3:00 pit-in to pit-out if done in the mandatory window) or confirmed damage",
+   "compensationTime": "Pro-Am/Am crew compensations and derogation pit-time penalties may be added (Art. 10.4.7)",
+   "regsSource": "2024 GT4 European Series Sporting Regulations S02, Art. 20 (latest regulations published on gt4europeanseries.com)"
+  },
+  "pitLaneSpeedKph": 50,
+  "weather": {
+   "air": 25.4,
+   "track": 40.9,
+   "wet": true,
+   "cond": "Wet"
+  },
+  "notes": "R1: wet/Wet conditions at start; R2: 1 SC phase(s), 1 FCY phase(s); pole = fastest lap of Q1/Q2 (two separate sessions, each setting its own race grid, different drivers of each crew); raceDuration/raceLaps/winnerTime are Race 1; Race 2 under races.r2; no lap charts/pit timing published (results.sro.com unavailable), so raceMedianTop5/pit figures are null; avgLapTop5 = total time / laps of the lead-lap top 5 (includes start lap, SC/FCY and the mandatory stop)"
+ },
+ "_sources": [
+  "https://www.gt4europeanseries.com/results/2026/spa-francorchamps",
+  "https://www.gt4europeanseries.com/images/results/73/GTWCEU_GT4%20Spa_FP2_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/73/GTWCEU_GT4%20Spa_Q1_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/73/GTWCEU_GT4%20Spa_Q2_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/73/GTWCEU_GT4%20Spa_R1_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/73/GTWCEU_GT4%20Spa_R2_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+ ]
+}

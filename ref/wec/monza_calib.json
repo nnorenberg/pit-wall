@@ -1,0 +1,63 @@
+{
+ "_sources": [
+  "https://files.alkamelcloud.com/wec/results/12_2023/05_AUTODROMO%20NAZIONALE%20DI%20MONZA/479_FIA%20WEC/202307081530_Qualifying%20HYPERCAR/03_Classification_Qualifying%20HYPERCAR.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/05_AUTODROMO%20NAZIONALE%20DI%20MONZA/479_FIA%20WEC/202307081600_Qualifying/90_Classification_Qualifying.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/05_AUTODROMO%20NAZIONALE%20DI%20MONZA/479_FIA%20WEC/202307091230_Race/Hour%206/03_Classification_Race_Hour%206.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/05_AUTODROMO%20NAZIONALE%20DI%20MONZA/479_FIA%20WEC/202307091230_Race/Hour%206/23_Analysis_Race_Hour%206.CSV",
+  "https://files.alkamelcloud.com/wec/results/12_2023/05_AUTODROMO%20NAZIONALE%20DI%20MONZA/479_FIA%20WEC/202307091230_Race/Hour%206/26_Weather_Race_Hour%206.CSV"
+ ],
+ "hyper": {
+  "year": 2023,
+  "layout": "Autodromo Nazionale Monza (GP)",
+  "event": "Autodromo Nazionale Di Monza",
+  "round": 5,
+  "pole": 95.358,
+  "poleDrv": "Mike Conway / Kamui Kobayashi / Jose Maria Lopez",
+  "poleCar": "Toyota GR010 Hybrid #7",
+  "poleSource": "Qualifying",
+  "qualiGaps": {
+   "Toyota GR010 Hybrid": 0.0,
+   "Ferrari 499P": 0.017,
+   "Peugeot 9X8": 0.304,
+   "Cadillac V-Series.R": 0.362,
+   "Porsche 963": 0.615,
+   "Glickenhaus 007 LMH": 1.256,
+   "Vanwall Vandervell 680": 2.731
+  },
+  "raceFastest": 96.696,
+  "raceFastestBy": "Toyota GR010 Hybrid #7",
+  "raceLaps": 200,
+  "raceDuration": 21631.922,
+  "winnerTime": "6:00:31.922",
+  "winner": "Toyota GR010 Hybrid #7",
+  "raceMedianTop5": 98.429,
+  "raceMedianTop5N": 836,
+  "lapLengthKm": 5.793,
+  "stintLaps": 28,
+  "stintLapsP75": 30,
+  "pitLaneTime": 25.2,
+  "stationaryBasisStops": 70,
+  "stationary": 53.3,
+  "stationaryRefuelOnly": 45.1,
+  "stationaryRefuelTyres": 59.2,
+  "tyreChangeExtra": 14.1,
+  "stopMix": {
+   "short": 28,
+   "long": 42
+  },
+  "pitTimeMedian": 78.5,
+  "stopLossTotal": 85.1,
+  "pitLoss": 30.3,
+  "topSpeed": 318.6,
+  "topSpeedMedianCarBest": 314.9,
+  "weather": {
+   "air": 33.5,
+   "track": 49.3,
+   "wet": false
+  },
+  "notes": "SC laps 10-15 (~0.3 h); SC laps 70-72 (~2.1 h); FCY laps 99-99 (~3.1 h); SC laps 140-142 (~4.3 h)",
+  "flag": "STALE: last WEC visit was 2023 (no 2024-2026 event). Hypercar regs then (LMH/LMDh) but BoP, tyres and the field differ from 2026."
+ },
+ "_note": "No WEC event here under current class structure since 2023; gt3 omitted (2023 GT class was LMGTE Am, not LMGT3).",
+ "_fields": "pole/qualiGaps: grid-order classification (Qualifying + Hyperpole) and each car model's best lap over all qualifying segments, gap in s to pole. raceMedianTop5: median of top-5 class finishers' laps with green flag at the line, previous lap also green, no pit in/out, within 107% of the car's own green median. pitLaneTime: pit-lane transit from the drive-through cluster of PIT_TIME (pit entry to exit, no stop). pitTimeMedian: median PIT_TIME of normal stops (<180 s). stationary = pitTimeMedian - pitLaneTime; stationaryRefuelOnly / stationaryRefuelTyres: 2-means split of the stops that ended a near-full stint (>=70% of stintLaps; WEC: refuel and tyre change are sequential). stopLossTotal: median (in-lap + out-lap - 2 x car green median) for stops with green laps; pitLoss: per-stop median of (stop loss - (PIT_TIME - pitLaneTime)) = time lost to the pit lane alone, excluding stationary time. stintLaps: median laps between consecutive normal stops (>=5 laps). topSpeed: highest per-car best TOP_SPEED (speed trap) in the race, after discarding implausible trap readings >105% of the class median car-best (listed in topSpeedDiscarded); topSpeedMedianCarBest also given. lapLengthKm: derived from KPH x lap time. Notes: SC (SF flag) / FCY periods on the overall winner's lap numbers."
+}

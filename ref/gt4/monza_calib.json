@@ -1,0 +1,144 @@
+{
+ "gt4": {
+  "year": 2026,
+  "layout": "Autodromo Nazionale di Monza 5793m",
+  "pole": 113.459,
+  "poleDrv": "B.Lariche / R.Consani",
+  "poleCar": "Audi R8 LMS GT4",
+  "poleSession": "Q2",
+  "q1Pole": {
+   "t": "1:53.474",
+   "drv": "B.Lariche / R.Consani",
+   "car": "Audi R8 LMS GT4"
+  },
+  "q2Pole": {
+   "t": "1:53.459",
+   "drv": "B.Lariche / R.Consani",
+   "car": "Audi R8 LMS GT4"
+  },
+  "qualiGaps": {
+   "Audi R8 LMS GT4": 0.0,
+   "Mercedes-AMG GT4": 0.518,
+   "McLaren Artura GT4": 0.522,
+   "Aston Martin Vantage AMR GT4 EVO": 0.592,
+   "Ford Mustang GT4": 0.835,
+   "Ginetta G56 Evo": 0.856,
+   "Toyota GR Supra GT4 EVO 2": 0.952,
+   "Porsche 718 Cayman GT4 RS CS": 1.162,
+   "Lotus Emira GT4": 1.281,
+   "BMW M4 GT4 G82 EVO": 1.732
+  },
+  "qualiWeather": {
+   "q1": {
+    "air": 28.0,
+    "track": 46.8,
+    "wet": false,
+    "cond": "Dry"
+   },
+   "q2": {
+    "air": 28.2,
+    "track": 49.9,
+    "wet": false,
+    "cond": "Dry"
+   }
+  },
+  "raceFastest": 114.922,
+  "raceFastestRace": "R2",
+  "raceMedianTop5": null,
+  "raceLaps": 25,
+  "raceDuration": 3651.869,
+  "winnerTime": "1:00:51.869",
+  "races": {
+   "r1": {
+    "date": "2026-05-30",
+    "winner": "E.Förderer / C.Fuchs",
+    "winnerCar": "Mercedes-AMG GT4",
+    "winnerTime": "1:00:51.869",
+    "raceDuration": 3651.869,
+    "raceLaps": 25,
+    "fastest": 115.022,
+    "fastestDrv": "M.Schiavone / M.Copetti",
+    "fastestCar": "Lotus Emira GT4",
+    "avgLapTop5": 146.161,
+    "started": 42,
+    "classified": 38,
+    "scPhases": 2,
+    "fcyPhases": 2,
+    "weatherStart": {
+     "air": 30.5,
+     "track": 49.9,
+     "wet": false,
+     "cond": "Dry"
+    },
+    "weatherEnd": {
+     "air": 30.7,
+     "track": 45.9,
+     "wet": false
+    },
+    "greenFlag": "17:39:48",
+    "chequeredFlag": "18:40:39"
+   },
+   "r2": {
+    "date": "2026-05-31",
+    "winner": "E.Förderer / C.Fuchs",
+    "winnerCar": "Mercedes-AMG GT4",
+    "winnerTime": "1:00:56.621",
+    "raceDuration": 3656.621,
+    "raceLaps": 26,
+    "fastest": 114.922,
+    "fastestDrv": "B.Lariche / R.Consani",
+    "fastestCar": "Audi R8 LMS GT4",
+    "avgLapTop5": 140.818,
+    "started": 39,
+    "classified": 33,
+    "scPhases": 2,
+    "fcyPhases": 1,
+    "weatherStart": {
+     "air": 30.8,
+     "track": 58.4,
+     "wet": false,
+     "cond": "Dry"
+    },
+    "weatherEnd": {
+     "air": 31.7,
+     "track": 56.3,
+     "wet": false
+    },
+    "greenFlag": "14:21:47",
+    "chequeredFlag": "15:22:34"
+   }
+  },
+  "pitLoss": null,
+  "pitLaneTime": null,
+  "stationary": null,
+  "stintLaps": null,
+  "topSpeed": null,
+  "pitRules": {
+   "mandatoryPitStop": true,
+   "driverChange": true,
+   "pitWindow": "pit-entry line crossed between 25:00.00 and 34:59.99 after the official start (window can be delayed/extended under SC/FCY)",
+   "minPitStopTime": "pit-lane delta (pit-in to pit-out at 50.0 km/h) + 50 s, measured pit-in to pit-out; exact figure issued per event in a Stewards' bulletin",
+   "minPitStopTimeSec": null,
+   "tyreChange": "not permitted except wet<->dry change of all four (min 3:00 pit-in to pit-out if done in the mandatory window) or confirmed damage",
+   "compensationTime": "Pro-Am/Am crew compensations and derogation pit-time penalties may be added (Art. 10.4.7)",
+   "regsSource": "2024 GT4 European Series Sporting Regulations S02, Art. 20 (latest regulations published on gt4europeanseries.com)"
+  },
+  "pitLaneSpeedKph": 50,
+  "weather": {
+   "air": 30.5,
+   "track": 49.9,
+   "wet": false,
+   "cond": "Dry"
+  },
+  "notes": "R1: 2 SC phase(s), 2 FCY phase(s); R2: 2 SC phase(s), 1 FCY phase(s); pole = fastest lap of Q1/Q2 (two separate sessions, each setting its own race grid, different drivers of each crew); raceDuration/raceLaps/winnerTime are Race 1; Race 2 under races.r2; no lap charts/pit timing published (results.sro.com unavailable), so raceMedianTop5/pit figures are null; avgLapTop5 = total time / laps of the lead-lap top 5 (includes start lap, SC/FCY and the mandatory stop)"
+ },
+ "_sources": [
+  "https://www.gt4europeanseries.com/results/2026/monza",
+  "https://www.gt4europeanseries.com/images/results/72/GTWCEU_GT4_FP2_ResultList_1.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/72/GTWCEU_GT4_Q1_ResultList_1.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/72/GTWCEU_GT4_Q2_ResultList_1.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/72/GTWCEU_GT4_R1_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/results/72/GTWCEU_GT4_R2_ResultList_2.0.PDF",
+  "https://www.gt4europeanseries.com/images/2024%20-%20GT4%20European%20Series%20-%20Sporting%20Regulations%20-%20S02.pdf"
+ ]
+}
