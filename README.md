@@ -9,7 +9,12 @@ A top-down racing strategy game played from the pit wall. You are the race engin
 
 ## Play
 
-Open `dist/pit-wall.html` in any modern browser. It is a single self-contained file and needs no server or install.
+Nothing to install. The whole game is one file, `dist/pit-wall.html`.
+
+1. On this repository's GitHub page, click **Code → Download ZIP**, then unzip it. Or clone it: `git clone https://github.com/nnorenberg/pit-wall.git`.
+2. Open the `dist` folder and double-click `pit-wall.html`. It opens in your browser (Chrome, Edge, Firefox or Safari) and works offline.
+
+Any changes you want to keep across sessions (your grid, championship standings) are saved in that browser.
 
 The driver radio and debriefs use built-in rules. When the page is hosted as a claude.ai artifact, drivers can also reply in their own words through Claude ("Hear it in their own words").
 
@@ -49,6 +54,8 @@ The intermediate files (`sim4.js`, `page4.html`, `caldata.js`, `apex-school.html
 | `calendar/` | rules, tyres, grids, schedules |
 | `trackcal.json`, `poles.json`, `gaps.json` | calibration outputs |
 | `tools/` | circuit-building pipeline (OSM fetch, smoothing, elevation, camber, validation) |
+| `osm/`, `ortho/` | intermediate circuit files used by the older Spa and Monza tools (`chain.py`, `geom_build*.py`, `lidar_wal*.py`). The aerial images themselves are not stored; `tools/ortho_width.py` downloads them again |
+| `calib/` | lap-by-lap and pit-stop timing from 2026 Spa and Monza, used to check pit loss and race pace |
 
 ## Common changes
 

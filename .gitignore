@@ -15,4 +15,8 @@ __pycache__/
 *.pyc
 # raw downloads used while building circuits and timing data
 tracks/*/
+ortho/*/
+ortho/*.jpg
+ortho/*.png
+ortho/*.log
 ref/*/raw/
