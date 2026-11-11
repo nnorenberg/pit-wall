@@ -75,25 +75,20 @@ function renderRadio() { renderChans(); renderMsgs(); renderSuggest(); renderJob
 // ---- engineer's controls ----
 const segBtns = (id, opts, val) => `<div class="seg" id="${id}" role="group">${opts.map(([v, l]) => `<button type="button" data-v="${v}" aria-pressed="${String(v) === String(val)}">${l}</button>`).join("")}</div>`;
 function pitLossEst(c) { const lt = world.laneTime(c); let tSec = 0; const T2 = T, v = c.plan || c.vlim; for (let i = T2.pit.entry; i !== T2.pit.exit; i = (i + 1) % T2.N) tSec += T2.ds / Math.max(v ? v[i] : 40, 5); return lt - tSec + (world.rules.service.tyres || 0); }
-function renderPitwall() {
-  const c = cars[selected], O = c.orders, set = world.tyreSet(c), f1 = c.sp.energy === "f1", refuel = world.rules.refuel || world.session !== "race";
+// The controls are rebuilt only when the car, the session or its stop count changes (or a command forces it);
+// every other refresh updates the live numbers and button states, so a half-made pit call is never wiped.
+function renderPitwall(force) {
+  const c = cars[selected], body = $("pw-body"), key = `${selected}|${world.sessionKey}|${c.stops}|${c.crew.length}`;
+  if (!force && body.dataset.key === key && body.querySelector(".pw-box")) return updatePitwall(c);
+  body.dataset.key = key;
+  const O = c.orders, set = world.tyreSet(c), f1 = c.sp.energy === "f1", refuel = world.rules.refuel || world.session !== "race";
   const mates = cars.filter(x => x !== c && x.team === c.team && x.sp.cls === c.sp.cls);
-  const ty = c.tyre, perLap = c.db.wearLaps.length ? c.db.wearLaps.slice(-4).reduce((a, b) => a + Math.max(b.F, b.R), 0) / Math.min(4, c.db.wearLaps.length) : null;
-  const cliff = perLap ? Math.max(0, (1 - ty.wear) / perLap) : null;
-  const fuelLaps = c.sp.energy === "ev" ? null : c.fuel / world.fuelPerLap(c);
-  const ga = c.gapAhead ? `${c.gapAhead.s.toFixed(1)} s to #${c.gapAhead.car.number}` : "clear air";
-  const behind = cars.filter(x => x.gapAhead && x.gapAhead.car === c)[0];
-  $("pw-body").innerHTML = `
+  body.innerHTML = `
     <div class="pw-row"><span class="ctl-label">Strategy</span>${segBtns("pw-owner", [["ai", "Team strategist"], ["user", "You"]], O.owner)}</div>
-    <div class="pw-data">
-      <div><span>Tyres</span><b>${esc(ty.comp.name)}</b> ${ty.age} laps · F ${Math.round(ty.tempF)}° / R ${Math.round(ty.tempR)}°C · wear F ${Math.round(ty.wearF * 100)}% R ${Math.round(ty.wearR * 100)}%${cliff != null ? ` · ~${Math.round(cliff)} laps to the cliff` : ""}</div>
-      <div><span>Fuel</span><b>${c.sp.energy === "ev" ? "electric" : c.fuel.toFixed(1) + " kg"}</b>${fuelLaps != null ? ` · ${fuelLaps.toFixed(1)} laps` : ""}${c.sp.energy === "f1" ? ` · battery ${c.soc.toFixed(2)} MJ, ${c.lapDeploy.toFixed(1)}/8.5 deployed${c.overtakeLap ? " · OVERTAKE MODE" : ""}` : ""}${c.sp.energy === "vet" ? ` · stint energy ${Math.round(c.stintE)}/${c.sp.stintMJ} MJ` : ""}</div>
-      <div><span>Gaps</span>${ga}${behind ? ` · #${behind.number} ${behind.gapAhead.s.toFixed(1)} s behind` : ""} · pit loss ≈ ${pitLossEst(c).toFixed(1)} s</div>
-      <div><span>Car</span>${c.damage.wing > 0.05 || c.damage.floor > 0.05 ? `<b style="color:var(--kerb)">damage: wing ${Math.round(c.damage.wing * 100)}%, floor ${Math.round(c.damage.floor * 100)}%</b>` : "no damage"}${c.pendingSetup ? ` · setup change waiting for the next stop` : ""}${c.crew.length > 1 ? ` · driving: ${esc(fullName(c))} (${fmtClock(c.driveTime[c.crewIdx])})` : ""}</div>
-    </div>
+    <div class="pw-data">${pitwallData(c)}</div>
     <div class="pw-box">
       <div class="ctl"><label class="ctl-label" for="pw-tyre">Tyres</label><select id="pw-tyre"><option value="">no change</option>${set.map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join("")}</select></div>
-      ${refuel && c.sp.energy !== "ev" ? `<div class="ctl"><label class="ctl-label" for="pw-fuel">Fuel +kg</label><input id="pw-fuel" type="number" min="0" max="110" step="1" value="${world.session === "race" ? Math.round(Math.min(60, world.fuelPerLap(c) * 20)) : 0}"></div>` : ""}
+      ${refuel && c.sp.energy !== "ev" ? `<div class="ctl"><label class="ctl-label" for="pw-fuel">Fuel +kg</label><input id="pw-fuel" type="number" inputmode="numeric" min="0" max="110" step="1" value="${world.session === "race" ? Math.round(Math.min(60, world.fuelPerLap(c) * 20)) : 0}"></div>` : ""}
       <div class="ctl"><label class="ctl-label" for="pw-wing">Front wing</label><select id="pw-wing"><option value="">no change</option><option value="-2">−2</option><option value="-1">−1</option><option value="1">+1</option><option value="2">+2</option><option value="new">new nose</option></select></div>
       <label class="chk"><input type="checkbox" id="pw-repair"> repair</label>
       ${c.crew.length > 1 ? `<label class="chk"><input type="checkbox" id="pw-driver"> driver change</label>` : ""}
@@ -105,6 +100,25 @@ function renderPitwall() {
     ${f1 ? `<div class="pw-row"><span class="ctl-label">Battery</span>${segBtns("pw-ers", [["harvest", "Harvest"], ["balanced", "Balanced"], ["attack", "Attack"]], O.ers)}</div>` : ""}
     <div class="pw-row"><span class="ctl-label">Racing</span>${segBtns("pw-pos", [["attack", "Attack"], ["free", "Free"], ["defend", "Defend"], ["hold", "Hold"]], O.position)}
       ${mates.length ? `<div class="ctl"><label class="ctl-label" for="pw-letby">Team order</label><select id="pw-letby"><option value="">race freely</option>${mates.map(m => `<option value="${m.slot}" ${O.letBy === m.slot ? "selected" : ""}>let #${m.number} by</option>`).join("")}</select></div>` : ""}</div>`;
+}
+function updatePitwall(c) {
+  const body = $("pw-body"), O = c.orders;
+  body.querySelector(".pw-data").innerHTML = pitwallData(c);
+  const go = $("pw-boxgo"); if (go) go.textContent = c.pitRequest ? "Boxing ✓ (update)" : "Box this lap";
+  for (const [id, v] of [["pw-owner", O.owner], ["pw-pace", O.pace], ["pw-mix", O.fuel], ["pw-lico", O.lico], ["pw-ers", O.ers], ["pw-pos", O.position]])
+    for (const btn of body.querySelectorAll(`#${id} button`)) btn.setAttribute("aria-pressed", String(btn.dataset.v === String(v)));
+  const lb = $("pw-letby"); if (lb && document.activeElement !== lb) lb.value = O.letBy == null ? "" : String(O.letBy);
+}
+function pitwallData(c) {
+  const ty = c.tyre, perLap = c.db.wearLaps.length ? c.db.wearLaps.slice(-4).reduce((a, b) => a + Math.max(b.F, b.R), 0) / Math.min(4, c.db.wearLaps.length) : null;
+  const cliff = perLap ? Math.max(0, (1 - ty.wear) / perLap) : null;
+  const fuelLaps = c.sp.energy === "ev" ? null : c.fuel / world.fuelPerLap(c);
+  const ga = c.gapAhead ? `${c.gapAhead.s.toFixed(1)} s to #${c.gapAhead.car.number}` : "clear air";
+  const behind = cars.filter(x => x.gapAhead && x.gapAhead.car === c)[0];
+  return `      <div><span>Tyres</span><b>${esc(ty.comp.name)}</b> ${ty.age} laps · F ${Math.round(ty.tempF)}° / R ${Math.round(ty.tempR)}°C · wear F ${Math.round(ty.wearF * 100)}% R ${Math.round(ty.wearR * 100)}%${cliff != null ? ` · ~${Math.round(cliff)} laps to the cliff` : ""}</div>
+      <div><span>Fuel</span><b>${c.sp.energy === "ev" ? "electric" : c.fuel.toFixed(1) + " kg"}</b>${fuelLaps != null ? ` · ${fuelLaps.toFixed(1)} laps` : ""}${c.sp.energy === "f1" ? ` · battery ${c.soc.toFixed(2)} MJ, ${c.lapDeploy.toFixed(1)}/8.5 deployed${c.overtakeLap ? " · OVERTAKE MODE" : ""}` : ""}${c.sp.energy === "vet" ? ` · stint energy ${Math.round(c.stintE)}/${c.sp.stintMJ} MJ` : ""}</div>
+      <div><span>Gaps</span>${ga}${behind ? ` · #${behind.number} ${behind.gapAhead.s.toFixed(1)} s behind` : ""} · pit loss ≈ ${pitLossEst(c).toFixed(1)} s</div>
+      <div><span>Car</span>${c.damage.wing > 0.05 || c.damage.floor > 0.05 ? `<b style="color:var(--kerb)">damage: wing ${Math.round(c.damage.wing * 100)}%, floor ${Math.round(c.damage.floor * 100)}%</b>` : "no damage"}${c.pendingSetup ? ` · setup change waiting for the next stop` : ""}${c.crew.length > 1 ? ` · driving: ${esc(fullName(c))} (${fmtClock(c.driveTime[c.crewIdx])})` : ""}</div>`;
 }
 function order(cmd, quiet) {
   const k = selected, c = cars[k];
@@ -407,3 +421,37 @@ $("debrief-body").addEventListener("click", async e => {
   }
 });
 $("debrief-now").addEventListener("click", () => { world.debriefs = cars.map(c => makeDebrief(c, world)); debriefSel = selected; renderDebrief(); });
+
+// ===== small interface helpers (design review) =====
+const reduceMotion = () => window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const EASE_OUT = "cubic-bezier(0.23, 1, 0.32, 1)";
+function pl(n, word) { return `${n} ${+n === 1 && !String(n).includes(".") ? word : word + "s"}`; }
+// the speed the sim is really running at, shown only when the per-frame cap holds it below the chosen speed
+let rsReal = 0, rsSim = 0;
+function trackRealSpeed(dt, simDt) {
+  rsReal += dt; rsSim += simDt;
+  if (rsReal < 1) return;
+  const x = rsSim / rsReal, want = simSpeed === "max" ? Infinity : simSpeed, el = $("speed-real");
+  el.textContent = running && x > 0 && x < want * 0.85 ? `running at ${x >= 10 ? Math.round(x) : x.toFixed(1)}×` : "";
+  rsReal = 0; rsSim = 0;
+}
+// timing tower: when positions change, each row slides from its old place to its new one (150 ms)
+function towerFlipStart(rows) {
+  if (reduceMotion()) return null;
+  const m = new Map(); for (const r of rows.children) m.set(r, r.getBoundingClientRect()); return m;
+}
+function towerFlipEnd(before) {
+  if (!before) return;
+  for (const [r, a] of before) {
+    const b = r.getBoundingClientRect(), dx = a.left - b.left, dy = a.top - b.top;
+    if ((dx || dy) && Math.abs(dy) < 400) r.animate([{ transform: `translate(${dx}px, ${dy}px)` }, { transform: "none" }], { duration: 150, easing: EASE_OUT });
+  }
+}
+// a fade at the bottom of the tower while more cars sit below the fold
+function towerMore(rows) { rows.classList.toggle("more", rows.scrollHeight - rows.scrollTop - rows.clientHeight > 2); }
+$("rows").addEventListener("scroll", e => towerMore(e.currentTarget), { passive: true });
+// content that arrives at the end of a session fades up 8 px (opacity only with reduced motion)
+function enterIn(el) {
+  if (!el || !el.animate) return;
+  el.animate(reduceMotion() ? [{ opacity: 0 }, { opacity: 1 }] : [{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 200, easing: EASE_OUT });
+}

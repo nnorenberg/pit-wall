@@ -16,6 +16,13 @@ const DEFAULT_GRID = {
 };
 const gridUI = { grid: JSON.parse(JSON.stringify(DEFAULT_GRID)), personas: {}, raceScale: 0.25, wecHours: null };
 try { const s = JSON.parse(localStorage.getItem("apex-grid-v1") || "null"); if (s && s.grid) Object.assign(gridUI, s); } catch { }
+// a saved grid from an older version may be empty or oversized: fall back per class
+for (const cid in DEFAULT_GRID) {
+  const g = gridUI.grid[cid] = gridUI.grid[cid] || JSON.parse(JSON.stringify(DEFAULT_GRID[cid]));
+  for (const k in g) g[k] = Math.max(0, Math.min(20, Math.round(+g[k] || 0)));
+  const tot = Object.values(g).reduce((x, y) => x + y, 0);
+  if (!tot || tot > 60) gridUI.grid[cid] = JSON.parse(JSON.stringify(DEFAULT_GRID[cid]));
+}
 const saveGrid = () => { try { localStorage.setItem("apex-grid-v1", JSON.stringify(gridUI)); } catch { } };
 function classOpt() { return CLASS_OPTS.find(o => o.id === classId) || CLASS_OPTS[0]; }
 function renderGridPanel() {
@@ -23,28 +30,45 @@ function renderGridPanel() {
   $("grid-body").innerHTML = opt.classIds.map(cid => {
     const cls = CLASSES.find(c => c.id === cid), g = gridUI.grid[cid], P = gridUI.personas[cid] || {};
     const total = SKILL_KEYS.reduce((s, k) => s + (g[k] || 0), 0);
-    return `<div class="gp-class"><div class="gp-head"><b>${esc(cls.name)}</b><span>${total} cars · real grid ${cls.grid} · ${cls.cars.length} manufacturers</span>
+    return `<div class="gp-class"><div class="gp-head"><b>${esc(cls.name)}</b><span><span class="gp-total" data-cid="${cid}">${total}</span> cars · real grid ${cls.grid} · ${cls.cars.length} manufacturers</span>
       <button type="button" class="btn" data-fill="${cid}">Fill to real grid</button></div>
       <table class="gp-tab"><thead><tr><th>Skill</th><th>Cars</th><th>Personality</th></tr></thead><tbody>
       ${SKILL_KEYS.map(s => `<tr><td><span class="ro-sw" style="background:${SKILL_BY[s].color}"></span>${SKILL_NAMES[s]}</td>
-        <td><input type="number" min="0" max="20" value="${g[s] || 0}" data-cid="${cid}" data-s="${s}" aria-label="${SKILL_NAMES[s]} in ${esc(cls.name)}"></td>
+        <td><input type="number" inputmode="numeric" min="0" max="20" value="${g[s] || 0}" data-cid="${cid}" data-s="${s}" aria-label="${SKILL_NAMES[s]} in ${esc(cls.name)}"></td>
         <td><select data-cid="${cid}" data-p="${s}"><option value="mixed">Mixed</option>${Object.entries(PERSONAS).map(([k, p]) => `<option value="${k}" ${P[s] === k ? "selected" : ""}>${p.label}</option>`).join("")}</select></td></tr>`).join("")}
       </tbody></table></div>`;
   }).join("") + `<div class="gp-foot"><label>Race distance <select id="gp-scale">${[[1, "Full distance"], [0.5, "50%"], [0.25, "25%"], [0.1, "10%"]].map(([v, l]) => `<option value="${v}" ${gridUI.raceScale === v ? "selected" : ""}>${l}</option>`).join("")}</select></label>
     <span class="note">Bigger grids and full distances take longer to simulate. A 24-hour Le Mans with 36 cars runs about 10 minutes at Max.</span>
+    <span class="gp-warn" id="gp-warn" role="status"></span>
     <button type="button" class="btn primary" id="gp-apply">Build this grid</button></div>`;
+  gridCheck();
+}
+// at most 60 cars per class (more than any real grid, and the page stays responsive); at least one car overall
+const CLASS_MAX = 60;
+const classTotal = cid => SKILL_KEYS.reduce((s, k) => s + (gridUI.grid[cid][k] || 0), 0);
+function gridCheck() {
+  const ids = classOpt().classIds, total = ids.reduce((s, cid) => s + classTotal(cid), 0);
+  for (const el of document.querySelectorAll(".gp-total")) el.textContent = classTotal(el.dataset.cid);
+  const warn = $("gp-warn"), go = $("gp-apply");
+  if (warn) warn.textContent = total ? "" : "Add at least one car to build a grid.";
+  if (go) go.disabled = !total;
+  return total;
 }
 $("grid-body").addEventListener("change", e => {
   const t = e.target;
-  if (t.dataset.s) gridUI.grid[t.dataset.cid][t.dataset.s] = clamp(Math.round(+t.value || 0), 0, 20);
+  if (t.dataset.s) {
+    const cid = t.dataset.cid, others = classTotal(cid) - (gridUI.grid[cid][t.dataset.s] || 0);
+    const v = clamp(Math.round(+t.value || 0), 0, Math.min(20, CLASS_MAX - others));
+    gridUI.grid[cid][t.dataset.s] = v; if (+t.value !== v) t.value = v;
+  }
   if (t.dataset.p) { gridUI.personas[t.dataset.cid] = gridUI.personas[t.dataset.cid] || {}; gridUI.personas[t.dataset.cid][t.dataset.p] = t.value === "mixed" ? undefined : t.value; }
   if (t.id === "gp-scale") gridUI.raceScale = +t.value;
-  saveGrid(); renderGridPanel();
+  saveGrid(); gridCheck();
 });
 $("grid-body").addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
   if (b.dataset.fill) { const cid = b.dataset.fill, cls = CLASSES.find(c => c.id === cid), g = gridUI.grid[cid]; let tot = SKILL_KEYS.reduce((s, k) => s + (g[k] || 0), 0), i = 0; while (tot < cls.grid) { g[SKILL_KEYS[i++ % 6]]++; tot++; } while (tot > cls.grid) { const k = SKILL_KEYS[5 - (i++ % 6)]; if (g[k] > 0) { g[k]--; tot--; } } saveGrid(); renderGridPanel(); }
-  if (b.id === "gp-apply") { saveGrid(); newSession(); transcriptsReset(`New grid: ${cars.length} cars.`); }
+  if (b.id === "gp-apply") { if (!gridCheck()) return; saveGrid(); newSession(); transcriptsReset(`New grid: ${cars.length} cars.`); }
 });
 function transcriptsReset(msg) { buildChans(); transcripts.forEach(t => t.push({ from: "sys", text: msg })); select(Math.min(selected, cars.length - 1)); }
 // persona "mixed": each driver keeps a personality drawn from its own seed
@@ -85,7 +109,7 @@ function renderChamp() {
   if (!live) { $("ch-stand").innerHTML = `<div class="empty">Start a championship to keep points across rounds. It uses the grid you built.</div>`; return; }
   const dr = Object.entries(champ.drivers).sort((a, b) => b[1].pts - a[1].pts), tm = Object.entries(champ.teams).sort((a, b) => b[1] - a[1]);
   $("ch-stand").innerHTML = `<div class="ch-tables"><table class="res-table"><thead><tr><th>P</th><th class="name">Driver</th><th class="name">Car</th><th>Pts</th><th>Wins</th></tr></thead><tbody>
-    ${dr.slice(0, 40).map(([k, d], i) => `<tr><td>${i + 1}</td><td class="name"><span class="ro-sw" style="background:${d.color}"></span>${esc(d.name)}</td><td class="name">${esc(d.car)}</td><td>${d.pts}</td><td>${d.wins || 0}</td></tr>`).join("")}</tbody></table>
+    ${dr.slice(0, 40).map(([k, d], i) => `<tr data-k="${esc(k)}"><td>${i + 1}</td><td class="name"><span class="ro-sw" style="background:${d.color}"></span>${esc(d.name)}</td><td class="name">${esc(d.car)}</td><td>${d.pts}</td><td>${d.wins || 0}</td></tr>`).join("")}</tbody></table>
     <table class="res-table"><thead><tr><th>P</th><th class="name">Team / manufacturer</th><th>Pts</th></tr></thead><tbody>${tm.map(([t, p], i) => `<tr><td>${i + 1}</td><td class="name">${esc(t)}</td><td>${p}</td></tr>`).join("")}</tbody></table></div>`;
 }
 $("ch-series").innerHTML = CHAMP_SERIES.map(s => `<option value="${s.id}">${esc(s.name)}</option>`).join("");
@@ -114,6 +138,7 @@ function awardPoints() {
   if (!champ || champ.round == null || world.mode !== "weekend" || !world.ended) return;
   const def = world.sessionDef, key = `${champ.round}:${def.key}`;
   if (champ.awarded[key]) return;
+  const before = Object.fromEntries(Object.entries(champ.drivers).map(([k, d]) => [k, d.pts]));
   let table = def.points;
   if (table === "wec") table = WEC_POINTS[world.config.wecHours >= 24 ? 24 : world.config.wecHours >= 8 ? 8 : 6] || WEC_POINTS[6];
   const add = (c, pts, win) => {
@@ -128,6 +153,13 @@ function awardPoints() {
   } else return;
   champ.awarded[key] = true;
   if (def === world.format[world.format.length - 1] && !champ.done.includes(champ.round)) champ.done.push(champ.round);
-  saveChamp(); renderChamp();
+  saveChamp(); renderChamp(); flashScorers(before);
   world.say(`Championship points awarded for ${def.name}.`);
+}
+
+function flashScorers(before) {
+  for (const tr of document.querySelectorAll("#ch-stand tr[data-k]")) {
+    const d = champ.drivers[tr.dataset.k];
+    if (d && d.pts > (before[tr.dataset.k] || 0)) tr.classList.add("pts-new");
+  }
 }

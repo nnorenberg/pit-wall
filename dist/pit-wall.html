@@ -1,5 +1,8 @@
 
 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f141a">
 <title>Pit Wall</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +18,7 @@
   --rule: #26303c;
   --ink: #e9edf2;
   --ink-2: #a8b2be;
-  --muted: #6c7886;
+  --muted: #838f9e;
   --kerb: #e5484d;
   --go: #43b97a;
   --flag: #f1d36b;
@@ -62,7 +65,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .tower-head h2, .sec-title { margin: 0; font: 700 13px/1 var(--f-display); letter-spacing: 0.14em; text-transform: uppercase; }
 .tower-head span { font: 400 11px/1 var(--f-data); color: var(--muted); }
 .row { display: grid; grid-template-columns: 22px 6px minmax(0,1fr) auto; gap: 4px 10px; align-items: center; padding: 9px 14px; border: 0; border-bottom: 1px solid var(--rule); cursor: pointer; background: transparent; color: inherit; text-align: left; font: inherit; width: 100%; }
-.row:hover { background: var(--panel-2); }
+@media (hover: hover) and (pointer: fine) { .row:hover { background: var(--panel-2); } }
 .row[aria-pressed="true"] { background: var(--panel-2); box-shadow: inset 3px 0 0 var(--ink); }
 .pos { font: 800 20px/1 var(--f-display); color: var(--ink-2); text-align: center; font-style: italic; }
 .swatch { width: 6px; height: 34px; border-radius: 3px; }
@@ -89,7 +92,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .car-line span { font: 400 11.5px/1.2 var(--f-data); color: var(--muted); }
 .specs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 5px; overflow: hidden; }
 .spec { background: var(--panel); padding: 7px 9px; }
-.spec .lab { font: 600 9.5px/1 var(--f-display); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.spec .lab { font: 600 10.5px/1 var(--f-display); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
 .spec .val { font: 500 13.5px/1.3 var(--f-data); font-variant-numeric: tabular-nums; margin-top: 3px; }
 .spec .val small { color: var(--muted); font-size: 10.5px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -102,7 +105,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 
 .phases { display: grid; grid-template-columns: repeat(5, 1fr); gap: 3px; }
 .phase { padding: 8px 4px 7px; background: var(--panel-2); text-align: center; font: 700 12px/1.1 var(--f-display); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); border-radius: 3px; }
-.phase small { display: block; font: 400 9.5px/1.2 var(--f-data); letter-spacing: 0; text-transform: none; margin-top: 3px; }
+.phase small { display: block; font: 400 10.5px/1.2 var(--f-data); letter-spacing: 0; text-transform: none; margin-top: 3px; }
 .phase.on { background: var(--flag); color: #1a1500; }
 
 .live { display: grid; grid-template-columns: 150px minmax(0,1fr); gap: 14px; align-items: center; }
@@ -138,7 +141,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .radio-col + .radio-col { border-left: 1px solid var(--rule); }
 .chan-list { display: grid; gap: 4px; margin-top: 10px; }
 .chan { display: grid; grid-template-columns: 6px minmax(0,1fr) 8px; gap: 8px; align-items: center; padding: 8px 8px; border-radius: 5px; border: 0; background: transparent; color: inherit; text-align: left; cursor: pointer; font: inherit; }
-.chan:hover { background: var(--panel-2); }
+@media (hover: hover) and (pointer: fine) { .chan:hover { background: var(--panel-2); } }
 .chan[aria-pressed="true"] { background: var(--panel-2); box-shadow: inset 0 0 0 1px #3a4655; }
 .chan .swatch { height: 26px; }
 .chan b { display: block; font: 700 15px/1.1 var(--f-display); text-transform: uppercase; }
@@ -158,7 +161,7 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .msg.typing { color: var(--muted); font-style: italic; }
 .suggest { display: flex; flex-wrap: wrap; gap: 6px; }
 .suggest button { font: 400 12px/1.2 var(--f-body); color: var(--ink-2); background: transparent; border: 1px dashed #3a4655; border-radius: 14px; padding: 5px 10px; cursor: pointer; text-align: left; }
-.suggest button:hover { color: var(--ink); border-color: var(--ink-2); }
+@media (hover: hover) and (pointer: fine) { .suggest button:hover { color: var(--ink); border-color: var(--ink-2); } }
 #radio-form { display: flex; gap: 8px; }
 #radio-input { flex: 1; min-width: 0; background: var(--bg); border: 1px solid var(--rule); border-radius: var(--r); color: var(--ink); font: 400 14px/1.3 var(--f-body); padding: 10px 12px; }
 #radio-input::placeholder { color: var(--muted); }
@@ -211,7 +214,7 @@ select { background: var(--panel); color: var(--ink); border: 1px solid var(--ru
 .chart-box { position: relative; }
 .chart-box canvas { display: block; width: 100%; }
 .tele-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 14px; align-items: start; }
-#tele { height: 720px; cursor: crosshair; touch-action: none; }
+#tele { height: 720px; cursor: crosshair; touch-action: pan-y; }
 #tele:focus-visible { outline: 2px solid var(--flag); outline-offset: 2px; }
 .tele-side { display: grid; gap: 10px; }
 #minimap { display: block; width: 100%; height: 220px; background: var(--bg); border: 1px solid var(--rule); border-radius: 6px; cursor: pointer; }
@@ -244,7 +247,7 @@ select { background: var(--panel); color: var(--ink); border: 1px solid var(--ru
 .log-row .res { text-align: right; font-variant-numeric: tabular-nums; }
 .log-row.kept .res { color: var(--go); }
 .log-row.off .res { color: var(--kerb); }
-.tag { font: 600 9.5px/1 var(--f-display); letter-spacing: 0.1em; text-transform: uppercase; color: #1a1500; background: var(--flag); border-radius: 3px; padding: 2px 4px; margin-right: 5px; vertical-align: 1px; }
+.tag { font: 600 10.5px/1 var(--f-display); letter-spacing: 0.1em; text-transform: uppercase; color: #1a1500; background: var(--flag); border-radius: 3px; padding: 2px 4px; margin-right: 5px; vertical-align: 1px; }
 .tbl-wrap { overflow-x: auto; }
 table { border-collapse: collapse; font: 400 11.5px/1.4 var(--f-data); font-variant-numeric: tabular-nums; width: 100%; }
 th, td { padding: 6px 9px; text-align: right; border-bottom: 1px solid var(--rule); white-space: nowrap; }
@@ -252,7 +255,7 @@ th { color: var(--muted); font-weight: 500; font-size: 10.5px; }
 th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
 tr.cur td { background: var(--panel-2); color: var(--ink); }
 tbody tr { cursor: pointer; }
-tbody tr:hover td { background: var(--panel-2); }
+@media (hover: hover) and (pointer: fine) { tbody tr:hover td { background: var(--panel-2); } }
 td.slow { color: var(--kerb); } td.fast { color: var(--go); }
 
 /* reference panel: a timing-sheet look, quieter than the live desk */
@@ -262,13 +265,13 @@ td.slow { color: var(--kerb); } td.fast { color: var(--go); }
 .ref-title h2 { margin: 0; font: 800 30px/1 var(--f-display); text-transform: uppercase; font-style: italic; }
 .ref-title p { margin: 6px 0 0; color: var(--muted); font-size: 12.5px; max-width: 70ch; }
 .ref-tabs { flex-wrap: wrap; }
-.ref-tabs button small { display: block; font: 400 9.5px/1.2 var(--f-data); letter-spacing: 0; text-transform: none; color: inherit; opacity: 0.75; margin-top: 2px; }
+.ref-tabs button small { display: block; font: 400 10.5px/1.2 var(--f-data); letter-spacing: 0; text-transform: none; color: inherit; opacity: 0.75; margin-top: 2px; }
 .ref-tabs button:disabled { opacity: 0.45; cursor: default; }
 .ref-body { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 16px; align-items: start; }
 .ref-main { display: grid; gap: 12px; min-width: 0; }
 .ref-controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
 .ref-controls .seg { flex-wrap: wrap; }
-.ref-controls .seg button small { font: 400 9.5px/1 var(--f-data); letter-spacing: 0; text-transform: none; margin-left: 5px; opacity: 0.7; }
+.ref-controls .seg button small { font: 400 10.5px/1 var(--f-data); letter-spacing: 0; text-transform: none; margin-left: 5px; opacity: 0.7; }
 .ref-note { font-size: 12.5px; color: var(--ink-2); background: var(--panel-2); border-left: 3px solid var(--flag); padding: 8px 11px; border-radius: 0 4px 4px 0; }
 .ref-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
 .sum { background: var(--panel); padding: 9px 12px; min-width: 0; }
@@ -286,7 +289,7 @@ td.slow { color: var(--kerb); } td.fast { color: var(--go); }
 .ref-table tbody tr { cursor: default; }
 .ref-table tbody tr:first-child td { color: var(--ink); }
 .ref-table td.p { color: var(--muted); }
-.ref-table .seg-tag, .ref-table .cat { font: 600 9.5px/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 5px; border-radius: 3px; background: var(--panel-2); color: var(--ink-2); margin-left: 6px; }
+.ref-table .seg-tag, .ref-table .cat { font: 600 10.5px/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 5px; border-radius: 3px; background: var(--panel-2); color: var(--ink-2); margin-left: 6px; }
 .ref-table .pen { color: var(--flag); margin-left: 3px; }
 .ref-src { margin: 0; font-size: 11.5px; color: var(--muted); }
 .ref-side { background: var(--panel-2); border-radius: 6px; padding: 14px 14px 12px; display: grid; gap: 10px; font-size: 12.5px; color: var(--ink-2); }
@@ -329,7 +332,7 @@ td.slow { color: var(--kerb); } td.fast { color: var(--go); }
   .specs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 /* ---- v7: pit wall, setup, debrief, grid, championship ---- */
-.cat { font: 600 9.5px/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 5px; border-radius: 3px; background: var(--panel-2); color: var(--ink-2); margin-left: 4px; }
+.cat { font: 600 10.5px/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 5px; border-radius: 3px; background: var(--panel-2); color: var(--ink-2); margin-left: 4px; }
 .note { color: var(--muted); font-size: 12px; line-height: 1.45; margin: 6px 0; }
 .rows { max-height: 640px; overflow-y: auto; }
 .row .who .sk { font: 600 10px/1 var(--f-display); letter-spacing: 0.08em; margin-left: 4px; }
@@ -354,7 +357,7 @@ td.slow { color: var(--kerb); } td.fast { color: var(--go); }
 .su-row b { font: 500 13px var(--f-data); text-align: right; }
 .su-row input[type=range] { width: 100%; accent-color: var(--flag); }
 .su-row.locked { opacity: 0.45; }
-.su-tag { font: 600 9.5px/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 5px; border-radius: 3px; background: var(--panel-2); color: var(--ink-2); text-align: center; }
+.su-tag { font: 600 10.5px/1 var(--f-display); letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 5px; border-radius: 3px; background: var(--panel-2); color: var(--ink-2); text-align: center; }
 .su-tag.cockpit { color: var(--go); } .su-tag.locked { color: var(--kerb); }
 .geo-nav button.on { background: var(--ink); color: var(--bg); }
 .baltab { width: 100%; border-collapse: collapse; font: 400 12px var(--f-data); }
@@ -396,13 +399,52 @@ td.slow { color: var(--kerb); } td.fast { color: var(--go); }
 .ch-tables { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 14px; }
 @media (max-width: 900px) { .pitwall { grid-template-columns: 1fr; } .desk.two, .ch-wrap, .ch-tables { grid-template-columns: 1fr; } .pitwall .radio-col + .radio-col { border-left: 0; border-top: 1px solid var(--rule); } .pitwall .chan-list { max-height: 160px; } }
 @media (max-width: 520px) { .su-row { grid-template-columns: 1fr 40px; } .su-row input[type=range] { grid-column: 1 / -1; grid-row: 2; } .su-row .su-tag { display: none; } .dc-grid { grid-template-columns: 1fr; } }
+/* ===== design review: touch, press feedback, legibility, phones ===== */
+html { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; }
+button, select, .row, .chan { touch-action: manipulation; }
+button { -webkit-user-select: none; user-select: none; transition: transform 120ms cubic-bezier(0.23, 1, 0.32, 1); }
+.btn:not(:disabled):active, .seg button:not(:disabled):active, .suggest button:active, #ch-cal .btn:active { transform: scale(0.97); }
+.progress div { width: 100% !important; transform: scaleX(0); transform-origin: left center; }
+.rows.more { -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 48px), transparent); mask-image: linear-gradient(to bottom, #000 calc(100% - 48px), transparent); }
+.speed-real { font: 400 11px/1 var(--f-data); color: var(--flag); align-self: center; white-space: nowrap; }
+.speed-real:empty { display: none; }
+.gp-warn { color: var(--flag); font-size: 12px; }
+.pts-new td { animation: pts-flash 1.2s ease-out; }
+@keyframes pts-flash { from { background: rgba(241, 211, 107, 0.22); } to { background: transparent; } }
+@media (pointer: coarse) {
+  input, select, textarea { font-size: 16px !important; }
+  .btn, .seg button, select { min-height: 40px; }
+}
+@media (max-width: 760px) {
+  #ctable, #ref-table, .ref-table, .res-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+@media (prefers-reduced-motion: reduce) {
+  button { transition: none; }
+  .btn:active, .seg button:active { transform: none; }
+  .pts-new td { animation-duration: 0.6s; }
+}
+/* the page grid must never take its width from its widest child */
+.wrap { grid-template-columns: minmax(0, 1fr); }
+.wrap > *, .main > *, .desk > *, .lower > * { min-width: 0; }
+@media (max-width: 520px) {
+  .ctl { flex-wrap: wrap; max-width: 100%; }
+  .ctl select, #trk, #cls { max-width: 100%; min-width: 0; }
+  .seg { flex-wrap: wrap; }
+  .geo-head > *, .chart-head > *, .ch-wrap > *, .su-row > * { min-width: 0; max-width: 100%; }
+  .gp-tab, #setup-bal table, #setup-bal { display: block; overflow-x: auto; }
+}
+@media (max-width: 520px) {
+  header > *, .controls { min-width: 0; max-width: 100%; }
+  .ctl:has(#trk), .ctl:has(#cls) { flex: 1 1 100%; }
+  #trk, #cls { flex: 1 1 auto; width: 100%; }
+}
 
 </style>
 
 <div class="wrap">
   <header>
     <div class="brand">
-      <h1>Apex <span>School</span></h1>
+      <h1>Pit <span>Wall</span></h1>
       <p>You run the pit wall. Build a grid from Rookies to Pros, set the cars up, call the stops, manage tyres, fuel and energy, and hear from the drivers after every session, on measured models of the real 2026 circuits.</p>
     </div>
     <div class="controls">
@@ -411,6 +453,7 @@ td.slow { color: var(--kerb); } td.fast { color: var(--go); }
         <div class="seg" id="speeds" role="group" aria-label="Simulation speed">
           <button type="button" data-s="1">1×</button><button type="button" data-s="4">4×</button><button type="button" data-s="16">16×</button><button type="button" data-s="64">64×</button><button type="button" data-s="max">Max</button>
         </div>
+        <span class="speed-real" id="speed-real" aria-live="polite"></span>
       </div>
       <div class="ctl"><span class="ctl-label">Lines</span>
         <div class="seg" id="lines" role="group" aria-label="Racing lines shown">
@@ -599,7 +642,7 @@ td.slow { color: var(--kerb); } td.fast { color: var(--go); }
     <section class="panel chart-card" aria-label="Learning curves">
       <div class="chart-head"><div class="sec-title">Learning curves</div><p>Lap time for every lap. × marks a crash lap.</p></div>
       <div class="legend" id="lc-legend"></div>
-      <div class="chart-box"><canvas id="learn"></canvas><div class="tip" id="lc-tip" hidden></div></div>
+      <div class="chart-box"><canvas id="learn" aria-label="Learning curve: lap time per lap for every driver"></canvas><div class="tip" id="lc-tip" hidden></div></div>
     </section>
     <section class="panel chart-card" aria-label="Experiment log">
       <div class="chart-head"><div class="sec-title">Experiment log</div><p>Each lap tests 4 of 20 sectors. A change stays only if that sector and the next one get faster.</p></div>
@@ -2618,7 +2661,7 @@ function buildRows() {
     rows.appendChild(b);
   });
 }
-const tyreBadge = c => `<span class="tyre" title="${esc(c.tyre.comp.name)}, ${c.tyre.age} laps, ${Math.round(c.tyre.wear * 100)}% worn, ${Math.round(c.tyre.temp)}°C"><i style="--c:${c.tyre.comp.col}">${c.tyre.comp.id}</i>${c.tyre.age}</span>`;
+const tyreBadge = c => `<span class="tyre" title="${esc(c.tyre.comp.name)}, ${pl(c.tyre.age, "lap")}, ${Math.round(c.tyre.wear * 100)}% worn, ${Math.round(c.tyre.temp)}°C"><i style="--c:${c.tyre.comp.col}">${c.tyre.comp.id}</i>${c.tyre.age}</span>`;
 function standings() {
   if (world.session === "race") return world.raceOrder();
   if (world.session === "quali") {
@@ -2645,6 +2688,7 @@ function raceGap(c, leader) {
 function updateRows() {
   const order = standings(), rows = $("rows"), leaderK = order[0], leader = cars[leaderK], ses = world.session;
   const qp = ses === "quali" ? world.qualiParts() : null, partName = qp ? qp[Math.min(world.qPart, qp.length - 1)].name : null;
+  const flip = towerFlipStart(rows);
   order.forEach((k, p) => {
     const c = cars[k], el = $("row-" + k);
     if (rows.children[p] !== el) rows.insertBefore(el, rows.children[p]);
@@ -2661,12 +2705,13 @@ function updateRows() {
       const out = (world.qOut || []).includes(k);
       best = out ? Math.min(...Object.values(qb), Infinity) : (mine ?? Infinity);
       gap = out ? "eliminated" : p === 0 ? partName : mine && lb ? "+" + (mine - lb).toFixed(3) : "no time";
-    } else { const lb = cars[leaderK].best; gap = (p === 0 ? "fastest" : isFinite(best) && isFinite(lb) ? "+" + (best - lb).toFixed(2) : "–") + ` · ${c.laps.length} laps`; }
+    } else { const lb = cars[leaderK].best; gap = (p === 0 ? "fastest" : isFinite(best) && isFinite(lb) ? "+" + (best - lb).toFixed(2) : "–") + ` · ${pl(c.laps.length, "lap")}`; }
     el.querySelector(".best").textContent = ses === "quali" ? fmtT(best) : fmt(best);
     el.querySelector(".gap").textContent = gap;
   });
+  towerFlipEnd(flip); towerMore(rows);
 }
-function updateProgress() { cars.forEach((c, k) => { const el = $("row-" + k); if (el) el.querySelector(".progress div").style.width = (c.pit ? 0 : (c.idx / T.N) * 100) + "%"; }); }
+function updateProgress() { cars.forEach((c, k) => { const el = $("row-" + k); if (el) el.querySelector(".progress div").style.transform = `scaleX(${c.pit ? 0 : c.idx / T.N})`; }); }
 
 // ---------- driver desk ----------
 function select(k) {
@@ -2698,7 +2743,7 @@ function renderCarState() {
   const c = cars[selected], ty = c.tyre, [lo, hi] = ty.comp.win, sp = c.sp;
   const tState = ty.temp < lo ? "cold" : ty.temp > hi ? "overheating" : "in window";
   const parts = [
-    ["Tyres", `<span class="tyre"><i style="--c:${ty.comp.col}">${ty.comp.id}</i></span> ${esc(ty.comp.name)} <small>· ${ty.age} laps</small>`, null],
+    ["Tyres", `<span class="tyre"><i style="--c:${ty.comp.col}">${ty.comp.id}</i></span> ${esc(ty.comp.name)} <small>· ${pl(ty.age, "lap")}</small>`, null],
     ["Tyre wear", `${Math.round(ty.wearF * 100)}<small>% F</small> ${Math.round(ty.wearR * 100)}<small>% R · grip ${Math.round((c.tyreWF || 1) * 100)}%</small>`, Math.min(1, ty.wear)],
     ["Tyre temp", `${Math.round(ty.tempF)}<small>° front</small> ${Math.round(ty.tempR)}<small>° rear · ${tState} (${lo}–${hi})</small>`, null],
     ["Fuel", `${c.fuel.toFixed(1)}<small> kg${c.fuelLap ? ` · ${c.fuelLap.toFixed(2)}/lap` : ""}</small>`, null],
@@ -2711,7 +2756,7 @@ function renderCarState() {
 const fcTrail = [];
 function updateDesk() {
   const c = cars[selected];
-  $("d-meta").textContent = `${fullName(c)} · ${c.driver.weight} kg · ${PERSONAS[c.driver.persona].label} · ${c.laps.length} laps · ${c.crashes} incidents${c.stops ? ` · ${c.stops} stops` : ""}`;
+  $("d-meta").textContent = `${fullName(c)} · ${c.driver.weight} kg · ${PERSONAS[c.driver.persona].label} · ${pl(c.laps.length, "lap")} · ${pl(c.crashes, "incident")}${c.stops ? ` · ${c.stops} stops` : ""}`;
   $("d-stats").innerHTML = `<span>Best <b>${fmt(c.best)}</b></span><span>Last <b>${fmt(c.lastLap ?? Infinity)}</b></span><span>Kept <b>${c.improvements}</b>/${c.attempts}</span>`;
   $("g-v").innerHTML = `${Math.round(kph(c.v))}<small> km/h</small>`;
   $("g-st").innerHTML = `${(Math.atan(c.k * (c.sp.wb || 3)) * 180 / Math.PI).toFixed(1)}<small>°</small>`;
@@ -3207,25 +3252,20 @@ function renderRadio() { renderChans(); renderMsgs(); renderSuggest(); renderJob
 // ---- engineer's controls ----
 const segBtns = (id, opts, val) => `<div class="seg" id="${id}" role="group">${opts.map(([v, l]) => `<button type="button" data-v="${v}" aria-pressed="${String(v) === String(val)}">${l}</button>`).join("")}</div>`;
 function pitLossEst(c) { const lt = world.laneTime(c); let tSec = 0; const T2 = T, v = c.plan || c.vlim; for (let i = T2.pit.entry; i !== T2.pit.exit; i = (i + 1) % T2.N) tSec += T2.ds / Math.max(v ? v[i] : 40, 5); return lt - tSec + (world.rules.service.tyres || 0); }
-function renderPitwall() {
-  const c = cars[selected], O = c.orders, set = world.tyreSet(c), f1 = c.sp.energy === "f1", refuel = world.rules.refuel || world.session !== "race";
+// The controls are rebuilt only when the car, the session or its stop count changes (or a command forces it);
+// every other refresh updates the live numbers and button states, so a half-made pit call is never wiped.
+function renderPitwall(force) {
+  const c = cars[selected], body = $("pw-body"), key = `${selected}|${world.sessionKey}|${c.stops}|${c.crew.length}`;
+  if (!force && body.dataset.key === key && body.querySelector(".pw-box")) return updatePitwall(c);
+  body.dataset.key = key;
+  const O = c.orders, set = world.tyreSet(c), f1 = c.sp.energy === "f1", refuel = world.rules.refuel || world.session !== "race";
   const mates = cars.filter(x => x !== c && x.team === c.team && x.sp.cls === c.sp.cls);
-  const ty = c.tyre, perLap = c.db.wearLaps.length ? c.db.wearLaps.slice(-4).reduce((a, b) => a + Math.max(b.F, b.R), 0) / Math.min(4, c.db.wearLaps.length) : null;
-  const cliff = perLap ? Math.max(0, (1 - ty.wear) / perLap) : null;
-  const fuelLaps = c.sp.energy === "ev" ? null : c.fuel / world.fuelPerLap(c);
-  const ga = c.gapAhead ? `${c.gapAhead.s.toFixed(1)} s to #${c.gapAhead.car.number}` : "clear air";
-  const behind = cars.filter(x => x.gapAhead && x.gapAhead.car === c)[0];
-  $("pw-body").innerHTML = `
+  body.innerHTML = `
     <div class="pw-row"><span class="ctl-label">Strategy</span>${segBtns("pw-owner", [["ai", "Team strategist"], ["user", "You"]], O.owner)}</div>
-    <div class="pw-data">
-      <div><span>Tyres</span><b>${esc(ty.comp.name)}</b> ${ty.age} laps · F ${Math.round(ty.tempF)}° / R ${Math.round(ty.tempR)}°C · wear F ${Math.round(ty.wearF * 100)}% R ${Math.round(ty.wearR * 100)}%${cliff != null ? ` · ~${Math.round(cliff)} laps to the cliff` : ""}</div>
-      <div><span>Fuel</span><b>${c.sp.energy === "ev" ? "electric" : c.fuel.toFixed(1) + " kg"}</b>${fuelLaps != null ? ` · ${fuelLaps.toFixed(1)} laps` : ""}${c.sp.energy === "f1" ? ` · battery ${c.soc.toFixed(2)} MJ, ${c.lapDeploy.toFixed(1)}/8.5 deployed${c.overtakeLap ? " · OVERTAKE MODE" : ""}` : ""}${c.sp.energy === "vet" ? ` · stint energy ${Math.round(c.stintE)}/${c.sp.stintMJ} MJ` : ""}</div>
-      <div><span>Gaps</span>${ga}${behind ? ` · #${behind.number} ${behind.gapAhead.s.toFixed(1)} s behind` : ""} · pit loss ≈ ${pitLossEst(c).toFixed(1)} s</div>
-      <div><span>Car</span>${c.damage.wing > 0.05 || c.damage.floor > 0.05 ? `<b style="color:var(--kerb)">damage: wing ${Math.round(c.damage.wing * 100)}%, floor ${Math.round(c.damage.floor * 100)}%</b>` : "no damage"}${c.pendingSetup ? ` · setup change waiting for the next stop` : ""}${c.crew.length > 1 ? ` · driving: ${esc(fullName(c))} (${fmtClock(c.driveTime[c.crewIdx])})` : ""}</div>
-    </div>
+    <div class="pw-data">${pitwallData(c)}</div>
     <div class="pw-box">
       <div class="ctl"><label class="ctl-label" for="pw-tyre">Tyres</label><select id="pw-tyre"><option value="">no change</option>${set.map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join("")}</select></div>
-      ${refuel && c.sp.energy !== "ev" ? `<div class="ctl"><label class="ctl-label" for="pw-fuel">Fuel +kg</label><input id="pw-fuel" type="number" min="0" max="110" step="1" value="${world.session === "race" ? Math.round(Math.min(60, world.fuelPerLap(c) * 20)) : 0}"></div>` : ""}
+      ${refuel && c.sp.energy !== "ev" ? `<div class="ctl"><label class="ctl-label" for="pw-fuel">Fuel +kg</label><input id="pw-fuel" type="number" inputmode="numeric" min="0" max="110" step="1" value="${world.session === "race" ? Math.round(Math.min(60, world.fuelPerLap(c) * 20)) : 0}"></div>` : ""}
       <div class="ctl"><label class="ctl-label" for="pw-wing">Front wing</label><select id="pw-wing"><option value="">no change</option><option value="-2">−2</option><option value="-1">−1</option><option value="1">+1</option><option value="2">+2</option><option value="new">new nose</option></select></div>
       <label class="chk"><input type="checkbox" id="pw-repair"> repair</label>
       ${c.crew.length > 1 ? `<label class="chk"><input type="checkbox" id="pw-driver"> driver change</label>` : ""}
@@ -3237,6 +3277,25 @@ function renderPitwall() {
     ${f1 ? `<div class="pw-row"><span class="ctl-label">Battery</span>${segBtns("pw-ers", [["harvest", "Harvest"], ["balanced", "Balanced"], ["attack", "Attack"]], O.ers)}</div>` : ""}
     <div class="pw-row"><span class="ctl-label">Racing</span>${segBtns("pw-pos", [["attack", "Attack"], ["free", "Free"], ["defend", "Defend"], ["hold", "Hold"]], O.position)}
       ${mates.length ? `<div class="ctl"><label class="ctl-label" for="pw-letby">Team order</label><select id="pw-letby"><option value="">race freely</option>${mates.map(m => `<option value="${m.slot}" ${O.letBy === m.slot ? "selected" : ""}>let #${m.number} by</option>`).join("")}</select></div>` : ""}</div>`;
+}
+function updatePitwall(c) {
+  const body = $("pw-body"), O = c.orders;
+  body.querySelector(".pw-data").innerHTML = pitwallData(c);
+  const go = $("pw-boxgo"); if (go) go.textContent = c.pitRequest ? "Boxing ✓ (update)" : "Box this lap";
+  for (const [id, v] of [["pw-owner", O.owner], ["pw-pace", O.pace], ["pw-mix", O.fuel], ["pw-lico", O.lico], ["pw-ers", O.ers], ["pw-pos", O.position]])
+    for (const btn of body.querySelectorAll(`#${id} button`)) btn.setAttribute("aria-pressed", String(btn.dataset.v === String(v)));
+  const lb = $("pw-letby"); if (lb && document.activeElement !== lb) lb.value = O.letBy == null ? "" : String(O.letBy);
+}
+function pitwallData(c) {
+  const ty = c.tyre, perLap = c.db.wearLaps.length ? c.db.wearLaps.slice(-4).reduce((a, b) => a + Math.max(b.F, b.R), 0) / Math.min(4, c.db.wearLaps.length) : null;
+  const cliff = perLap ? Math.max(0, (1 - ty.wear) / perLap) : null;
+  const fuelLaps = c.sp.energy === "ev" ? null : c.fuel / world.fuelPerLap(c);
+  const ga = c.gapAhead ? `${c.gapAhead.s.toFixed(1)} s to #${c.gapAhead.car.number}` : "clear air";
+  const behind = cars.filter(x => x.gapAhead && x.gapAhead.car === c)[0];
+  return `      <div><span>Tyres</span><b>${esc(ty.comp.name)}</b> ${pl(ty.age, "lap")} · F ${Math.round(ty.tempF)}° / R ${Math.round(ty.tempR)}°C · wear F ${Math.round(ty.wearF * 100)}% R ${Math.round(ty.wearR * 100)}%${cliff != null ? ` · ~${pl(Math.round(cliff), "lap")} to the cliff` : ""}</div>
+      <div><span>Fuel</span><b>${c.sp.energy === "ev" ? "electric" : c.fuel.toFixed(1) + " kg"}</b>${fuelLaps != null ? ` · ${pl(fuelLaps.toFixed(1), "lap")}` : ""}${c.sp.energy === "f1" ? ` · battery ${c.soc.toFixed(2)} MJ, ${c.lapDeploy.toFixed(1)}/8.5 deployed${c.overtakeLap ? " · OVERTAKE MODE" : ""}` : ""}${c.sp.energy === "vet" ? ` · stint energy ${Math.round(c.stintE)}/${c.sp.stintMJ} MJ` : ""}</div>
+      <div><span>Gaps</span>${ga}${behind ? ` · #${behind.number} ${behind.gapAhead.s.toFixed(1)} s behind` : ""} · pit loss ≈ ${pitLossEst(c).toFixed(1)} s</div>
+      <div><span>Car</span>${c.damage.wing > 0.05 || c.damage.floor > 0.05 ? `<b style="color:var(--kerb)">damage: wing ${Math.round(c.damage.wing * 100)}%, floor ${Math.round(c.damage.floor * 100)}%</b>` : "no damage"}${c.pendingSetup ? ` · setup change waiting for the next stop` : ""}${c.crew.length > 1 ? ` · driving: ${esc(fullName(c))} (${fmtClock(c.driveTime[c.crewIdx])})` : ""}</div>`;
 }
 function order(cmd, quiet) {
   const k = selected, c = cars[k];
@@ -3416,7 +3475,7 @@ function driverBrief(k) {
     `You are ${dv.first} ${dv.last}, a ${D.name}-level driver (${PERSONAS[dv.persona].label.toLowerCase()} personality; aggression ${Math.round(dv.aggression * 100)}%, risk appetite ${Math.round(dv.risk * 100)}%), ${dv.weight} kg, driving car #${c.number}, a ${c.sp.name} (${c.sp.className}, 2026 rules).`,
     `How well you can describe the car: ${Math.round(dv.feedback * 100)}% (a Pro is precise and technical; a Rookie is vague, emotional and sometimes wrong).`,
     `Session: ${world.mode === "ghost" ? "ghost running" : world.sessionDef.name}, ${world.weather.name.toLowerCase()}, track ${world.weather.track}°C.${pos ? ` Position ${pos}, ${world.raceLaps ? `lap ${c.raceLaps + 1}/${world.raceLaps}` : ""}, ${c.stops} stops.` : ""} Gap ahead: ${c.gapAhead ? c.gapAhead.s.toFixed(1) + " s" : "clear"}.`,
-    `Car now: ${c.tyre.comp.name} tyres, ${c.tyre.age} laps, wear F ${Math.round(c.tyre.wearF * 100)}% R ${Math.round(c.tyre.wearR * 100)}%, temps F ${Math.round(c.tyre.tempF)} R ${Math.round(c.tyre.tempR)}°C (window ${c.tyre.comp.win.join("-")}). Fuel ${c.fuel.toFixed(1)} kg.${c.sp.energy === "f1" ? ` Battery ${c.soc.toFixed(1)} MJ.` : ""} Damage: wing ${Math.round(c.damage.wing * 100)}%, floor ${Math.round(c.damage.floor * 100)}%.`,
+    `Car now: ${c.tyre.comp.name} tyres, ${pl(c.tyre.age, "lap")}, wear F ${Math.round(c.tyre.wearF * 100)}% R ${Math.round(c.tyre.wearR * 100)}%, temps F ${Math.round(c.tyre.tempF)} R ${Math.round(c.tyre.tempR)}°C (window ${c.tyre.comp.win.join("-")}). Fuel ${c.fuel.toFixed(1)} kg.${c.sp.energy === "f1" ? ` Battery ${c.soc.toFixed(1)} MJ.` : ""} Damage: wing ${Math.round(c.damage.wing * 100)}%, floor ${Math.round(c.damage.floor * 100)}%.`,
     `Orders in force: pace ${c.orders.pace}, fuel ${c.orders.fuel}, lift-and-coast ${c.orders.lico}, ERS ${c.orders.ers}, position ${c.orders.position}, strategy owner ${c.orders.owner}.`,
     `What you feel (already filtered by your feedback skill; use it, don't invent other problems): ${dbf.lines.join(" ")}`,
     `Laps: ${c.laps.length}, best ${fmt(c.best)}, last ${fmt(c.lastLap ?? Infinity)}, incidents ${c.crashes}. Time lost to the class reference by corner: ${L.length ? L.map(x => `${cname(x.n)} +${x.d.toFixed(2)}s`).join(", ") : "not known yet"}.`,
@@ -3540,6 +3599,40 @@ $("debrief-body").addEventListener("click", async e => {
 });
 $("debrief-now").addEventListener("click", () => { world.debriefs = cars.map(c => makeDebrief(c, world)); debriefSel = selected; renderDebrief(); });
 
+// ===== small interface helpers (design review) =====
+const reduceMotion = () => window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const EASE_OUT = "cubic-bezier(0.23, 1, 0.32, 1)";
+function pl(n, word) { return `${n} ${+n === 1 && !String(n).includes(".") ? word : word + "s"}`; }
+// the speed the sim is really running at, shown only when the per-frame cap holds it below the chosen speed
+let rsReal = 0, rsSim = 0;
+function trackRealSpeed(dt, simDt) {
+  rsReal += dt; rsSim += simDt;
+  if (rsReal < 1) return;
+  const x = rsSim / rsReal, want = simSpeed === "max" ? Infinity : simSpeed, el = $("speed-real");
+  el.textContent = running && x > 0 && x < want * 0.85 ? `running at ${x >= 10 ? Math.round(x) : x.toFixed(1)}×` : "";
+  rsReal = 0; rsSim = 0;
+}
+// timing tower: when positions change, each row slides from its old place to its new one (150 ms)
+function towerFlipStart(rows) {
+  if (reduceMotion()) return null;
+  const m = new Map(); for (const r of rows.children) m.set(r, r.getBoundingClientRect()); return m;
+}
+function towerFlipEnd(before) {
+  if (!before) return;
+  for (const [r, a] of before) {
+    const b = r.getBoundingClientRect(), dx = a.left - b.left, dy = a.top - b.top;
+    if ((dx || dy) && Math.abs(dy) < 400) r.animate([{ transform: `translate(${dx}px, ${dy}px)` }, { transform: "none" }], { duration: 150, easing: EASE_OUT });
+  }
+}
+// a fade at the bottom of the tower while more cars sit below the fold
+function towerMore(rows) { rows.classList.toggle("more", rows.scrollHeight - rows.scrollTop - rows.clientHeight > 2); }
+$("rows").addEventListener("scroll", e => towerMore(e.currentTarget), { passive: true });
+// content that arrives at the end of a session fades up 8 px (opacity only with reduced motion)
+function enterIn(el) {
+  if (!el || !el.animate) return;
+  el.animate(reduceMotion() ? [{ opacity: 0 }, { opacity: 1 }] : [{ opacity: 0, transform: "translateY(8px)" }, { opacity: 1, transform: "none" }], { duration: 200, easing: EASE_OUT });
+}
+
 // ---------- grid composer ----------
 const CLASS_OPTS = [
   { id: "f1", name: "Formula 1", classIds: ["f1"] },
@@ -3558,6 +3651,13 @@ const DEFAULT_GRID = {
 };
 const gridUI = { grid: JSON.parse(JSON.stringify(DEFAULT_GRID)), personas: {}, raceScale: 0.25, wecHours: null };
 try { const s = JSON.parse(localStorage.getItem("apex-grid-v1") || "null"); if (s && s.grid) Object.assign(gridUI, s); } catch { }
+// a saved grid from an older version may be empty or oversized: fall back per class
+for (const cid in DEFAULT_GRID) {
+  const g = gridUI.grid[cid] = gridUI.grid[cid] || JSON.parse(JSON.stringify(DEFAULT_GRID[cid]));
+  for (const k in g) g[k] = Math.max(0, Math.min(20, Math.round(+g[k] || 0)));
+  const tot = Object.values(g).reduce((x, y) => x + y, 0);
+  if (!tot || tot > 60) gridUI.grid[cid] = JSON.parse(JSON.stringify(DEFAULT_GRID[cid]));
+}
 const saveGrid = () => { try { localStorage.setItem("apex-grid-v1", JSON.stringify(gridUI)); } catch { } };
 function classOpt() { return CLASS_OPTS.find(o => o.id === classId) || CLASS_OPTS[0]; }
 function renderGridPanel() {
@@ -3565,28 +3665,45 @@ function renderGridPanel() {
   $("grid-body").innerHTML = opt.classIds.map(cid => {
     const cls = CLASSES.find(c => c.id === cid), g = gridUI.grid[cid], P = gridUI.personas[cid] || {};
     const total = SKILL_KEYS.reduce((s, k) => s + (g[k] || 0), 0);
-    return `<div class="gp-class"><div class="gp-head"><b>${esc(cls.name)}</b><span>${total} cars · real grid ${cls.grid} · ${cls.cars.length} manufacturers</span>
+    return `<div class="gp-class"><div class="gp-head"><b>${esc(cls.name)}</b><span><span class="gp-total" data-cid="${cid}">${total}</span> cars · real grid ${cls.grid} · ${cls.cars.length} manufacturers</span>
       <button type="button" class="btn" data-fill="${cid}">Fill to real grid</button></div>
       <table class="gp-tab"><thead><tr><th>Skill</th><th>Cars</th><th>Personality</th></tr></thead><tbody>
       ${SKILL_KEYS.map(s => `<tr><td><span class="ro-sw" style="background:${SKILL_BY[s].color}"></span>${SKILL_NAMES[s]}</td>
-        <td><input type="number" min="0" max="20" value="${g[s] || 0}" data-cid="${cid}" data-s="${s}" aria-label="${SKILL_NAMES[s]} in ${esc(cls.name)}"></td>
+        <td><input type="number" inputmode="numeric" min="0" max="20" value="${g[s] || 0}" data-cid="${cid}" data-s="${s}" aria-label="${SKILL_NAMES[s]} in ${esc(cls.name)}"></td>
         <td><select data-cid="${cid}" data-p="${s}"><option value="mixed">Mixed</option>${Object.entries(PERSONAS).map(([k, p]) => `<option value="${k}" ${P[s] === k ? "selected" : ""}>${p.label}</option>`).join("")}</select></td></tr>`).join("")}
       </tbody></table></div>`;
   }).join("") + `<div class="gp-foot"><label>Race distance <select id="gp-scale">${[[1, "Full distance"], [0.5, "50%"], [0.25, "25%"], [0.1, "10%"]].map(([v, l]) => `<option value="${v}" ${gridUI.raceScale === v ? "selected" : ""}>${l}</option>`).join("")}</select></label>
     <span class="note">Bigger grids and full distances take longer to simulate. A 24-hour Le Mans with 36 cars runs about 10 minutes at Max.</span>
+    <span class="gp-warn" id="gp-warn" role="status"></span>
     <button type="button" class="btn primary" id="gp-apply">Build this grid</button></div>`;
+  gridCheck();
+}
+// at most 60 cars per class (more than any real grid, and the page stays responsive); at least one car overall
+const CLASS_MAX = 60;
+const classTotal = cid => SKILL_KEYS.reduce((s, k) => s + (gridUI.grid[cid][k] || 0), 0);
+function gridCheck() {
+  const ids = classOpt().classIds, total = ids.reduce((s, cid) => s + classTotal(cid), 0);
+  for (const el of document.querySelectorAll(".gp-total")) el.textContent = classTotal(el.dataset.cid);
+  const warn = $("gp-warn"), go = $("gp-apply");
+  if (warn) warn.textContent = total ? "" : "Add at least one car to build a grid.";
+  if (go) go.disabled = !total;
+  return total;
 }
 $("grid-body").addEventListener("change", e => {
   const t = e.target;
-  if (t.dataset.s) gridUI.grid[t.dataset.cid][t.dataset.s] = clamp(Math.round(+t.value || 0), 0, 20);
+  if (t.dataset.s) {
+    const cid = t.dataset.cid, others = classTotal(cid) - (gridUI.grid[cid][t.dataset.s] || 0);
+    const v = clamp(Math.round(+t.value || 0), 0, Math.min(20, CLASS_MAX - others));
+    gridUI.grid[cid][t.dataset.s] = v; if (+t.value !== v) t.value = v;
+  }
   if (t.dataset.p) { gridUI.personas[t.dataset.cid] = gridUI.personas[t.dataset.cid] || {}; gridUI.personas[t.dataset.cid][t.dataset.p] = t.value === "mixed" ? undefined : t.value; }
   if (t.id === "gp-scale") gridUI.raceScale = +t.value;
-  saveGrid(); renderGridPanel();
+  saveGrid(); gridCheck();
 });
 $("grid-body").addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
   if (b.dataset.fill) { const cid = b.dataset.fill, cls = CLASSES.find(c => c.id === cid), g = gridUI.grid[cid]; let tot = SKILL_KEYS.reduce((s, k) => s + (g[k] || 0), 0), i = 0; while (tot < cls.grid) { g[SKILL_KEYS[i++ % 6]]++; tot++; } while (tot > cls.grid) { const k = SKILL_KEYS[5 - (i++ % 6)]; if (g[k] > 0) { g[k]--; tot--; } } saveGrid(); renderGridPanel(); }
-  if (b.id === "gp-apply") { saveGrid(); newSession(); transcriptsReset(`New grid: ${cars.length} cars.`); }
+  if (b.id === "gp-apply") { if (!gridCheck()) return; saveGrid(); newSession(); transcriptsReset(`New grid: ${cars.length} cars.`); }
 });
 function transcriptsReset(msg) { buildChans(); transcripts.forEach(t => t.push({ from: "sys", text: msg })); select(Math.min(selected, cars.length - 1)); }
 // persona "mixed": each driver keeps a personality drawn from its own seed
@@ -3627,7 +3744,7 @@ function renderChamp() {
   if (!live) { $("ch-stand").innerHTML = `<div class="empty">Start a championship to keep points across rounds. It uses the grid you built.</div>`; return; }
   const dr = Object.entries(champ.drivers).sort((a, b) => b[1].pts - a[1].pts), tm = Object.entries(champ.teams).sort((a, b) => b[1] - a[1]);
   $("ch-stand").innerHTML = `<div class="ch-tables"><table class="res-table"><thead><tr><th>P</th><th class="name">Driver</th><th class="name">Car</th><th>Pts</th><th>Wins</th></tr></thead><tbody>
-    ${dr.slice(0, 40).map(([k, d], i) => `<tr><td>${i + 1}</td><td class="name"><span class="ro-sw" style="background:${d.color}"></span>${esc(d.name)}</td><td class="name">${esc(d.car)}</td><td>${d.pts}</td><td>${d.wins || 0}</td></tr>`).join("")}</tbody></table>
+    ${dr.slice(0, 40).map(([k, d], i) => `<tr data-k="${esc(k)}"><td>${i + 1}</td><td class="name"><span class="ro-sw" style="background:${d.color}"></span>${esc(d.name)}</td><td class="name">${esc(d.car)}</td><td>${d.pts}</td><td>${d.wins || 0}</td></tr>`).join("")}</tbody></table>
     <table class="res-table"><thead><tr><th>P</th><th class="name">Team / manufacturer</th><th>Pts</th></tr></thead><tbody>${tm.map(([t, p], i) => `<tr><td>${i + 1}</td><td class="name">${esc(t)}</td><td>${p}</td></tr>`).join("")}</tbody></table></div>`;
 }
 $("ch-series").innerHTML = CHAMP_SERIES.map(s => `<option value="${s.id}">${esc(s.name)}</option>`).join("");
@@ -3656,6 +3773,7 @@ function awardPoints() {
   if (!champ || champ.round == null || world.mode !== "weekend" || !world.ended) return;
   const def = world.sessionDef, key = `${champ.round}:${def.key}`;
   if (champ.awarded[key]) return;
+  const before = Object.fromEntries(Object.entries(champ.drivers).map(([k, d]) => [k, d.pts]));
   let table = def.points;
   if (table === "wec") table = WEC_POINTS[world.config.wecHours >= 24 ? 24 : world.config.wecHours >= 8 ? 8 : 6] || WEC_POINTS[6];
   const add = (c, pts, win) => {
@@ -3670,8 +3788,15 @@ function awardPoints() {
   } else return;
   champ.awarded[key] = true;
   if (def === world.format[world.format.length - 1] && !champ.done.includes(champ.round)) champ.done.push(champ.round);
-  saveChamp(); renderChamp();
+  saveChamp(); renderChamp(); flashScorers(before);
   world.say(`Championship points awarded for ${def.name}.`);
+}
+
+function flashScorers(before) {
+  for (const tr of document.querySelectorAll("#ch-stand tr[data-k]")) {
+    const d = champ.drivers[tr.dataset.k];
+    if (d && d.pts > (before[tr.dataset.k] || 0)) tr.classList.add("pts-new");
+  }
 }
 
 // ---------- real-world reference ----------
@@ -3756,7 +3881,7 @@ function renderRef() {
   items.push([S.label, fmtDate(S.date) || weekend || `${refState.year} season`, [S.date ? "" : "event weekend", S.status && S.status !== "Final" ? `${S.status} classification` : ""].filter(Boolean).join(" · ")]);
   if (w) items.push(["Conditions", `<span class="${w.wet ? "wet" : ""}">${w.wet ? "Wet" : "Dry"}</span>`, [w.air != null ? `air ${w.air.toFixed(0)}°C` : "", w.track != null ? `track ${w.track.toFixed(0)}°C` : ""].filter(Boolean).join(" · ")]);
   if (rows[0]) {
-    if (race) items.push(["Winner", esc(rows[0].drv.split(" / ")[0]) + (rows[0].drv.includes(" / ") ? " et al." : ""), `${esc(rows[0].car || rows[0].team)} · ${rows[0].laps} laps · ${esc(rows[0].t)}`]);
+    if (race) items.push(["Winner", esc(rows[0].drv.split(" / ")[0]) + (rows[0].drv.includes(" / ") ? " et al." : ""), `${esc(rows[0].car || rows[0].team)} · ${pl(rows[0].laps, "lap")} · ${esc(rows[0].t)}`]);
     else items.push([refState.sess === "prac" ? "Fastest" : "Pole / P1", rows[0].t, `${esc(rows[0].drv.split(" / ")[0])} · ${esc(rows[0].car || rows[0].team)}`]);
   }
   if (race && S.fastest) items.push(["Fastest lap", S.fastest.t, esc(S.fastest.drv)]);
@@ -3871,7 +3996,7 @@ $("wx").addEventListener("change", e => { ui.weather = e.target.value; world.set
 setPressed("mode", "m", ui.mode); $("wx").value = ui.weather;
 
 // ---------- refresh / controls ----------
-function refreshAll() { drainRadio(); renderRefSim(); renderRC(); renderResults(); renderSpecs(); updateRows(); updateDesk(); renderLog(); renderGeo(); renderGeoTable(); renderJobs(); renderSuggest(); renderChans(); renderPitwall(); drawCompare(); drawLearn(); if (world.ended && world.debriefs && !world.debriefShown) { world.debriefShown = true; debriefSel = selected; renderDebrief(); } }
+function refreshAll() { drainRadio(); renderRefSim(); renderRC(); renderResults(); renderSpecs(); updateRows(); updateDesk(); renderLog(); renderGeo(); renderGeoTable(); renderJobs(); renderSuggest(); renderChans(); renderPitwall(); drawCompare(); drawLearn(); if (world.ended && world.debriefs && !world.debriefShown) { world.debriefShown = true; debriefSel = selected; renderDebrief(); enterIn($("debrief-body")); } }
 function setPressed(groupId, attr, val) { for (const b of $(groupId).querySelectorAll("button")) b.setAttribute("aria-pressed", String(b.dataset[attr] === String(val))); }
 $("speeds").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; simSpeed = b.dataset.s === "max" ? "max" : +b.dataset.s; setPressed("speeds", "s", b.dataset.s); });
 $("lines").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; linesMode = b.dataset.l; setPressed("lines", "l", linesMode); });
@@ -3900,9 +4025,9 @@ $("mu").textContent = classOpt().name;
 
 let last = performance.now(), uiTimer = 0, rcTimer = 0;
 function frameLoop(now) {
-  const dt = Math.min(0.1, (now - last) / 1000); last = now;
-  if (running) { const lapsDone = simSpeed === "max" ? advance(25, 22) : advance(dt * simSpeed, 22); if (lapsDone) refreshAll(); }
-  drawTrack(); drawFC(); stepPlayback(dt);
+  const dt = Math.min(0.1, (now - last) / 1000); last = now; const simBefore = simTime;
+  if (running) { const lapsDone = simSpeed === "max" ? advance(25, 9) : advance(dt * simSpeed, 9); if (lapsDone) refreshAll(); }
+  drawTrack(); drawFC(); stepPlayback(dt); trackRealSpeed(dt, simTime - simBefore);
   uiTimer += dt;
   if (uiTimer > 0.1) { uiTimer = 0; updateDesk(); updateProgress(); updateRows(); $("clock").textContent = fmtClock(simTime); rcTimer = (rcTimer || 0) + 1; if (rcTimer % 5 === 0) { renderRC(); renderResults(); drainRadio(); if (rcTimer % 20 === 0) renderPitwall(); } }
   requestAnimationFrame(frameLoop);

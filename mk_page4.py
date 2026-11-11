@@ -154,5 +154,36 @@ function trackDataHtml() {
 R('const SESS_LABEL = { prac: "Practice", quali: "Qualifying", q1: "Q1", q2: "Q2", race: "Race", r1: "Race 1", r2: "Race 2" };', 'const SESS_LABEL = { prac: "Practice", quali: "Qualifying", q1: "Q1", q2: "Q2", race: "Race", r1: "Race 1", r2: "Race 2", sq: "Sprint qualifying", sprint: "Sprint" };')
 
 R('<title>Apex School</title>', '<title>Pit Wall</title>')
+
+# ---------------- design review fixes (Pit Wall v8) ----------------
+# standalone file: charset, phone viewport, browser chrome colour
+R('<title>Pit Wall</title>', '<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n<meta name="theme-color" content="#0f141a">\n<title>Pit Wall</title>')
+R('<h1>Apex <span>School</span></h1>', '<h1>Pit <span>Wall</span></h1>')
+R('<canvas id="learn"></canvas>', '<canvas id="learn" aria-label="Learning curve: lap time per lap for every driver"></canvas>')
+# grammar: "1 lap", "1 incident"
+RX(r'\$\{([^{}`]+?)\} (lap|incident)s\b', r'${pl(\1, "\2")}')
+# the sim gets at most ~9 ms a frame so 60 fps survives; the bar shows the real speed when that cap bites
+R('advance(25, 22) : advance(dt * simSpeed, 22)', 'advance(25, 9) : advance(dt * simSpeed, 9)')
+R('function frameLoop(now) {\n  const dt = Math.min(0.1, (now - last) / 1000); last = now;',
+  'function frameLoop(now) {\n  const dt = Math.min(0.1, (now - last) / 1000); last = now; const simBefore = simTime;')
+R('drawTrack(); drawFC(); stepPlayback(dt);', 'drawTrack(); drawFC(); stepPlayback(dt); trackRealSpeed(dt, simTime - simBefore);')
+R('<button type="button" data-s="64">64×</button><button type="button" data-s="max">Max</button>\n        </div>',
+  '<button type="button" data-s="64">64×</button><button type="button" data-s="max">Max</button>\n        </div>\n        <span class="speed-real" id="speed-real" aria-live="polite"></span>')
+# progress bars: scaleX instead of width (composite-only)
+R('el.querySelector(".progress div").style.width = (c.pit ? 0 : (c.idx / T.N) * 100) + "%";', 'el.querySelector(".progress div").style.transform = `scaleX(${c.pit ? 0 : c.idx / T.N})`;')
+# timing tower: rows slide to their new place when positions change, and the list shows when more cars are below
+R("  order.forEach((k, p) => {\n    const c = cars[k], el = $(\"row-\" + k);\n    if (rows.children[p] !== el) rows.insertBefore(el, rows.children[p]);",
+  "  const flip = towerFlipStart(rows);\n  order.forEach((k, p) => {\n    const c = cars[k], el = $(\"row-\" + k);\n    if (rows.children[p] !== el) rows.insertBefore(el, rows.children[p]);")
+RX(r'(function updateRows\(\) \{[\s\S]*?\n  \}\);\n)\}', r'\1  towerFlipEnd(flip); towerMore(rows);\n}')
+# hover only where there is a real pointer (touch screens keep tapped rows lit otherwise)
+for rule in ['.row:hover { background: var(--panel-2); }', '.chan:hover { background: var(--panel-2); }', '.suggest button:hover { color: var(--ink); border-color: var(--ink-2); }', 'tbody tr:hover td { background: var(--panel-2); }']:
+    R(rule, '@media (hover: hover) and (pointer: fine) { ' + rule + ' }')
+# legibility: grey text passes 4.5:1 on every panel; no label below 10.5 px
+R('--muted: #6c7886;', '--muted: #838f9e;')
+RX(r'\b9\.5px', '10.5px')
+# phones: telemetry drags zoom sideways but must let the page scroll
+R('#tele { height: 720px; cursor: crosshair; touch-action: none; }', '#tele { height: 720px; cursor: crosshair; touch-action: pan-y; }')
+# debrief arrives with a short fade when a session ends (not when switching drivers)
+R('debriefSel = selected; renderDebrief(); } }', 'debriefSel = selected; renderDebrief(); enterIn($("debrief-body")); } }')
 open('page4.html', 'w').write(p)
 print('page4 ok', len(p))
