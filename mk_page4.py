@@ -80,7 +80,7 @@ R('''    ["Tyre temp", `${Math.round(ty.temp)}<small>°C · ${tState} (${lo}–$
 R('''    ["Tyre wear", `${Math.round(ty.wear * 100)}<small>% · grip ${Math.round((c.tyreWF || 1) * 100)}%</small>`, Math.min(1, ty.wear)],''', '''    ["Tyre wear", `${Math.round(ty.wearF * 100)}<small>% F</small> ${Math.round(ty.wearR * 100)}<small>% R · grip ${Math.round((c.tyreWF || 1) * 100)}%</small>`, Math.min(1, ty.wear)],''')
 # radio + season code
 a = p.index('// ---------- team radio ----------'); b = p.index('// ---------- real-world reference ----------')
-p = p[:a] + open('page4_pitwall.js').read() + '\n' + open('page4_season.js').read() + '\n' + p[b:]
+p = p[:a] + open('page4_pitwall.js').read() + '\n' + open('page4_season.js').read() + '\n' + open('page4_layout.js').read() + '\n' + p[b:]
 R('    const pro = cars[5], best = isFinite(pro.best) ? pro.best : null;', '    const pro = cars.filter(c => c.sp.cls === series).sort((a, b) => a.best - b.best)[0] || cars[0], best = isFinite(pro.best) ? pro.best : null;')
 R('the Pro drives a ${esc(simCls.cars[5].make + " " + simCls.cars[5].model)}. Grip is calibrated so it laps Spa about 1.5% off ${CALIB[series] || "the real pole"}.', 'cars are calibrated so a Pro on new soft tyres and low fuel matches the real 2026 pole, per circuit where timing exists.')
 # race control
@@ -185,5 +185,6 @@ RX(r'\b9\.5px', '10.5px')
 R('#tele { height: 720px; cursor: crosshair; touch-action: none; }', '#tele { height: 720px; cursor: crosshair; touch-action: pan-y; }')
 # debrief arrives with a short fade when a session ends (not when switching drivers)
 R('debriefSel = selected; renderDebrief(); } }', 'debriefSel = selected; renderDebrief(); enterIn($("debrief-body")); } }')
+R('setRadioMode();\nrequestAnimationFrame(frameLoop);', 'setRadioMode();\ninitLayout();\nrequestAnimationFrame(frameLoop);')
 open('page4.html', 'w').write(p)
 print('page4 ok', len(p))
