@@ -7,6 +7,8 @@ A top-down racing strategy game played from the pit wall. You are the race engin
 - **Calibrated pace.** A fully learned Pro in each class's reference car matches the real 2026 pole at every circuit that has 2026 timing. Rounds not yet raced use labelled estimates.
 - **Real-world reference panel** with qualifying, race and practice results back to the start of each series' current regulations.
 
+What changed in each version: see [CHANGELOG.md](CHANGELOG.md).
+
 ## Play
 
 Nothing to install. The whole game is one file, `dist/pit-wall.html`.
