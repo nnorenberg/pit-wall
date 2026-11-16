@@ -174,3 +174,17 @@ button { -webkit-user-select: none; user-select: none; transition: transform 120
 .ro-bar { width: 9px; margin-right: 3px; }
 .ro-head { min-width: 0; }
 .ro-head span { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* live text with a fixed footprint, so the page height doesn't change as values do */
+.rc-msgs { display: grid; grid-auto-rows: 1.4em; height: calc(3 * 1.4em); overflow: hidden; gap: 0; }
+.rc-msgs span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.pw-data > div { min-height: calc(2 * 1.45em); }
+/* race control: the status pills sit on their own line and never wrap, so the panel's height is fixed */
+.rc-status { flex: 1 0 100%; flex-wrap: nowrap; justify-content: flex-end; overflow: hidden; min-width: 0; margin-left: 0; }
+.rc-status .pill, .rc-status > * { flex: 0 1 auto; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* timing rows: one line of status text, so a row never changes height */
+.row .who small, .row .gap { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; display: block; }
+.row .who > b { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; } .row .who { min-width: 0; } .row .times { white-space: nowrap; }
+.row .who small b { display: inline; font: inherit; font-weight: 500; letter-spacing: normal; }
+/* the status line may never widen race control (a long "Full course yellow" pill shortens with … instead) */
+.rc > * { min-width: 0; max-width: 100%; }
+.rc-status { flex: 1 1 100%; max-width: 100%; }

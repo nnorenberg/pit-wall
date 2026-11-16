@@ -2,6 +2,18 @@
 
 Each version below is also a GitHub release, with the playable `dist/pit-wall.html` attached. The live page is at https://claude.ai/artifact/Fjqh1zJyLRDGWWKkc8B96N.
 
+## v9.2 — 2026-11-16: page no longer bounces while scrolling
+
+**Fixed**
+- Scrolling to the bottom of the page no longer gets stuck or bounces back while a session runs. Live panels were changing height as their numbers changed, so the page kept growing and shrinking under you:
+  - Race control grew and shrank by 70 px every time a full-course yellow started or ended (on narrow screens). It now keeps one height.
+  - A car heading to the pits got an oversized second line ("BOX"/"PIT") in the timing tower. It now stays on the row's normal status line, and every timing row has one fixed height.
+  - Corner mathematics, the car data header, the pit-wall numbers, the suggestion chips and the race-control messages changed height as their text changed. Now each grows to fit once and then holds still for the rest of the session.
+- While you're near the bottom of the page, it can't shrink from live updates. Any space it gives back is held for you, so the view doesn't move. Folding or moving a section still resizes the page normally.
+
+**For developers**
+- `tools/live_check.mjs` runs a test in a real-time browser (frames actually render) through the DevTools protocol, for checks like scroll stability that a simulated clock can't reproduce.
+
 ## v9.1 — 2026-11-16: steady telemetry map
 
 **Fixed**

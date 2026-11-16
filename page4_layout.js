@@ -69,7 +69,47 @@ function setWidth(el, w) {
   el.dataset.w = w; layout.w[el.dataset.tile] = w;
   for (const b of el.querySelectorAll(".tile-w button")) b.setAttribute("aria-pressed", String(b.dataset.w === w));
 }
-function relayout() { saveLayout(); requestAnimationFrame(() => { resize(); updateSummaries(); }); }
+function relayout() { saveLayout(); resetSteady(); requestAnimationFrame(() => { resize(); updateSummaries(); holdHeight(true); }); }
+// Live panels change height a little as their numbers change. When you're near the bottom, a shrink would make
+// the browser pull the view up. A spacer under the page takes up whatever the content gives back, and the scroll
+// position is put back, in the same frame (a ResizeObserver runs after layout, before paint), so nothing moves.
+// Away from the bottom, or after a deliberate fold, resize or move, the page follows its natural height again.
+let heightFloor = 0, lastY = 0, floorSpacer = null;
+function holdHeight(reset) {
+  const wrap = document.querySelector(".wrap"), natural = wrap.offsetTop + wrap.offsetHeight;
+  const docH = Math.max(natural, heightFloor), near = lastY + innerHeight > docH - innerHeight;
+  heightFloor = reset || !near ? natural : Math.max(heightFloor, natural);
+  const h = Math.max(0, heightFloor - natural) + "px";
+  if (floorSpacer.style.height !== h) floorSpacer.style.height = h;
+  if (!reset && near && scrollY < lastY - 1) window.scrollTo(0, lastY);
+}
+// Blocks whose text changes every tick (equations, live readouts, chips) may grow to fit but don't shrink back
+// mid-session, so the page settles instead of breathing. Reset when their width changes, a different car is
+// selected, or the layout changes.
+const STEADY = ["#eqs", ".drv-head", "#d-state", "#d-stats", "#suggest", ".pw-data", "#rc-anchor .rc-row", "#rc-inter", "#readout", "#res-sub"];
+const steadyRO = new ResizeObserver(entries => {
+  for (const e of entries) {
+    const el = e.target, w = Math.round(e.contentRect.width);
+    if (el._steadyW == null || Math.abs(el._steadyW - w) > 2) { el._steadyW = w; requestAnimationFrame(() => restartSteady(el)); continue; }
+    const h = Math.ceil(el.getBoundingClientRect().height);
+    // applied next frame: changing an observed element inside the callback trips Chrome's "ResizeObserver loop" error
+    if (h > (el._steadyH || 0)) { el._steadyH = h; requestAnimationFrame(() => { if (el._steadyH === h) el.style.minHeight = h + "px"; }); }
+  }
+});
+function initSteady() { for (const sel of STEADY) for (const el of document.querySelectorAll(sel)) steadyRO.observe(el); }
+// let the block take its natural height, then hold that as the new floor from the next frame on
+function restartSteady(el) {
+  el._steadyH = 0; el.style.minHeight = "";
+  requestAnimationFrame(() => { const h = Math.ceil(el.getBoundingClientRect().height); if (h > el._steadyH) { el._steadyH = h; el.style.minHeight = h + "px"; } });
+}
+function resetSteady() { for (const sel of STEADY) for (const el of document.querySelectorAll(sel)) restartSteady(el); }
+function initHeightHold() {
+  floorSpacer = document.createElement("div"); floorSpacer.setAttribute("aria-hidden", "true"); floorSpacer.style.height = "0px";
+  document.querySelector(".wrap").after(floorSpacer);
+  lastY = scrollY;
+  addEventListener("scroll", () => { lastY = scrollY; if (floorSpacer.style.height !== "0px") holdHeight(false); }, { passive: true });
+  new ResizeObserver(() => holdHeight(false)).observe(document.querySelector(".wrap"));
+}
 
 // ---------- summaries: the key numbers a collapsed tile still shows ----------
 const SUMMARY = {
@@ -276,5 +316,7 @@ function initLayout() {
   for (const a of document.querySelectorAll('header a[href^="#"]')) a.addEventListener("click", () => { const el = document.querySelector(a.getAttribute("href")); if (el && el.classList.contains("collapsed")) { setCollapsed(el, false); relayout(); } });
   document.addEventListener("keydown", e => { if (e.key === "Escape" && tileDrag) endDrag(true); });
   setInterval(updateSummaries, 500);
+  initHeightHold();
+  initSteady();
   relayout();
 }

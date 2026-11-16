@@ -187,5 +187,7 @@ R('#tele { height: 720px; cursor: crosshair; touch-action: none; }', '#tele { he
 R('debriefSel = selected; renderDebrief(); } }', 'debriefSel = selected; renderDebrief(); enterIn($("debrief-body")); } }')
 R('setRadioMode();\nrequestAnimationFrame(frameLoop);', 'setRadioMode();\ninitLayout();\nrequestAnimationFrame(frameLoop);')
 R('<th>Driver</th><th>km/h</th><th>Thr %</th><th>Brk %</th><th>Steer °</th><th>Gap s</th>', '<th>Driver</th><th title="Speed, km/h">km/h</th><th title="Throttle, %">Thr</th><th title="Brake pressure, %">Brk</th><th title="Steering angle, degrees (R right, L left)">Str°</th><th title="Time gap to the reference car, seconds">Gap</th>')
+R('w.msgs.slice(-3).reverse().map(m => `<span><b>${fmtClock(m.t)}</b>${esc(m.text)}</span>`)', 'w.msgs.slice(-3).reverse().map(m => `<span title="${esc(m.text)}"><b>${fmtClock(m.t)}</b>${esc(m.text)}</span>`)')
+R('function select(k) {\n  selected = k;', 'function select(k) {\n  selected = k; if (typeof resetSteady === "function" && layout) resetSteady();')
 open('page4.html', 'w').write(p)
 print('page4 ok', len(p))
