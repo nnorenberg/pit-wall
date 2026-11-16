@@ -186,5 +186,6 @@ R('#tele { height: 720px; cursor: crosshair; touch-action: none; }', '#tele { he
 # debrief arrives with a short fade when a session ends (not when switching drivers)
 R('debriefSel = selected; renderDebrief(); } }', 'debriefSel = selected; renderDebrief(); enterIn($("debrief-body")); } }')
 R('setRadioMode();\nrequestAnimationFrame(frameLoop);', 'setRadioMode();\ninitLayout();\nrequestAnimationFrame(frameLoop);')
+R('<th>Driver</th><th>km/h</th><th>Thr %</th><th>Brk %</th><th>Steer °</th><th>Gap s</th>', '<th>Driver</th><th title="Speed, km/h">km/h</th><th title="Throttle, %">Thr</th><th title="Brake pressure, %">Brk</th><th title="Steering angle, degrees (R right, L left)">Str°</th><th title="Time gap to the reference car, seconds">Gap</th>')
 open('page4.html', 'w').write(p)
 print('page4 ok', len(p))

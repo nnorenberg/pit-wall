@@ -160,3 +160,17 @@ button { -webkit-user-select: none; user-select: none; transition: transform 120
 .tile.collapsed .tile-chev { transform: rotate(-45deg); }
 @media (max-width: 900px) { .tile-w { display: none; } }
 @media (max-width: 520px) { .tile-name { flex: 1 1 0; } }
+/* telemetry readout: fixed columns so changing numbers never resize the side column (or the map above it) */
+.tele-side { grid-template-columns: minmax(0, 1fr); min-width: 0; }
+.ro-table { table-layout: fixed; font-variant-numeric: tabular-nums; }
+.ro-table th, .ro-table td { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ro-table th, .ro-table td { padding: 4px 3px; }
+.ro-table td:not(:first-child) { text-overflow: clip; }
+.ro-table th:nth-child(1), .ro-table td:nth-child(1) { width: 29%; }
+.ro-table th:nth-child(2), .ro-table td:nth-child(2) { width: 11%; }
+.ro-table th:nth-child(3), .ro-table td:nth-child(3), .ro-table th:nth-child(4), .ro-table td:nth-child(4) { width: 15%; }
+.ro-table th:nth-child(5), .ro-table td:nth-child(5) { width: 12%; }
+.ro-table th:nth-child(6), .ro-table td:nth-child(6) { width: 18%; }
+.ro-bar { width: 9px; margin-right: 3px; }
+.ro-head { min-width: 0; }
+.ro-head span { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

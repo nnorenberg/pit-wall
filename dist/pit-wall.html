@@ -493,6 +493,20 @@ button { -webkit-user-select: none; user-select: none; transition: transform 120
 .tile.collapsed .tile-chev { transform: rotate(-45deg); }
 @media (max-width: 900px) { .tile-w { display: none; } }
 @media (max-width: 520px) { .tile-name { flex: 1 1 0; } }
+/* telemetry readout: fixed columns so changing numbers never resize the side column (or the map above it) */
+.tele-side { grid-template-columns: minmax(0, 1fr); min-width: 0; }
+.ro-table { table-layout: fixed; font-variant-numeric: tabular-nums; }
+.ro-table th, .ro-table td { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ro-table th, .ro-table td { padding: 4px 3px; }
+.ro-table td:not(:first-child) { text-overflow: clip; }
+.ro-table th:nth-child(1), .ro-table td:nth-child(1) { width: 29%; }
+.ro-table th:nth-child(2), .ro-table td:nth-child(2) { width: 11%; }
+.ro-table th:nth-child(3), .ro-table td:nth-child(3), .ro-table th:nth-child(4), .ro-table td:nth-child(4) { width: 15%; }
+.ro-table th:nth-child(5), .ro-table td:nth-child(5) { width: 12%; }
+.ro-table th:nth-child(6), .ro-table td:nth-child(6) { width: 18%; }
+.ro-bar { width: 9px; margin-right: 3px; }
+.ro-head { min-width: 0; }
+.ro-head span { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 </style>
 
@@ -3172,7 +3186,7 @@ function renderReadout() {
     const d = s === ref ? null : chanVal("dt", s, j, ref, r0);
     return `<tr><td><span class="ro-sw" style="background:${s.c.D.color}"></span>${esc(nm(s.c))}</td><td>${v.toFixed(0)}</td><td><span class="ro-bar go" style="--p:${thr.toFixed(0)}%"></span>${thr.toFixed(0)}</td><td><span class="ro-bar br" style="--p:${brk.toFixed(0)}%"></span>${brk.toFixed(0)}</td><td>${st > 0.3 ? "R" : st < -0.3 ? "L" : ""}${Math.abs(st).toFixed(1)}</td><td>${d == null ? "ref" : (d >= 0 ? "+" : "−") + Math.abs(d).toFixed(2)}</td></tr>`;
   }).join("");
-  el.innerHTML = head + `<table class="ro-table"><thead><tr><th>Driver</th><th>km/h</th><th>Thr %</th><th>Brk %</th><th>Steer °</th><th>Gap s</th></tr></thead><tbody>${rows}</tbody></table>`;
+  el.innerHTML = head + `<table class="ro-table"><thead><tr><th>Driver</th><th title="Speed, km/h">km/h</th><th title="Throttle, %">Thr</th><th title="Brake pressure, %">Brk</th><th title="Steering angle, degrees (R right, L left)">Str°</th><th title="Time gap to the reference car, seconds">Gap</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 function stepPlayback(dt) {
   if (!cmp.play || !teleGeom || !teleGeom.ref) return;
