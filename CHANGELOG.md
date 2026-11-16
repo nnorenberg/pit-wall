@@ -2,6 +2,17 @@
 
 Each version below is also a GitHub release, with the playable `dist/pit-wall.html` attached. The live page is at https://claude.ai/artifact/Fjqh1zJyLRDGWWKkc8B96N.
 
+## v9.3 — 2026-11-16: fixed-size Car data and Corner mathematics
+
+**Fixed**
+- **Car data** and **Corner mathematics** now have a fixed height that never changes as the car drives. These two were the main cause of the snap-back at the bottom of the page, because their contents change at every corner.
+  - The height is set just above their tallest measured content: 840 px on wide screens, 1010 px on medium screens, 1170 px on phones. Both tiles share it, so the pair lines up.
+  - If a corner ever needs more room, the contents scroll inside the tile with its bar pinned at the top. The tile itself doesn't resize.
+- On phones, the pit wall reserves room for two rows of suggestion chips, so a second row appearing mid-race doesn't push the page down.
+- A half-width section next to a taller one (e.g. Experiment log beside Learning curves) no longer spreads its contents out with large gaps.
+
+Checked in a real-time browser: during a 64× race with the view parked at the bottom of the page, the page height stayed constant and the view didn't move at 1440, 1100 or 390 px wide.
+
 ## v9.2 — 2026-11-16: page no longer bounces while scrolling
 
 **Fixed**

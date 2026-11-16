@@ -188,3 +188,14 @@ button { -webkit-user-select: none; user-select: none; transition: transform 120
 /* the status line may never widen race control (a long "Full course yellow" pill shortens with … instead) */
 .rc > * { min-width: 0; max-width: 100%; }
 .rc-status { flex: 1 1 100%; max-width: 100%; }
+/* Car data and Corner mathematics: one fixed height per screen size (just above their tallest measured content),
+   so their live numbers can never change the page height. Extra content scrolls inside, under a pinned bar. */
+:root { --desk-tile-h: 840px; }
+@media (max-width: 1299px) { :root { --desk-tile-h: 1010px; } }
+@media (max-width: 900px) { :root { --desk-tile-h: 1170px; } }
+.board > [data-tile="car"]:not(.collapsed):not(.dragging), .board > [data-tile="corner"]:not(.collapsed):not(.dragging) {
+  height: var(--desk-tile-h); align-self: start; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable;
+}
+.board > [data-tile="car"] > .tile-bar, .board > [data-tile="corner"] > .tile-bar { position: sticky; top: 0; z-index: 1; background: var(--panel); box-shadow: 0 -14px 0 var(--panel); }
+@media (max-width: 900px) { #suggest { min-height: 60px; align-content: start; } }
+.board > .tile { align-content: start; }

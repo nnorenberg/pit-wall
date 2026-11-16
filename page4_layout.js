@@ -86,7 +86,8 @@ function holdHeight(reset) {
 // Blocks whose text changes every tick (equations, live readouts, chips) may grow to fit but don't shrink back
 // mid-session, so the page settles instead of breathing. Reset when their width changes, a different car is
 // selected, or the layout changes.
-const STEADY = ["#eqs", ".drv-head", "#d-state", "#d-stats", "#suggest", ".pw-data", "#rc-anchor .rc-row", "#rc-inter", "#readout", "#res-sub"];
+// (Car data and Corner mathematics have fixed tile heights instead: see page4.css)
+const STEADY = ["#suggest", ".pw-data", "#rc-anchor .rc-row", "#rc-inter", "#readout", "#res-sub"];
 const steadyRO = new ResizeObserver(entries => {
   for (const e of entries) {
     const el = e.target, w = Math.round(e.contentRect.width);
